@@ -505,4 +505,386 @@
     </div>
 </template>
 
-<style></style>
+ALL STYLES FROM OTHER REPO ARE HERE 
+JUST NEED TO DIVVY THEM UP AND APPLY THEM AS REQUIRED
+<style>
+:root {
+  --main-hex: #Fd920b;
+  --off-main-hex: #Fab256;
+  --background-hex: #D9d9d9;
+  --off-background-hex: #777777;
+}
+
+body {
+  background-color: var(--background-hex);
+  margin: 0;
+  font-family: 'Merriweather', sans-serif;
+  text-align: center;
+  line-height: 2;
+}
+
+div {
+  margin: 0;
+}
+
+h1 {
+    color: var(--main-hex);
+    font-family: 'Fugaz One', serif;
+    font-size: 5rem;
+}
+
+h3 {
+  color: var(--off-main-hex);
+  font-family: 'Montserrat', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Containers */
+
+.top-container {
+  position: relative;
+  color: var(--main-hex);
+  background-color: var(--off-background-hex);
+  max-height: 500px;
+}
+
+.middle-container {
+  padding: 20px;
+  padding-top: 30px;
+}
+
+.bottom-container {
+  background-color: var(--off-background-hex);
+  padding: 20px 0 20px 0;
+  color: #EAF6F6;
+}
+
+/* Section Styles */
+
+.project-section {
+  background-color: var(--off-background-hex);
+  color: white;
+  padding: 40px 35px;
+}
+
+.project-section:nth-child(odd){
+  background-color: var(--background-hex);
+  color: black;
+  padding: 40px 35px;
+}
+
+.homepage-section{
+  margin: 5% 10% 0 10%;
+}
+
+/* Buttons */
+
+.basic-button {
+  display: block;
+  margin: 2% auto;
+}
+
+/* Overriding btn-primary to the teal colour scheme */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--main-hex) !important;
+    border-color: black !important;
+}
+
+/* Headings */
+
+.section-heading {
+  color: var(--main-hex);
+  font-family: 'Montserrat', serif;
+  font-size: 2rem;
+  margin: 35px 0;
+  font-weight: bold;
+}
+
+.subheading {
+  color: var(--off-main-hex);
+  font-family: 'Montserrat', serif;
+  font-size: 1.8rem;
+  margin: 20px 0;
+  word-break: break-word;
+  font-weight: bold;
+}
+
+.title-subheading {
+  color: var(--off-main-hex);
+  font-family: 'Montserrat', serif;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+/* Navigation Bars */
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat';
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#contents-brand {
+  color: var(--off-main-hex);
+}
+
+.contents-navbar {
+  margin: 0 100px;
+  margin-top: 40px;
+}
+
+.navbar-collapse {
+  margin: 45px 0;
+}
+
+/* Intro */
+
+.waterscape {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+
+#nameTitle {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7%;
+  z-index: 2;
+}
+
+#professionTitle{
+  font-size: 27px;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 17%;
+  z-index: 2;
+}
+
+#imageOfMe {
+  border-radius: 30%;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Language List*/
+
+.lang-list {
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  list-style: none;
+}
+
+.languages-heading {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-hex);
+  text-decoration: none;
+}
+
+
+/* Stats */
+
+.stats-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.stats-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 10px 8px;
+  margin: 10px 10px;
+  background-color: whitesmoke;
+  border: 1px solid var(--off-main-hex);
+}
+
+.stat-name{
+  font-size: 1.2rem;
+  color: black;
+}
+
+.stat-metric{
+  color: var(--main-hex);
+  font-weight: bolder;
+}
+
+.stat-metric.small{
+  font-size: 1.5rem;
+}
+
+/* Contact Me */
+
+/* Portfolio*/
+
+.new-annotation{
+  color: crimson;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.carousel-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.carousel {
+  margin-top: 30px;
+}
+
+.dark-prev-icon {
+ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.dark-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.portfolio-block {
+  margin: 10px 10px;
+}
+
+.portfolio-block.big-block {
+  font-size: 0.9rem;
+}
+
+.round-border {
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.small-margin-bottom {
+  margin-bottom: 25px;
+}
+
+/* Footer */
+
+.footer-link {
+  color: var(--off-main-hex);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 0 15px 0 15px;
+}
+
+.footer-embedded-link {
+  color: #EAF6F6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.spacedText {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Mobile & Tablet Compatability - CSS Breakpoint */
+
+  @media (max-width: 1250px) {
+    body {
+      font-size: 1.7rem;
+    }
+
+    p {
+      font-size: 1.7rem;
+    }
+
+    .homepage-section {
+      margin: 2% 3% 0 3%;
+    }
+
+    .subheading {
+      font-size: 2.6rem;
+    }
+
+    .navbar-toggler-icon{
+      width: 4.5em;
+      height: 3em;
+    }
+
+    .navbar-brand {
+      font-size: 2rem;
+    }
+
+    .nav-link {
+      font-size: 2rem;
+    }
+
+    h1 {
+      font-size: 4.8rem;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+    }
+
+    .title-subheading {
+      font-size: 1.9rem;
+    }
+
+    .section-heading{
+      font-size: 2.3rem;
+    }
+
+    .languages-heading {
+      font-size: 2rem;
+    }
+
+    #nameTitle{
+      top: 5%;
+      font-size: 4.2rem;
+    }
+
+    #professionTitle{
+      top: 20%;
+      font-size: 2.7rem;
+    }
+
+    #imageOfMe{
+      height: 320px;
+    }
+
+    .stats-child{
+      width: 45%;
+    }
+
+    .stat-name{
+      font-size: 1.4rem;
+    }
+
+    .stat-metric.small{
+      font-size: 1.9rem;
+    }
+
+    }
+
+</style>
