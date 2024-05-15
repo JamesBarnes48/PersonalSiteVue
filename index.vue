@@ -1,8 +1,6 @@
 <script></script>
 
 <template>
-
-</template>
   <div class="top-container">
     <p id="nameTitle">I'm James.</p>
     <p id="professionTitle" class="title-subheading">web developer</p>
@@ -172,3 +170,6 @@
     <p>Icon made by <a class="footer-embedded-link" href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a class="footer-embedded-link" href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
     <p>© 2020 James Barnes</p>
   </div>
+</template>
+
+<style></style>
