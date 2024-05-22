@@ -6,20 +6,13 @@
   </div>
 
   <div class="middle-container">
-    <nav class="navbar navbar-expand-lg navbar-light">
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtogglecontent" aria-controls="navtogglecontent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navtogglecontent">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="showcase.html">Project Showcase</a> </li>
-        </ul>
-      </div>
-
-    </nav>
+    <v-toolbar>
+      NOTES::
+      Youre going to have to use Vue.router to set up routing between your pages. follow this site to see how:
+      https://www.digitalocean.com/community/tutorials/how-to-navigate-between-views-with-vue-router
+      you need to replace App.vue with just a router-view tag and then move the contents over to a new .vue file in Views
+      then you can replace what is rendered onscreen by using router-link tags
+    </v-toolbar>
 
     <div id="profile">
       <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
