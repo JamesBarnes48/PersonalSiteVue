@@ -173,5 +173,143 @@
 </template>
 
 <style>
+.homepage-section{
+  margin: 5% 10% 0 10%;
+}
 
+.basic-button {
+  display: block;
+  margin: 2% auto;
+}
+
+/* Overriding btn-primary to the teal colour scheme */
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: var(--main-hex) !important;
+    border-color: black !important;
+}
+
+
+/* Intro */
+
+.title-subheading {
+  color: var(--off-main-hex);
+  font-family: 'Montserrat', serif;
+  font-size: 2rem;
+  margin-top: 40px;
+}
+
+.waterscape {
+  display: block;
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+}
+
+
+#nameTitle {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 7%;
+  z-index: 2;
+}
+
+#professionTitle{
+  font-size: 27px;
+  font-weight: bolder;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 17%;
+  z-index: 2;
+}
+
+#imageOfMe {
+  border-radius: 30%;
+  height: 280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Language List*/
+
+.lang-list {
+  font-family: 'Montserrat';
+  font-weight: bolder;
+  list-style: none;
+}
+
+.languages-heading {
+  font-family: 'Montserrat';
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--main-hex);
+  text-decoration: none;
+}
+
+
+/* Stats */
+
+.stats-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.stats-child{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30%;
+  padding: 10px 8px;
+  margin: 10px 10px;
+  background-color: whitesmoke;
+  border: 1px solid var(--off-main-hex);
+}
+
+.stat-name{
+  font-size: 1.2rem;
+  color: black;
+}
+
+.stat-metric{
+  color: var(--main-hex);
+  font-weight: bolder;
+}
+
+.stat-metric.small{
+  font-size: 1.5rem;
+}
+
+@media (max-width: 1250px){
+  .homepage-section {
+      margin: 2% 3% 0 3%;
+    }
+    
+    .title-subheading {
+      font-size: 1.9rem;
+    }
+
+    .languages-heading {
+      font-size: 2rem;
+    }
+
+    #nameTitle{
+      top: 5%;
+      font-size: 4.2rem;
+    }
+
+    #professionTitle{
+      top: 20%;
+      font-size: 2.7rem;
+    }
+
+    #imageOfMe{
+      height: 320px;
+    }
+}
 </style>
