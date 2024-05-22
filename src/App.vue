@@ -205,22 +205,22 @@
 
 
 #nameTitle {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   position: absolute;
   left: 0;
   right: 0;
-  top: 7%;
+  margin-top: 0px;
   z-index: 2;
 }
 
 #professionTitle{
-  font-size: 27px;
+  font-size: 38px;
   font-weight: bolder;
   position: absolute;
   left: 0;
   right: 0;
-  top: 17%;
+  bottom: 35%;
   z-index: 2;
 }
 
@@ -302,8 +302,8 @@
     }
 
     #professionTitle{
-      top: 20%;
-      font-size: 2.7rem;
+      bottom: 34%;
+      font-size: 2.5rem;
     }
 
     #imageOfMe{
