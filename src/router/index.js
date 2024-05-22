@@ -1,6 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import App from '../App.vue'
 import HomeView from '../views/Home.vue'
-import ShowcaseView from '../views/Showcase.vue'
+//import ShowcaseView from '../views/Showcase.vue'
+
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -8,13 +10,15 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeView
+      component: App
     },
+    /*
     {
-      path: '/about',
-      name: 'about',
+      path: '/showcase',
+      name: 'showcase',
       component: ShowcaseView
     }
+    */
   ]
 })
 

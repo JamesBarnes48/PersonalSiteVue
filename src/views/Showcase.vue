@@ -1,4 +1,38 @@
-<script></script>
+<script>
+/*
+import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
+import autocomplete2 from "../assets/images/showcase/autocomplete2.png"
+import cheat1 from "../assets/images/showcase/cheat1.png"
+import cheat2 from "../assets/images/showcase/cheat2.png"
+import cheat3 from "../assets/images/showcase/cheat3.png"
+import omdb1 from "../assets/images/showcase/omdb1.png"
+import omdb2 from "../assets/images/showcase/omdb2.png"
+import omdb3 from "../assets/images/showcase/omdb3.png"
+import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
+import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
+*/
+
+export default {
+  data() {
+    return {
+      images: []
+    }
+  },
+
+  mounted() {
+    this.importAll(require.context('../assets/images/showcase/', true, /\.png$/));
+  },
+
+  methods: {
+    importAll(r) {
+      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
+    },
+
+    showthing() {
+      console.info(this.images);
+    }
+  }
+}</script>
 
 <template>
   <!-- Main Nav Bar -->
@@ -20,6 +54,7 @@
     <!-- Title -->
     <div class="container-fluid project-section">
     <h1>Project Showcase</h1>
+    <button onclick="showthing"></button>
 
     <!-- Contents Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light sticky-top contents-navbar">
