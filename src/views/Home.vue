@@ -6,11 +6,6 @@
     </div>
   
     <div class="middle-container">
-      <v-toolbar>
-        <router-link :to="{ name: 'home' }">Home</router-link>
-        <router-link :to="{ name: 'PageNotFound' }">Showcase</router-link>
-      </v-toolbar>
-  
       <div id="profile">
         <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
         <h2 class="section-heading">Hello!</h2>
