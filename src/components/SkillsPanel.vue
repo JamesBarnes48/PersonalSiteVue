@@ -1,6 +1,6 @@
 <script>
 export default {
-    name: 'SkillPanel',
+    name: 'SkillsPanel',
     props: {
         skillName: {type: String, default: 'A Skill'},
         description: {type: 'String', default: 'Skill Description'},
