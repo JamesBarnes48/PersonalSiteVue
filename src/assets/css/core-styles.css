@@ -7,7 +7,7 @@
   
   body {
     background-color: var(--background-hex);
-    margin: 0;
+    margin: 0 0 0 56px;
     font-family: 'Merriweather', sans-serif;
     text-align: center;
     line-height: 2;
