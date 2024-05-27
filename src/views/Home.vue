@@ -1,3 +1,33 @@
+<script>
+export default {
+  name: 'Home',
+  data: () => ({
+    skills: [{
+      name: 'Java',
+      description: 'As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
+      listDescription: 'Some of projects I have made in Java include:',
+      listItems: ['"Cheat" card game', 'Word auto-completion algorithm', 'Toll road system']
+    },
+    {
+      name: 'C++',
+      description: `I am relatively new to C++, only starting learning it in late 2019, but after a few projects using it I am seeing the merits of it already. It is very similar to C# which I had experience
+                  using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
+                  which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
+      listDescription: 'Some C++ projects I have worked on include:',
+      listItems: ['Offline movie database', '2D arcade game']
+    },
+    {
+      name: 'Web Development',
+      description: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
+                  Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I have delved deeper
+                  into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library, jQuery, DOM manipulation and more.`,
+      listDescription: 'Some websites I have created include:',
+      listItems: ["Personal site (you're looking at it now!)", 'Virtual garage']
+    }]
+  })
+}
+</script>
+
 <template>
     <div class="top-container">
       <p id="nameTitle">I'm James.</p>
@@ -18,81 +48,7 @@
           I've had a chance to put my skills to practice as well as pick up a few new ones. I have finally learned how to use git properly for starters (about time I learned there are branches other than master!)
           as well as working with some more advanced tools you might encounter when working in industry and peer reviewing work done by others. With a bit of graft I've found myself reaping benefits!</p>
         <p>From Python to C, from SQL to ARM assembly code, I have had some experience working with plenty of different languages. While I may be a web developer, mainly I have most experience in:</p>
-  
-        <!-- ACCORDION -->
-        <div class="homepage-section" id="languages-accordion">
-          <div class="card">
-            <div class="card-header" id="java-heading">
-              <h5 class="mb-0">
-                <button class="btn btn-link languages-heading" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Java
-                </button>
-              </h5>
-            </div>
-            <div id="collapseOne" class="collapse show" aria-labelledby="java-heading" data-parent="#languages-accordion">
-              <div class="card-body">
-                <p>As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it.
-                  The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.
-                </p>
-                <p>Some of projects I have made in Java include:</p>
-                <ul class="lang-list">
-                  <li>"Cheat" card game</li>
-                  <li>Word auto-completion algorithm</li>
-                  <li>Toll road system</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card">
-            <div class="card-header" id="cplusplus-heading">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed languages-heading" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  C++
-                </button>
-              </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="cplusplus-heading" data-parent="#languages-accordion">
-              <div class="card-body">
-                <p>I am relatively new to C++, only starting learning it in late 2019, but after a few projects using it I am seeing the merits of it already. It is very similar to C# which I had experience
-                  using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
-                  which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.</p>
-                  <p>Some C++ projects I have worked on include:</p>
-                  <ul class="lang-list">
-                    <li>Offline movie database</li>
-                    <li>2D arcade game</li>
-                  </ul>
-              </div>
-            </div>
-          </div>
-  
-          <div class="card">
-            <div class="card-header" id="html-heading">
-              <h5 class="mb-0">
-                <button class="btn btn-link collapsed languages-heading" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Web Development
-                </button>
-              </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="html-heading" data-parent="#languages-accordion">
-              <div class="card-body">
-                <p>First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
-                  Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I have delved deeper
-                  into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library, jQuery, DOM manipulation and more.
-                </p>
-                <p>Some websites I have created include:</p>
-                <ul class="lang-list">
-                  <li>Personal site (You're looking at it right now!)</li>
-                  <li>tindog</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- ACCORDION -->
-  
-      </div>
-  
+      </div>  
       <hr>
   
       <div class="homepage-section">
