@@ -3,7 +3,7 @@ import SkillsPanel from './SkillsPanel.vue'
 
 export default {
     name: 'SkillsPanelList',
-    components: {SkillsPanel}
+    components: {SkillsPanel},
     props: {
         skills: {
             type: 'Object',
@@ -17,7 +17,9 @@ export default {
     <v-expansion-panels>
         <SkillsPanel
         v-for="skill in skills"
-        :skillName="skill.skillName",
+        :skillName="skill.skillName"
+        :skillDesc="skill.skillDesc"
+        :listDescription="skill.listDescription"
         :listItems="skill.listItems"
         ></SkillsPanel>
     </v-expansion-panels>

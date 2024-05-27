@@ -2,7 +2,8 @@
 export default {
   name: 'Home',
   data: () => ({
-    skills: [{
+    skills: [
+    {
       name: 'Java',
       description: 'As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
       listDescription: 'Some of projects I have made in Java include:',
@@ -25,7 +26,7 @@ export default {
       listItems: ["Personal site (you're looking at it now!)", 'Virtual garage']
     }]
   })
-}
+  }
 </script>
 
 <template>
