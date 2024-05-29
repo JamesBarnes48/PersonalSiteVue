@@ -11,7 +11,7 @@ import { createVuetify } from 'vuetify'
 import * as components from 'vuetify/components'
 import * as directives from 'vuetify/directives'
 
-import FontAwesomeIcon from "./font-awesome-icons.js";
+import FontAwesomeIcon from "./utilities/font-awesome-icons.js";
 
 const vuetify = createVuetify({
     components,
