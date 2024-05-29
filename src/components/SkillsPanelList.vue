@@ -5,8 +5,8 @@ export default {
     name: 'SkillsPanelList',
     components: {SkillsPanel},
     props: {
-        skills: {
-            type: 'Object',
+        skillsList: {
+            type: Array,
             required: true
         }
     }
@@ -16,7 +16,7 @@ export default {
 <template>
     <v-expansion-panels>
         <SkillsPanel
-        v-for="skill in skills"
+        v-for="skill in skillsList"
         :skillName="skill.skillName"
         :skillDesc="skill.skillDesc"
         :listDescription="skill.listDescription"

@@ -3,9 +3,9 @@ export default {
     name: 'SkillsPanel',
     props: {
         skillName: {type: String, default: 'A Skill'},
-        description: {type: 'String', default: 'Skill Description'},
-        listDescription: {type: 'String'},
-        listItems: {type: 'Object', default() {return []}}
+        skillDesc: {type: String, default: 'Skill Description'},
+        listDescription: {type: String},
+        listItems: {type: Array, default() {return []}}
     }
 }
 </script>
@@ -15,7 +15,7 @@ export default {
     :title="skillName"
     >
         <v-expansion-panel-text>
-            <p>{{ description }}</p>
+            <p>{{ skillDesc }}</p>
             <div v-if="listItems.length">
                 <p>{{ listDescription }}</p>
                 <v-list>

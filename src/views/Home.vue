@@ -1,25 +1,28 @@
 <script>
+import SkillsPanelList from '../components/SkillsPanelList.vue';
+
 export default {
   name: 'Home',
+  components: {SkillsPanelList},
   data: () => ({
     skills: [
     {
-      name: 'Java',
-      description: 'As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
+      skillName: 'Java',
+      skillDesc: 'As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
       listDescription: 'Some of projects I have made in Java include:',
       listItems: ['"Cheat" card game', 'Word auto-completion algorithm', 'Toll road system']
     },
     {
-      name: 'C++',
-      description: `I am relatively new to C++, only starting learning it in late 2019, but after a few projects using it I am seeing the merits of it already. It is very similar to C# which I had experience
+      skillName: 'C++',
+      skillDesc: `I am relatively new to C++, only starting learning it in late 2019, but after a few projects using it I am seeing the merits of it already. It is very similar to C# which I had experience
                   using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
                   which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
       listDescription: 'Some C++ projects I have worked on include:',
       listItems: ['Offline movie database', '2D arcade game']
     },
     {
-      name: 'Web Development',
-      description: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
+      skillName: 'Web Development',
+      skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
                   Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I have delved deeper
                   into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library, jQuery, DOM manipulation and more.`,
       listDescription: 'Some websites I have created include:',
@@ -51,6 +54,8 @@ export default {
         <p>From Python to C, from SQL to ARM assembly code, I have had some experience working with plenty of different languages. While I may be a web developer, mainly I have most experience in:</p>
       </div>  
       <hr>
+
+      <SkillsPanelList :skillsList="skills" />
   
       <div class="homepage-section">
         <h2 class="subheading">My Stats</h2>
