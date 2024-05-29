@@ -11,23 +11,35 @@ export default {
 </script>
 
 <template>
-    <v-expansion-panel
-    :title="skillName"
-    >
+    <v-expansion-panel>
+        <v-expansion-panel-title class="skillName" >{{ skillName }}</v-expansion-panel-title>
         <v-expansion-panel-text>
             <p>{{ skillDesc }}</p>
             <div v-if="listItems.length">
                 <p>{{ listDescription }}</p>
-                <v-list>
-                    <v-list-item 
-                    v-for="item in listItems"
-                    :key="item"
-                    :title="item" />
-                </v-list>
+                <ul class="list_items">
+                    <li v-for="item in listItems">{{ item }}</li>
+                </ul>
             </div>
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
 
 <style scoped>
+.skillName {
+    color: var(--main-hex);
+    font-size: 24px;
+}
+
+.list_items {
+    margin: auto;
+    margin-top: 20px;
+    max-width: 40%;
+}
+
+@media (max-width: 1250px) {
+    .list_items {
+        max-width: 65%;
+    }
+}
 </style>

@@ -53,7 +53,6 @@ export default {
           as well as working with some more advanced tools you might encounter when working in industry and peer reviewing work done by others. With a bit of graft I've found myself reaping benefits!</p>
         <p>From Python to C, from SQL to ARM assembly code, I have had some experience working with plenty of different languages. While I may be a web developer, mainly I have most experience in:</p>
       </div>  
-      <hr>
 
       <SkillsPanelList :skillsList="skills" />
   

@@ -14,7 +14,7 @@ export default {
 </script>
 
 <template>
-    <v-expansion-panels>
+    <v-expansion-panels variant="popout">
         <SkillsPanel
         v-for="skill in skillsList"
         :skillName="skill.skillName"
