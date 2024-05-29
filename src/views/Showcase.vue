@@ -1,16 +1,5 @@
 <script>
-/*
-import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
-import autocomplete2 from "../assets/images/showcase/autocomplete2.png"
-import cheat1 from "../assets/images/showcase/cheat1.png"
-import cheat2 from "../assets/images/showcase/cheat2.png"
-import cheat3 from "../assets/images/showcase/cheat3.png"
-import omdb1 from "../assets/images/showcase/omdb1.png"
-import omdb2 from "../assets/images/showcase/omdb2.png"
-import omdb3 from "../assets/images/showcase/omdb3.png"
-import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
-import autocomplete1 from "../assets/images/showcase/autocomplete1.png"
-*/
+import * as showcaseImages from '../utilities/showcase-images.js'
 
 export default {
   data() {
@@ -20,19 +9,12 @@ export default {
   },
 
   mounted() {
-    this.importAll(require.context('../assets/images/showcase/', true, /\.png$/));
   },
 
   methods: {
-    importAll(r) {
-      r.keys().forEach(key => (this.images.push({ pathLong: r(key), pathShort: key })));
-    },
-
-    showthing() {
-      console.info(this.images);
-    }
   }
-}</script>
+}
+</script>
 
 <template>
   <!-- Main Nav Bar -->
@@ -86,16 +68,16 @@ export default {
         <div id="garage-carousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/garage1.png" alt="Title">
+            <img class="carousel-image" :src="showcaseImages.garage1" alt="Title">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/garage2.png" alt="Selecting effects">
+            <img class="carousel-image" :src="showcaseImages.garage2" alt="Selecting effects">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/garage3.png" alt="Output">
+            <img class="carousel-image" :src="showcaseImages.garage3" alt="Output">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/garage4.png" alt="Output">
+            <img class="carousel-image" :src="showcaseImages.garage4" alt="Output">
             </div>
         </div>
         <a class="carousel-control-prev" href="#garage-carousel" role="button" data-slide="prev">
@@ -140,13 +122,13 @@ export default {
         <div id="tindog-carousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-            <img class="carousel-image round-border" src="images/showcase/webdev/tindog3.png" alt="Title section of site">
+            <img class="carousel-image round-border" :src="showcaseImages.tindog1" alt="Title section of site">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" src="images/showcase/webdev/tindog2.png" alt="Company endorsements">
+            <img class="carousel-image round-border" :src="showcaseImages.tindog2" alt="Company endorsements">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" src="images/showcase/webdev/tindog1.png" alt="Offers">
+            <img class="carousel-image round-border" :src="showcaseImages.tindog3" alt="Offers">
             </div>
         </div>
         <a class="carousel-control-prev" href="#tindog-carousel" role="button" data-slide="prev">
@@ -170,13 +152,13 @@ export default {
         <div id="alchemy-carousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/alc1.png" alt="Title">
+            <img class="carousel-image" :src="showcaseImages.alc1" alt="Title">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/alc2.png" alt="Selecting effects">
+            <img class="carousel-image" :src="showcaseImages.alc2" alt="Selecting effects">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/alc3.png" alt="Output">
+            <img class="carousel-image" :src="showcaseImages.alc3" alt="Output">
             </div>
         </div>
         <a class="carousel-control-prev" href="#alchemy-carousel" role="button" data-slide="prev">
@@ -216,10 +198,10 @@ export default {
         <div id="simon-carousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-            <img class="carousel-image round-border" src="images/showcase/webdev/simon1.png" alt="Before starting the game">
+            <img class="carousel-image round-border" :src="showcaseImages.simon1" alt="Before starting the game">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" src="images/showcase/webdev/simon2.png" alt="Game over">
+            <img class="carousel-image round-border" :src="showcaseImages.simon2" alt="Game over">
             </div>
         </div>
         <a class="carousel-control-prev" href="#simon-carousel" role="button" data-slide="prev">
@@ -243,10 +225,10 @@ export default {
         <div id="newsletter-carousel" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/news1.png" alt="Enter Details">
+            <img class="carousel-image" :src="showcaseImages.news1" alt="Enter Details">
             </div>
             <div class="carousel-item container-fluid">
-            <img class="carousel-image" src="images/showcase/webdev/news2.png" alt="Registered!">
+            <img class="carousel-image" :src="showcaseImages.news2" alt="Registered!">
             </div>
         </div>
         <a class="carousel-control-prev" href="#newsletter-carousel" role="button" data-slide="prev">
@@ -300,13 +282,13 @@ export default {
         <div id="cheat-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image round-border" src="images/showcase/cheat1.png" alt="Card class methods">
+                <img class="carousel-image round-border" :src="showcaseImages.cheat1" alt="Card class methods">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" src="images/showcase/cheat2.png" alt="Hand class methods">
+                <img class="carousel-image round-border" :src="showcaseImages.cheat2" alt="Hand class methods">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" src="images/showcase/cheat3.png" alt="MyStrategy choosing a bid">
+                <img class="carousel-image round-border" :src="showcaseImages.cheat3" alt="MyStrategy choosing a bid">
             </div>
             </div>
             <a class="carousel-control-prev" href="#cheat-carousel" role="button" data-slide="prev">
@@ -331,16 +313,16 @@ export default {
         <div id="study-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image" src="images/showcase/study1.png" alt="Login screen">
+                <img class="carousel-image" :src="showcaseImages.study1" alt="Login screen">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/study2.png" alt="Statistics screen">
+                <img class="carousel-image" :src="showcaseImages.study2" alt="Statistics screen">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/study3.png" alt="Home screen">
+                <img class="carousel-image" :src="showcaseImages.study3" alt="Home screen">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/study4.png" alt="Tracking an assignment">
+                <img class="carousel-image" :src="showcaseImages.study4" alt="Tracking an assignment">
             </div>
             </div>
             <a class="carousel-control-prev" href="#study-carousel" role="button" data-slide="prev">
@@ -387,10 +369,10 @@ export default {
         <div id="autocomplete-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image round-border" src="images/showcase/autocomplete1.png" alt="First few queries">
+                <img class="carousel-image round-border" :src="showcaseImages.autocomplete1" alt="First few queries">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" src="images/showcase/autocomplete2.png" alt="Last few queries">
+                <img class="carousel-image round-border" :src="showcaseImages.autocomplete2" alt="Last few queries">
             </div>
             </div>
             <a class="carousel-control-prev" href="#autocomplete-carousel" role="button" data-slide="prev">
@@ -415,10 +397,10 @@ export default {
         <div id="toll-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image" src="images/showcase/toll1.png" alt="Results of vehicles passing through the toll road">
+                <img class="carousel-image" :src="showcaseImages.toll1" alt="Results of vehicles passing through the toll road">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/toll2.png" alt="Total money made from road">
+                <img class="carousel-image" :src="showcaseImages.toll2" alt="Total money made from road">
             </div>
             </div>
             <a class="carousel-control-prev" href="#toll-carousel" role="button" data-slide="prev">
@@ -465,16 +447,16 @@ export default {
         <div id="redline-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image" src="images/showcase/redline1.png" alt="Title screen">
+                <img class="carousel-image" :src="showcaseImages.redline1" alt="Title screen">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/redline4.png" alt="Playing the game">
+                <img class="carousel-image" :src="showcaseImages.redline2" alt="Playing the game">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/redline3.png" alt="Speeding up">
+                <img class="carousel-image" :src="showcaseImages.redline3" alt="Speeding up">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/redline2.png" alt="Game over screen">
+                <img class="carousel-image" :src="showcaseImages.redline4" alt="Game over screen">
             </div>
             </div>
             <a class="carousel-control-prev" href="#redline-carousel" role="button" data-slide="prev">
@@ -499,10 +481,10 @@ export default {
         <div id="omdb-carousel" class="carousel slide">
             <div class="carousel-inner">
             <div class="carousel-item active container-fluid">
-                <img class="carousel-image" src="images/showcase/omdb1.png" alt="Oldest films in the database">
+                <img class="carousel-image" :src="showcaseImages.omdb1" alt="Oldest films in the database">
             </div>
             <div class="carousel-item container-fluid">
-                <img class="carousel-image" src="images/showcase/omdb2.png" alt="Newest films in the database and queries">
+                <img class="carousel-image" :src="showcaseImages.omdb2" alt="Newest films in the database and queries">
             </div>
             </div>
             <a class="carousel-control-prev" href="#omdb-carousel" role="button" data-slide="prev">

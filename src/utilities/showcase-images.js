@@ -1,4 +1,3 @@
-
 export const autocomplete1 = require( "../assets/images/showcase/autocomplete1.png")
 export const autocomplete2 = require( "../assets/images/showcase/autocomplete2.png")
 export const cheat1 = require( "../assets/images/showcase/cheat1.png")

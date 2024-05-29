@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-//import ShowcaseView from '../views/Showcase.vue'
+import Showcase from '../views/Showcase.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
 
@@ -12,13 +12,11 @@ const router = createRouter({
       name: 'home',
       component: Home
     },
-    /*
     {
       path: '/showcase',
       name: 'showcase',
-      component: ShowcaseView
-    }
-    */
+      component: Showcase
+    },
     {
       path: '/:catchAll(.*)*',
       name: "PageNotFound",
