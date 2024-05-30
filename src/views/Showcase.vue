@@ -58,6 +58,76 @@ export default {
                 repoLink: 'https://jamesbarnes48.github.io/Simon-Game/',
                 projectImages: [showcaseImages.news1, showcaseImages.news2],
             },
+            {
+                title: 'Cheat Card Game Simulator',
+                mainText: `The latest project I completed using Java is a simulation of the card game Cheat. Boasting 16 different classes and 3 different interfaces it is my most complex project to date.
+                    The game is simple and as you would expect, simulates the card game Cheat. Depending on how you configure it you can set any number of potential players to be either a human player who
+                    plays the game through console input or an AI with 3 different strategies. Basic strategy plays the game with a very basic strategy, thinker strategy plays the game more randomly
+                    and takes more risks and my own strategy which plays the game even more randomly with varying levels of randomness similar to how a human might play. The game can manipulate cards and the deck
+                    as it sees fit by making use of a range of methods for sorting cards and the like.`,
+                repoLink: 'https://github.com/JamesBarnes48/Cheat-Simulator',
+                projectImages: [showcaseImages.cheat1, showcaseImages.cheat2, showcaseImages.cheat3],
+            },
+            {
+                title: 'University Study Planner',
+                mainText: `This is another larger-scale project where I worked alongside a group of 3 of my peers to plan, design and develop a study planner for students of
+                    our university in Java and JavaFX. Being a group project, this project had more of an emphasis on teamwork and required us to work efficiently together to
+                    complete all the code, as there is a total of 17 controller classes and 11 model and view classes comprising the entire project. It has a wide range of
+                    features including creating milestones, tracking progress through assignments, multiple profiles as well as quality of life features like a night mode.
+                    To create a profile you will need an XML file of modules to tie to that profile, in the src/Content folder there is an example file to use.
+                    You will need to configure your project to run the file. I used Java 11 JRE, Java 1.8 SDK and project language level of Java 8. Configure JavaFX by ensuring
+                    VM options is set to ""--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml".`,
+                repoLink: 'https://github.com/JamesBarnes48/University-Study-Planner',
+                projectImages: [showcaseImages.study1, showcaseImages.study2, showcaseImages.study3, showcaseImages.study4],
+            },
+            {
+                title: 'Word Auto-complete App',
+                mainText: `This simple Java application reads in a text file containing a text file containing a chapter of Lord of The Rings and
+                    creates a dictionary of words that appear in it as well as how frequently they appear. This dictionary is then stored
+                    and can then be queried with any prefix to produce the top 3 words you may want to auto-complete to as well as the probability of that being the word you wanted.
+                    This is done using my own implementation of a Trie data structure, and a large portion of this project was creating and manipulating this complex
+                    data structure. Currently the text reads Lord of the Rings and queries a given set of queries from another text file, but you can
+                    change those files around and see what happens with other text and queries!`,
+                repoLink: 'https://github.com/JamesBarnes48/Word-Autocomplete-App',
+                projectImages: [showcaseImages.autocomplete1, showcaseImages.autocomplete2],
+            },
+            {
+                title: 'Toll Road Simulator',
+                mainText: `One of my early Java projects involved creating a toll road system which would read in license plates from a text file and
+                    simulate them passing through the toll road, charging their account different amounts based on their vehicle and other factors.
+                    The system responds if they dont have enough money to make the trip as well as to various other factors.
+                    A relatively simple project compared to the others, this was my first time using a few useful Java features such as exceptions
+                    and abstract classes.`,
+                repoLink: 'https://github.com/JamesBarnes48/Toll-Road-Simulator',
+                projectImages: [showcaseImages.toll1, showcaseImages.toll2],
+            },
+            {
+                title: 'Redline LA Pursuit',
+                mainText: `A large personal project of mine and my first attempt at game development, Redline LA Pursuit is a 2D arcade-style
+                    game developed using OpenGL for C++. Inspired by old-school 80's arcade games, the game is relatively simple in that you
+                    must drive your car as far as you can while avoiding obstacles in your way. This was a lot of fun to make and introduced me
+                    to the world of graphics rendering with OpenGL. Have a go and see how far you can get!`,
+                repoLink: 'https://github.com/JamesBarnes48/Redline-LA-Pursuit',
+                projectImages: [showcaseImages.redline1, showcaseImages.redline2, showcaseImages.redline3, showcaseImages.redline4],
+            },
+            {
+                title: 'Offline Movie Database',
+                mainText: `A C++ application that reads the text file "films.txt" and formats the information into a film database.
+                    The database of films and information about them can then be queried using a wide range of different queries.
+                    You can set the queries to whatever you want by changing the code slightly, retrieving films based on a wide range of criteria.
+                    You want to see the 5th most recent PG-rated film? Query it!`,
+                repoLink: 'https://github.com/JamesBarnes48/Offline-Movie-Database',
+                projectImages: [showcaseImages.omdb1, showcaseImages.omdb2],
+            },
+            {
+                title: 'Offline Movie Database',
+                mainText: `A C++ application that reads the text file "films.txt" and formats the information into a film database.
+                    The database of films and information about them can then be queried using a wide range of different queries.
+                    You can set the queries to whatever you want by changing the code slightly, retrieving films based on a wide range of criteria.
+                    You want to see the 5th most recent PG-rated film? Query it!`,
+                repoLink: 'https://github.com/JamesBarnes48/Offline-Movie-Database',
+                projectImages: [showcaseImages.omdb1, showcaseImages.omdb2],
+            },
         ]
   }),
 }
@@ -75,298 +145,13 @@ export default {
 
     <section id="webdev">
 
-
-    <div class="container-fluid project-section">
-    <div class="row small-margin-bottom">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="newsletter-carousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-            <img class="carousel-image" :src="showcaseImages.news1" alt="Enter Details">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.news2" alt="Registered!">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#newsletter-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#newsletter-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Newsletter Sign-Up</h3>
-        <p>Up until this point I had been making static web pages, but this was my first step into developing a dynamic web app, meaning the website is
-        hosted on a server instead of on the clients web browser, meaning the whole project is structured a lot differently to a static web site,
-        it uses <strong>Node.js and Express</strong> to create a file to handle requests to my server (which I am hosting for free on Heroku). Dynamic web apps like this can handle a lot more complex tasks than
-        any static webpage, and if you were developing a website for your company this is likely how you would do it!</p>
-    </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-    <p>This is a simple site on the surface, but most of this site's utility is behind the scenes. The user enters their name and email address
-    to sign themselves up for a newsletter. When the user submits their info it uses the <strong>Mailchimp API</strong> to sign them up to my personal mailing list.
-    After a user has signed up successfully I will be able to see everyone who has signed up from my Mailchimp account.</p>
-    <p>While I don't have anything to send out at the moment, it's not difficult to see how this simple concept could be very useful from an advertising
-    perspective!</p>
-    <p>Go sign yourself up over <a href="https://immense-badlands-47381.herokuapp.com">here!</a></p>
-    </div>
-
     </section>
 
     <!-- Java -->
     <section id="java">
 
-    <div class="container-fluid project-section">
-    <h3 class="section-heading">Java</h3>
-
-    <!-- Java section grid -->
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12">
-        <h3 class="subheading">Cheat Card Game Simulator</h3>
-        <p>The latest project I completed using Java is a simulation of the card game Cheat. Boasting 16 different classes and 3 different interfaces it is my most complex project to date.
-            The game is simple and as you would expect, simulates the card game Cheat. Depending on how you configure it you can set any number of potential players to be either a human player who
-            plays the game through console input or an AI with 3 different strategies. Basic strategy plays the game with a very basic strategy, thinker strategy plays the game more randomly
-            and takes more risks and my own strategy which plays the game even more randomly with varying levels of randomness similar to how a human might play. The game can manipulate cards and the deck
-            as it sees fit by making use of a range of methods for sorting cards and the like. </p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/Cheat-Simulator">here</a></p>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="cheat-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image round-border" :src="showcaseImages.cheat1" alt="Card class methods">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" :src="showcaseImages.cheat2" alt="Hand class methods">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" :src="showcaseImages.cheat3" alt="MyStrategy choosing a bid">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#cheat-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#cheat-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-
-    </div>
-    <div class="container-fluid project-section">
-
-    <div class="row small-margin-bottom">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="study-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image" :src="showcaseImages.study1" alt="Login screen">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.study2" alt="Statistics screen">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.study3" alt="Home screen">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.study4" alt="Tracking an assignment">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#study-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#study-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">University Study Planner</h3>
-        <p>This is another larger-scale project where I worked alongside a group of 3 of my peers to plan, design and develop a study planner for students of
-        our university in Java and JavaFX. Being a group project, this project had more of an emphasis on teamwork and required us to work efficiently together to
-        complete all the code, as there is a total of 17 controller classes and 11 model and view classes comprising the entire project. It has a wide range of
-    features including creating milestones, tracking progress through assignments, multiple profiles as well as quality of life features like a night mode.
-    To create a profile you will need an XML file of modules to tie to that profile, in the src/Content folder there is an example file to use.</p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/University-Study-Planner">here</a></p>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-    <p>You will need to configure your project to run the file. I used Java 11 JRE, Java 1.8 SDK and project language level of Java 8. Configure JavaFX by ensuring
-    VM options is set to ""--module-path ${PATH_TO_FX} --add-modules javafx.controls,javafx.fxml". </p>
-
-    </div>
-
-    <div class="container-fluid project-section">
-
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Word Auto-Complete App</h3>
-        <p>This simple Java application reads in a text file containing a text file containing a chapter of Lord of The Rings and
-        creates a dictionary of words that appear in it as well as how frequently they appear. This dictionary is then stored
-        and can then be queried with any prefix to produce the top 3 words you may want to auto-complete to as well as the probability of that being the word you wanted.
-        This is done using my own implementation of a Trie data structure, and a large portion of this project was creating and manipulating this complex
-        data structure. Currently the text reads Lord of the Rings and queries a given set of queries from another text file, but you can
-        change those files around and see what happens with other text and queries!</p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/Word-Autocomplete-App">here</a></p>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="autocomplete-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image round-border" :src="showcaseImages.autocomplete1" alt="First few queries">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image round-border" :src="showcaseImages.autocomplete2" alt="Last few queries">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#autocomplete-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#autocomplete-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-
-    </div>
-    <div class="container-fluid project-section">
-
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="toll-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image" :src="showcaseImages.toll1" alt="Results of vehicles passing through the toll road">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.toll2" alt="Total money made from road">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#toll-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#toll-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Toll Road Simulator</h3>
-        <p>One of my early Java projects involved creating a toll road system which would read in license plates from a text file and
-        simulate them passing through the toll road, charging their account different amounts based on their vehicle and other factors.
-        The system responds if they dont have enough money to make the trip as well as to various other factors.</p>
-        <p>A relatively simple project compared to the others, this was my first time using a few useful Java features such as exceptions
-        and abstract classes.</p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/Toll-Road-Simulator">here</a></p>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-
-    </div>
-
     </section>
     <section id="c">
-
-    <div class="container-fluid project-section">
-    <h3 class="section-heading">C/C++</h3>
-
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">"Redline LA Pursuit"</h3>
-        <p>A recent large personal project of mine and my first attempt at game development, Redline LA Pursuit is a 2D arcade-style
-        game developed using OpenGL for C++. Inspired by old-school 80's arcade games, the game is relatively simple in that you
-        must drive your car as far as you can while avoiding obstacles in your way. This was a lot of fun to make and introduced me
-        to the world of graphics rendering with OpenGL. Have a go and see how far you can get!</p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/Redline-LA-Pursuit">here</a></p>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="redline-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image" :src="showcaseImages.redline1" alt="Title screen">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.redline2" alt="Playing the game">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.redline3" alt="Speeding up">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.redline4" alt="Game over screen">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#redline-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#redline-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-
-    </div>
-    <div class="container-fluid project-section">
-
-    <div class="row">
-        <div class="col-lg-1"></div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="omdb-carousel" class="carousel slide">
-            <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-                <img class="carousel-image" :src="showcaseImages.omdb1" alt="Oldest films in the database">
-            </div>
-            <div class="carousel-item container-fluid">
-                <img class="carousel-image" :src="showcaseImages.omdb2" alt="Newest films in the database and queries">
-            </div>
-            </div>
-            <a class="carousel-control-prev" href="#omdb-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#omdb-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-            </a>
-        </div>
-        </div>
-        <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Offline Movie Database</h3>
-        <p>A C++ application that reads the text file "films.txt" and formats the information into a film database.
-        The database of films and information about them can then be queried using a wide range of different queries.
-        You can set the queries to whatever you want by changing the code slightly, retrieving films based on a wide range of criteria.
-        You want to see the 5th most recent PG-rated film? Query it! </p>
-        <p>Download it from github <a href="https://github.com/JamesBarnes48/Offline-Movie-Database">here</a></p>
-        </div>
-        <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-
-    </div>
 
     </section>
 
