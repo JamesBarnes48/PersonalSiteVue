@@ -1,11 +1,11 @@
 <script>
 export default {
-    name: 'ShowcaseProject'
+    name: 'ShowcaseProject',
     props: {
         title: {type: String, default: 'Project title'},
         mainText: {type: String, default: 'Main text'},
         repoLink: {type: String, default: '<link to repo>'},
-        projectImages: {type: Array}
+        projectImages: {type: Array, default() {return []}}
     }
 }
 </script>

@@ -2,17 +2,35 @@
 import * as showcaseImages from '../utilities/showcase-images.js'
 
 export default {
-  data() {
-    return {
-        showcaseImages: showcaseImages
-    }
-  },
-
-  mounted() {
-  },
-
-  methods: {
-  }
+  data:() => ({
+        showcaseImages: showcaseImages,
+        projects: [
+            {
+                title: 'Virtual Garage Application',
+                mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
+                    across the globe using this simple but fun tool. Really this has been a chance for
+                    me to put to practice some of the new development skills I have learned recently including linking a database service</strong> to your application,
+                    using some more advanced jQuery</strong> as well as generally building fuller and more scalable</strong> web applications. This project is also completely unguided 
+                    so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
+                    It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
+                    Extra effort has been made to mitigate cyber threats</strong> such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
+                repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
+                projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
+            },
+            {
+                title: 'Virtual Garage Application',
+                mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
+                    across the globe using this simple but fun tool. Really this has been a chance for
+                    me to put to practice some of the new development skills I have learned recently including linking a database service</strong> to your application,
+                    using some more advanced jQuery</strong> as well as generally building fuller and more scalable</strong> web applications. This project is also completely unguided 
+                    so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
+                    It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
+                    Extra effort has been made to mitigate cyber threats</strong> such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
+                repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
+                projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
+            },
+        ]
+  }),
 }
 </script>
 
@@ -33,48 +51,6 @@ export default {
 
     <div class="container-fluid project-section">
     <h3 class="section-heading">Web Development</h3>
-    <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="garage-carousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-            <img class="carousel-image" :src="showcaseImages.garage1" alt="Title">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.garage2" alt="Selecting effects">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.garage3" alt="Output">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.garage4" alt="Output">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#garage-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#garage-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-    <div class="col-lg-5 col-md-12 portfolio-block big-block">
-        <h3 class="subheading">Virtual Garage Application <span class="new-annotation">[NEW]</span></h3>
-        <p>My latest side project has been a fun little <strong>Node.js</strong> web app where you can run your own dream garage. Manage your five prestigious garages spanning
-        across the globe using this simple but fun tool. Really this has been a chance for
-        me to put to practice some of the new development skills I have learned recently including <strong>linking a database service</strong> to your application,
-        using some more <strong>advanced jQuery</strong> as well as generally building <strong>fuller and more scalable</strong> web applications. This project is also completely unguided 
-        so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.</p>
-        <p>It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
-            Extra effort has been made to <strong>mitigate cyber threats</strong> such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.
-        </p>
-        <p>Try cloning the repo and follow the .readme's instructions to set it up yourself <a href="https://github.com/JamesBarnes48/Virtual-Garage">here</a></p>
-    </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
     </div>
 
     <div class="container-fluid project-section">
