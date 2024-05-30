@@ -142,14 +142,13 @@ export default {
 </script>
 
 <template>
-    <h1>Project Showcase</h1>
-
-    <!-- Contents Navbar -->
     <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
         <a href="#webdev">Web Development</a>
         <a href="#java">Java</a>
         <a href="#c">C/C++</a>
     </v-app-bar>
+
+    <h1 class="showcase-title">Project Showcase</h1>
 
     <section id="webdev">
 
@@ -198,6 +197,10 @@ export default {
 }
 
 /* Headings */
+
+.showcase-title {
+    margin-top: 75px;
+}
 
 .section-heading {
   color: var(--main-hex);

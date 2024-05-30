@@ -28,6 +28,6 @@ export default {
 
 <style>
 .project-container{
-    margin: 60px 0;
+    margin: 60px 50px;
 }
 </style>
