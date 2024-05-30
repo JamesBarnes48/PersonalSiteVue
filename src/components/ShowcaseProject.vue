@@ -16,7 +16,6 @@ export default {
             <v-carousel-item
             v-for="img in projectImages"
             :src="img"
-            cover
             ></v-carousel-item>
         </v-carousel>
         <div class="text-container">
@@ -28,4 +27,7 @@ export default {
 </template>
 
 <style>
+.project-container{
+    margin: 60px 0;
+}
 </style>
