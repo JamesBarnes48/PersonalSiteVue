@@ -17,45 +17,16 @@ export default {
 </script>
 
 <template>
-  <!-- Main Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light">
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtogglemain" aria-controls="navtogglemain" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navtogglemain">
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item"> <a class="nav-link" href="index.html">Home</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="showcase.html">Project Showcase</a> </li>
-    </ul>
-    </div>
-
-    </nav>
-
     <!-- Title -->
     <div class="container-fluid project-section">
-    <h1>Project Showcase</h1>
-    <button onclick="showthing"></button>
+        <h1>Project Showcase</h1>
 
-    <!-- Contents Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top contents-navbar">
-
-    <a id="contents-brand" class="navbar-brand" href="">Contents</a>
-
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navtogglecontents" aria-controls="navtogglecontents" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navtogglecontents">
-        <ul class="navbar-nav">
-        <li class="nav-item"> <a class="nav-link" href="#webdev">Web Development</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#java">Java</a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#c">C/C++</a> </li>
-        </ul>
-    </div>
-
-    </nav>
+        <!-- Contents Navbar -->
+        <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
+            <a href="#webdev">Web Development</a>
+            <a href="#java">Java</a>
+            <a href="#c">C/C++</a>
+        </v-app-bar>
     </div>
 
     <section id="webdev">
@@ -549,18 +520,11 @@ export default {
 }
 
 /* Navigation Bars */
-
-#contents-brand {
-  color: var(--off-main-hex);
-}
-
-.contents-navbar {
-  margin: 0 100px;
-  margin-top: 40px;
-}
-
-.navbar-collapse {
-  margin: 45px 0;
+.appbar a{
+    font-family: 'Montserrat', serif;
+    color: var(--main-hex);
+    text-decoration: none;
+    margin: 0 60px;
 }
 
 .new-annotation{
