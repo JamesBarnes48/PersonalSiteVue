@@ -1,30 +1,31 @@
-export const autocomplete1 = require( "../assets/images/showcase/autocomplete1.png")
-export const autocomplete2 = require( "../assets/images/showcase/autocomplete2.png")
-export const cheat1 = require( "../assets/images/showcase/cheat1.png")
-export const cheat2 = require( "../assets/images/showcase/cheat2.png")
-export const cheat3 = require( "../assets/images/showcase/cheat3.png")
-export const omdb1 = require( "../assets/images/showcase/omdb1.png")
-export const omdb2 = require( "../assets/images/showcase/omdb2.png")
-export const omdb3 = require( "../assets/images/showcase/omdb3.png")
-export const redline1 = require( "../assets/images/showcase/redline1.png")
-export const redline2 = require( "../assets/images/showcase/redline2.png")
-export const redline3 = require( "../assets/images/showcase/redline3.png")
-export const study1 = require( "../assets/images/showcase/study1.png")
-export const study2 = require( "../assets/images/showcase/study2.png")
-export const study3 = require( "../assets/images/showcase/study3.png")
-export const study4 = require( "../assets/images/showcase/study4.png")
-export const toll1 = require( "../assets/images/showcase/toll1.png")
-export const toll2 = require( "../assets/images/showcase/toll2.png")
-export const alc1 = require( "../assets/images/showcase/webdev/alc1.png")
-export const alc2 = require( "../assets/images/showcase/webdev/alc2.png")
-export const alc3 = require( "../assets/images/showcase/webdev/alc3.png")
-export const garage1 = require( "../assets/images/showcase/webdev/garage1.png")
-export const garage2 = require( "../assets/images/showcase/webdev/garage2.png")
-export const garage3 = require( "../assets/images/showcase/webdev/garage3.png")
-export const news1 = require( "../assets/images/showcase/webdev/news1.png")
-export const news2 = require( "../assets/images/showcase/webdev/news2.png")
-export const simon1 = require( "../assets/images/showcase/webdev/simon1.png")
-export const simon2 = require( "../assets/images/showcase/webdev/simon2.png")
-export const tindog1 = require( "../assets/images/showcase/webdev/tindog1.png")
-export const tindog2 = require( "../assets/images/showcase/webdev/tindog2.png")
-export const tindog3 = require( "../assets/images/showcase/webdev/tindog3.png")
+export { default as autocomplete1 } from  "../assets/images/showcase/autocomplete1.png"
+export { default as autocomplete2 } from  "../assets/images/showcase/autocomplete2.png"
+export { default as cheat1 } from  "../assets/images/showcase/cheat1.png"
+export { default as cheat2 } from  "../assets/images/showcase/cheat2.png"
+export { default as cheat3 } from  "../assets/images/showcase/cheat3.png"
+export { default as omdb1 } from  "../assets/images/showcase/omdb1.png"
+export { default as omdb2 } from  "../assets/images/showcase/omdb2.png"
+export { default as redline1 } from  "../assets/images/showcase/redline1.png"
+export { default as redline2 } from  "../assets/images/showcase/redline2.png"
+export { default as redline3 } from  "../assets/images/showcase/redline3.png"
+export { default as redline4 } from  "../assets/images/showcase/redline4.png"
+export { default as study1 } from  "../assets/images/showcase/study1.png"
+export { default as study2 } from  "../assets/images/showcase/study2.png"
+export { default as study3 } from  "../assets/images/showcase/study3.png"
+export { default as study4 } from  "../assets/images/showcase/study4.png"
+export { default as toll1 } from  "../assets/images/showcase/toll1.png"
+export { default as toll2 } from  "../assets/images/showcase/toll2.png"
+export { default as alc1 } from  "../assets/images/showcase/webdev/alc1.png"
+export { default as alc2 } from  "../assets/images/showcase/webdev/alc2.png"
+export { default as alc3 } from  "../assets/images/showcase/webdev/alc3.png"
+export { default as garage1 } from  "../assets/images/showcase/webdev/garage1.png"
+export { default as garage2 } from  "../assets/images/showcase/webdev/garage2.png"
+export { default as garage3 } from  "../assets/images/showcase/webdev/garage3.png"
+export { default as garage4 } from  "../assets/images/showcase/webdev/garage4.png"
+export { default as news1 } from  "../assets/images/showcase/webdev/news1.png"
+export { default as news2 } from  "../assets/images/showcase/webdev/news2.png"
+export { default as simon1 } from  "../assets/images/showcase/webdev/simon1.png"
+export { default as simon2 } from  "../assets/images/showcase/webdev/simon2.png"
+export { default as tindog1 } from  "../assets/images/showcase/webdev/tindog1.png"
+export { default as tindog2 } from  "../assets/images/showcase/webdev/tindog2.png"
+export { default as tindog3 } from  "../assets/images/showcase/webdev/tindog3.png"

@@ -4,7 +4,7 @@ import * as showcaseImages from '../utilities/showcase-images.js'
 export default {
   data() {
     return {
-      images: []
+        showcaseImages: showcaseImages
     }
   },
 
