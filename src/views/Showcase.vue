@@ -9,25 +9,54 @@ export default {
                 title: 'Virtual Garage Application',
                 mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
                     across the globe using this simple but fun tool. Really this has been a chance for
-                    me to put to practice some of the new development skills I have learned recently including linking a database service</strong> to your application,
-                    using some more advanced jQuery</strong> as well as generally building fuller and more scalable</strong> web applications. This project is also completely unguided 
+                    me to put to practice some of the new development skills I have learned recently including linking a database service to your application,
+                    using some more advanced jQuery as well as generally building fuller and more scalable web applications. This project is also completely unguided 
                     so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
                     It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
-                    Extra effort has been made to mitigate cyber threats</strong> such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
+                    Extra effort has been made to mitigate cyber threats such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
                 repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
                 projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
             },
             {
-                title: 'Virtual Garage Application',
-                mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
-                    across the globe using this simple but fun tool. Really this has been a chance for
-                    me to put to practice some of the new development skills I have learned recently including linking a database service</strong> to your application,
-                    using some more advanced jQuery</strong> as well as generally building fuller and more scalable</strong> web applications. This project is also completely unguided 
-                    so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
-                    It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
-                    Extra effort has been made to mitigate cyber threats</strong> such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
-                repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
-                projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
+                title: 'Tindog',
+                mainText: `A webpage for a made-up company called Tindog, which runs a dating app for dogs. I made this page to get to grips
+                    with the  Bootstrap 4  library and it's various tools for presentation which combine to make it look like a real company
+                    site.
+                    One of the key features of Bootstrap 4 is it's tools for making mobile-friendly sites so I developed this site
+                    with mobile in mind. Take a look at it on mobile too and see what it looks like!`,
+                repoLink: 'https://jamesbarnes48.github.io/Tindog/',
+                projectImages: [showcaseImages.tindog1, showcaseImages.tindog2, showcaseImages.tindog3],
+            },
+            {
+                title: 'TES V: Skyrim Alchemy Lab',
+                mainText: `This website came from an idea I had where I could kill two birds with one stone: put some more advanced Javascript and
+                    jQuery into action and make a handy little tool which would definitely make some people's lives easier as they craft potions in the game.
+                    The site allows you to choose up to 3 effects from the game to combine together and then see what ingredients you can use
+                    to gain those effects as well as showing which effects have ingredients in common with each other. I paid special attention to ensure
+                    the site works just as well on mobile as on desktop, as it should!`,
+                repoLink: 'https://jamesbarnes48.github.io/Alchemy-Lab/',
+                projectImages: [showcaseImages.alc1, showcaseImages.alc2, showcaseImages.alc3],
+            },
+            {
+                title: 'Simon',
+                mainText: `A webpage where you can play a simple, in-browser implementation of the Simon memory game. See if you can remember the order
+                    the buttons light up in and press them. The game uses client-side javascript to run the game on your computer. This was a simple
+                    project where I could work on a single real programming challenge in Javascript which was getting the game to run on a loop and increment each time.`,
+                repoLink: 'https://jamesbarnes48.github.io/Simon-Game/',
+                projectImages: [showcaseImages.simon1, showcaseImages.simon2],
+            },
+            {
+                title: 'Newsletter Sign-up',
+                mainText: `Up until this point I had been making static web pages, but this was my first step into developing a dynamic web app, meaning the website is
+                    hosted on a server instead of on the clients web browser, meaning the whole project is structured a lot differently to a static web site,
+                    it uses Node.js and Express to create a file to handle requests to my server (which I am hosting for free on Heroku). Dynamic web apps like this can handle a lot more complex tasks than
+                    any static webpage, and if you were developing a website for your company this is likely how you would do it! This is a simple site on the surface, but most of this site's utility is behind the scenes. The user enters their name and email address
+                    to sign themselves up for a newsletter. When the user submits their info it uses the Mailchimp API to sign them up to my personal mailing list.
+                    After a user has signed up successfully I will be able to see everyone who has signed up from my Mailchimp account.
+                    While I don't have anything to send out at the moment, it's not difficult to see how this simple concept could be very useful from an advertising
+                    perspective!`,
+                repoLink: 'https://jamesbarnes48.github.io/Simon-Game/',
+                projectImages: [showcaseImages.news1, showcaseImages.news2],
             },
         ]
   }),
@@ -35,135 +64,17 @@ export default {
 </script>
 
 <template>
-    <!-- Title -->
-    <div class="container-fluid project-section">
-        <h1>Project Showcase</h1>
+    <h1>Project Showcase</h1>
 
-        <!-- Contents Navbar -->
-        <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
-            <a href="#webdev">Web Development</a>
-            <a href="#java">Java</a>
-            <a href="#c">C/C++</a>
-        </v-app-bar>
-    </div>
+    <!-- Contents Navbar -->
+    <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
+        <a href="#webdev">Web Development</a>
+        <a href="#java">Java</a>
+        <a href="#c">C/C++</a>
+    </v-app-bar>
 
     <section id="webdev">
 
-    <div class="container-fluid project-section">
-    <h3 class="section-heading">Web Development</h3>
-    </div>
-
-    <div class="container-fluid project-section">
-    <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Tindog</h3>
-        <p>A webpage for a made-up company called Tindog, which runs a dating app for dogs. I made this page to get to grips
-        with the <strong> Bootstrap 4 </strong> library and it's various tools for presentation which combine to make it look like a real company
-        site.</p>
-        <p>One of the key features of Bootstrap 4 is it's tools for making mobile-friendly sites so I developed this site
-        with mobile in mind. Take a look at it on mobile too and see what it looks like!</p>
-        <p>Click <a href="https://jamesbarnes48.github.io/Tindog/">here</a> to go to site</p>
-    </div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="tindog-carousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-            <img class="carousel-image round-border" :src="showcaseImages.tindog1" alt="Title section of site">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" :src="showcaseImages.tindog2" alt="Company endorsements">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" :src="showcaseImages.tindog3" alt="Offers">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#tindog-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#tindog-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-    </div>
-
-    <div class="container-fluid project-section">
-    <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="alchemy-carousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-            <img class="carousel-image" :src="showcaseImages.alc1" alt="Title">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.alc2" alt="Selecting effects">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image" :src="showcaseImages.alc3" alt="Output">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#alchemy-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#alchemy-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">TES V: Skyrim Alchemy Lab</h3>
-        <p>This website came from an idea I had where I could kill two birds with one stone: put some more <strong>advanced Javascript</strong> and
-        jQuery into action and make a handy little tool which would definitely make some people's lives easier as they craft potions in the game.</p>
-        <p>The site allows you to choose up to 3 effects from the game to combine together and then see what ingredients you can use
-        to gain those effects as well as showing which effects have ingredients in common with each other. I paid special attention to ensure
-        the site works just as well on mobile as on desktop, as it should!</p>
-        <p>Try experimenting with it <a href="https://jamesbarnes48.github.io/Alchemy-Lab/">here</a></p>
-    </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-    </div>
-
-    <div class="container-fluid project-section">
-    <div class="row">
-    <div class="col-lg-1"></div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <h3 class="subheading">Simon</h3>
-        <p>A webpage where you can play a simple, in-browser implementation of the Simon memory game. See if you can remember the order
-        the buttons light up in and press them. The game uses client-side javascript to run the game on your computer. This was a simple
-        project where I could work on a single real programming challenge in Javascript which was getting the game to run on a loop and increment each time.</p>
-        <p>Click <a href="https://jamesbarnes48.github.io/Simon-Game/">here</a> to go to site</p>
-    </div>
-    <div class="col-lg-5 col-md-12 portfolio-block">
-        <div id="simon-carousel" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item active container-fluid">
-            <img class="carousel-image round-border" :src="showcaseImages.simon1" alt="Before starting the game">
-            </div>
-            <div class="carousel-item container-fluid">
-            <img class="carousel-image round-border" :src="showcaseImages.simon2" alt="Game over">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#simon-carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon dark-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#simon-carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon dark-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-        </div>
-    </div>
-    <div class="col-lg-1 col-md-1 col-sm-1"></div>
-    </div>
-    </div>
 
     <div class="container-fluid project-section">
     <div class="row small-margin-bottom">
