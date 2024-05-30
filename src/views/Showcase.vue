@@ -1,4 +1,5 @@
 <script>
+import ShowcaseProject from '../components/ShowcaseProject.vue';
 import * as showcaseImages from '../utilities/showcase-images.js'
 
 export default {
@@ -130,6 +131,7 @@ export default {
             },
         ]
   }),
+  components: {ShowcaseProject}
 }
 </script>
 
@@ -144,6 +146,8 @@ export default {
     </v-app-bar>
 
     <section id="webdev">
+
+        
 
     </section>
 
