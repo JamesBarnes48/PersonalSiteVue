@@ -126,16 +126,7 @@ export default {
                         You want to see the 5th most recent PG-rated film? Query it!`,
                     repoLink: 'https://github.com/JamesBarnes48/Offline-Movie-Database',
                     projectImages: [showcaseImages.omdb1, showcaseImages.omdb2],
-                },
-                {
-                    title: 'Offline Movie Database',
-                    mainText: `A C++ application that reads the text file "films.txt" and formats the information into a film database.
-                        The database of films and information about them can then be queried using a wide range of different queries.
-                        You can set the queries to whatever you want by changing the code slightly, retrieving films based on a wide range of criteria.
-                        You want to see the 5th most recent PG-rated film? Query it!`,
-                    repoLink: 'https://github.com/JamesBarnes48/Offline-Movie-Database',
-                    projectImages: [showcaseImages.omdb1, showcaseImages.omdb2],
-                },
+                }
             ]
         }
   }),
@@ -153,6 +144,7 @@ export default {
     <h1 class="showcase-title">Project Showcase</h1>
 
     <section id="webdev">
+        <h3>Web Development</h3>
 
         <ShowcaseProject
             v-for="project in projects.webdev"
@@ -167,10 +159,28 @@ export default {
 
     <!-- Java -->
     <section id="java">
+        <h3>Java</h3>
 
+        <ShowcaseProject
+            v-for="project in projects.java"
+            :title="project.title"
+            :mainText="project.mainText"
+            :repoLink="project.repoLink"
+            :repoLinkText="project.repoLinkText"
+            :projectImages="project.projectImages"
+        ></ShowcaseProject>
     </section>
     <section id="c">
+        <h3>C/C++</h3>
 
+        <ShowcaseProject
+            v-for="project in projects.c"
+            :title="project.title"
+            :mainText="project.mainText"
+            :repoLink="project.repoLink"
+            :repoLinkText="project.repoLinkText"
+            :projectImages="project.projectImages"
+        ></ShowcaseProject>
     </section>
 
     <div class="bottom-container">
