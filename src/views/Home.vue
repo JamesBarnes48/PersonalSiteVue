@@ -70,39 +70,18 @@ export default {
           </div>
           <div class="stats-child">
             <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
-            <h2 class="stat-metric">361</h2>
+            <h2 class="stat-metric">390</h2>
           </div>
           <div class="stats-child">
             <h3 class="stat-name">Major projects lead:</h3>
             <h2 class="stat-metric">3</h2>
           </div>
           <div class="stats-child">
-            <h3 class="stat-name">Pub crawl completion rate:</h3>
-            <h2 class="stat-metric">0%</h2>
-          </div>
-          <div class="stats-child">
             <h3 class="stat-name">Countries visited:</h3>
             <h2 class="stat-metric">8</h2>
           </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Chivalry 2 main:</h3>
-            <h2 class="stat-metric small">Morning Star (2157 kills)</h2>
-          </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Most hours clocked on a game:</h3>
-            <h2 class="stat-metric small">1833 hours (GTA 5)</h2>
-          </div>
         </div>
       </div>
-  
-      <hr>
-  
-      <div class="contact-me">
-        <h2 class="section-heading">Get In Touch</h2>
-        <h3>Want to talk to me about something? Email me at:</h3>
-        <p class="spacedText"><em>j.barnes.dev77@gmail.com</em></p>
-      </div>
-  
     </div>
   </template>
   

@@ -14,16 +14,21 @@ export default {
 </script>
 
 <template>
-    <v-expansion-panels variant="popout">
-        <SkillsPanel
-        v-for="skill in skillsList"
-        :skillName="skill.skillName"
-        :skillDesc="skill.skillDesc"
-        :listDescription="skill.listDescription"
-        :listItems="skill.listItems"
-        ></SkillsPanel>
-    </v-expansion-panels>
+    <div class="panels-container">
+        <v-expansion-panels class="panels" variant="popout">
+            <SkillsPanel
+            v-for="skill in skillsList"
+            :skillName="skill.skillName"
+            :skillDesc="skill.skillDesc"
+            :listDescription="skill.listDescription"
+            :listItems="skill.listItems"
+            ></SkillsPanel>
+        </v-expansion-panels>
+    </div>
 </template>
 
 <style scoped>
+.panels-container {
+    margin: 60px 60px;
+}
 </style>
