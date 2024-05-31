@@ -144,7 +144,7 @@ export default {
     <h1 class="showcase-title">Project Showcase</h1>
 
     <section id="webdev">
-        <h3>Web Development</h3>
+        <h3 class="section-title">Web Development</h3>
 
         <ShowcaseProject
             v-for="project in projects.webdev"
@@ -159,7 +159,7 @@ export default {
 
     <!-- Java -->
     <section id="java">
-        <h3>Java</h3>
+        <h3 class="section-title">Java</h3>
 
         <ShowcaseProject
             v-for="project in projects.java"
@@ -171,7 +171,7 @@ export default {
         ></ShowcaseProject>
     </section>
     <section id="c">
-        <h3>C/C++</h3>
+        <h3 class="section-title">C/C++</h3>
 
         <ShowcaseProject
             v-for="project in projects.c"
@@ -213,6 +213,11 @@ export default {
 
 .showcase-title {
     margin-top: 75px;
+}
+
+.section-title {
+    margin: 50px 0;
+    font-size: 30px;
 }
 
 .section-heading {
