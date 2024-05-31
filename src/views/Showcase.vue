@@ -235,7 +235,7 @@ export default {
 }
 
 .appbar a:hover{
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .appbar-inner-container {
