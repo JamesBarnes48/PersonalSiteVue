@@ -33,10 +33,9 @@ export default {
 </script>
 
 <template>
-    <div class="top-container">
+    <div class="title-container">
       <p id="nameTitle">I'm James.</p>
-      <p id="professionTitle" class="title-subheading">web developer</p>
-      <img class="waterscape" src="@/assets/images/waterscape.jpg" alt="">
+      <p class="title-subheading">web developer</p>
     </div>
   
     <div class="middle-container">
@@ -86,6 +85,14 @@ export default {
   </template>
   
   <style>
+  .title-container{
+    background-image: url("@/assets/images/waterscape.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 450px;
+  }
+
   .homepage-section{
     margin: 5% 10% 0 10%;
   }
@@ -107,8 +114,8 @@ export default {
   .title-subheading {
     color: var(--off-main-hex);
     font-family: 'Montserrat', serif;
-    font-size: 2rem;
-    margin-top: 40px;
+    font-size: 36px;
+    font-weight: bolder;
   }
   
   .waterscape {
@@ -120,23 +127,10 @@ export default {
   
   
   #nameTitle {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
-    position: absolute;
-    left: 0;
-    right: 0;
     margin-top: 0px;
-    z-index: 2;
-  }
-  
-  #professionTitle{
-    font-size: 38px;
-    font-weight: bolder;
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 41%;
-    z-index: 2;
+    color: var(--main-hex);
   }
   
   #imageOfMe {
