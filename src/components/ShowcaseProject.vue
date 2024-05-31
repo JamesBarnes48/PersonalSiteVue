@@ -4,8 +4,8 @@ export default {
     props: {
         title: {type: String, default: 'Project title'},
         mainText: {type: String, default: 'Main text'},
-        repoLinkText: {type: String, default: 'Find the Github repository here: '},
-        repoLink: {type: String, default: '<link to repo>'},
+        repoLinkText: {type: String, default: 'Find the Github repository '},
+        repoLink: {type: String},
         projectImages: {type: Array, default() {return []}}
     }
 }
@@ -23,8 +23,10 @@ export default {
         </div>
         <div class="text-container">
             <h3 class="subheading">{{ title }}</h3>
-        <p>{{ mainText }}</p>
-        <p>{{ repoLinkText }} <a href="https://github.com/JamesBarnes48/Virtual-Garage">here</a></p>
+            <p>{{ mainText }}</p>
+            <div v-if="repoLink">
+                <p>{{ repoLinkText }} <a :href="repoLink">here</a></p>
+            </div>
         </div>
     </div>
 </template>
