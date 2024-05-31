@@ -33,7 +33,13 @@ export default {
 
 <style scoped>
 .project-container{
-    margin: 80px 65px;
+    background-color: var(--off-background-hex);
+    color: white;
+    padding: 80px 65px;
+}
+.project-container:nth-of-type(odd) {
+    background-color: var(--background-hex);
+    color: black;
 }
 
 .carousel-container {
