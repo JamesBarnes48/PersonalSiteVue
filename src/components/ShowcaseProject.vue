@@ -37,7 +37,7 @@ export default {
     color: white;
     padding: 80px 65px;
 }
-.project-container:nth-of-type(odd) {
+.project-container:nth-of-type(even) {
     background-color: var(--background-hex);
     color: black;
 }

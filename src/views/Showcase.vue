@@ -136,9 +136,17 @@ export default {
 
 <template>
     <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
-        <a href="#webdev">Web Development</a>
-        <a href="#java">Java</a>
-        <a href="#c">C/C++</a>
+        <div class="appbar-inner-container">
+            <div>
+                <a href="#webdev">Web Development</a>
+            </div>
+            <div>
+                <a href="#java">Java</a>
+            </div>
+            <div>
+                <a href="#c">C/C++</a>
+            </div>
+        </div>
     </v-app-bar>
 
     <h1 class="showcase-title">Project Showcase</h1>
@@ -224,7 +232,21 @@ export default {
     font-family: 'Montserrat', serif;
     color: var(--main-hex);
     text-decoration: none;
-    margin: 0 60px;
+}
+
+.appbar a:hover{
+    font-weight: bolder;
+}
+
+.appbar-inner-container {
+    width: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.appbar-inner-container div{
+    width: 100%;
 }
 
 .new-annotation{
