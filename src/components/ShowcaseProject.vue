@@ -14,7 +14,7 @@ export default {
 <template>
     <div class="project-container">
         <div class="carousel-container">
-            <v-carousel>
+            <v-carousel cycle>
                 <v-carousel-item
                 v-for="img in projectImages"
                 :src="img"
@@ -36,6 +36,8 @@ export default {
     background-color: var(--off-background-hex);
     color: white;
     padding: 80px 65px;
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 1px solid var(--main-hex);
 }
 .project-container:nth-of-type(even) {
     background-color: var(--background-hex);
