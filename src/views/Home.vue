@@ -84,7 +84,7 @@ export default {
     </div>
   </template>
   
-  <style>
+  <style scoped>
   .title-container{
     background-image: url("@/assets/images/waterscape.jpg");
     background-position: center;
@@ -96,19 +96,6 @@ export default {
   .homepage-section{
     margin: 5% 10% 0 10%;
   }
-  
-  .basic-button {
-    display: block;
-    margin: 2% auto;
-  }
-  
-  /* Overriding btn-primary to the teal colour scheme */
-  .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-      background-color: var(--main-hex) !important;
-      border-color: black !important;
-  }
-  
-  
   /* Intro */
   
   .title-subheading {
@@ -117,14 +104,6 @@ export default {
     font-size: 36px;
     font-weight: bolder;
   }
-  
-  .waterscape {
-    display: block;
-    width: 100%;
-    max-height: 350px;
-    object-fit: cover;
-  }
-  
   
   #nameTitle {
     font-size: 70px;
@@ -140,22 +119,13 @@ export default {
     margin-right: auto;
   }
   
-  /*Language List*/
-  
-  .lang-list {
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    list-style: none;
-  }
-  
-  .languages-heading {
-    font-family: 'Montserrat';
-    font-size: 1.5rem;
-    font-weight: bold;
+  .section-heading {
     color: var(--main-hex);
-    text-decoration: none;
+    font-family: 'Montserrat', serif;
+    font-size: 2rem;
+    margin: 35px 0;
+    font-weight: bold;
   }
-  
   
   /* Stats */
   
@@ -199,10 +169,6 @@ export default {
       
       .title-subheading {
         font-size: 1.9rem;
-      }
-  
-      .languages-heading {
-        font-size: 2rem;
       }
   
       #nameTitle{

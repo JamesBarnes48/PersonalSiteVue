@@ -192,25 +192,11 @@ export default {
     </section>
 </template>
 
-<style>
+<style scoped>
 
 section {
     border-top: 1px solid var(--main-hex);
     border-bottom: 1px solid var(--main-hex);
-}
-
-/* Section Styles */
-
-.project-section {
-  background-color: var(--off-background-hex);
-  color: white;
-  padding: 40px 35px;
-}
-
-.project-section:nth-child(odd){
-  background-color: var(--background-hex);
-  color: black;
-  padding: 40px 35px;
 }
 
 /* Headings */
@@ -222,14 +208,6 @@ section {
 .section-title {
     margin: 50px 0;
     font-size: 30px;
-}
-
-.section-heading {
-  color: var(--main-hex);
-  font-family: 'Montserrat', serif;
-  font-size: 2rem;
-  margin: 35px 0;
-  font-weight: bold;
 }
 
 /* Navigation Bars */
@@ -253,62 +231,5 @@ section {
 .appbar-inner-container div{
     width: 100%;
 }
-
-.new-annotation{
-  color: crimson;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-.carousel-image {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.carousel {
-  margin-top: 30px;
-}
-
-.dark-prev-icon {
- background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
-}
-
-.dark-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
-}
-
-.portfolio-block {
-  margin: 10px 10px;
-}
-
-.portfolio-block.big-block {
-  font-size: 0.9rem;
-}
-
-.round-border {
-  border: 2px solid black;
-  border-radius: 5px;
-}
-
-.small-margin-bottom {
-  margin-bottom: 25px;
-}
-
-/* Mobile & Tablet Compatability - CSS Breakpoint */
-
-@media (max-width: 1250px) {
-    .stats-child{
-      width: 45%;
-    }
-
-    .stat-name{
-      font-size: 1.4rem;
-    }
-
-    .stat-metric.small{
-      font-size: 1.9rem;
-    }
-    }
 
 </style>
