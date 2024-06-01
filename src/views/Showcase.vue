@@ -194,6 +194,11 @@ export default {
 
 <style>
 
+section {
+    border-top: 1px solid var(--main-hex);
+    border-bottom: 1px solid var(--main-hex);
+}
+
 /* Section Styles */
 
 .project-section {
