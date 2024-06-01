@@ -38,47 +38,47 @@ export default {
       <p class="title-subheading">web developer</p>
     </div>
   
-    <div class="middle-container">
-      <div id="profile">
-        <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
-        <h2 class="section-heading">Hello!</h2>
-        <p>A chap with a particular affinity for all things digital. Hooked on Super Mario from a young age and a controller in my hand ever since.
-           Equipped with a pop culture reference for any occasion and a connoisseur of the coffee break at the office. I am anything but your average software developer.</p>
-  
+    <div class="profile-container">
+      <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
+      <h2 class="section-heading">Hello!</h2>
+      <p>A chap with a particular affinity for all things digital. Hooked on Super Mario from a young age and a controller in my hand ever since.
+          Equipped with a pop culture reference for any occasion and a connoisseur of the coffee break at the office. I am anything but your average software developer.</p>
+
+      <div class="home-text-sectiono">
         <h2 class="subheading"> What am I up to?</h2>
         <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
         <p>After completing my BSc Computer Science and graduating with 2.1 honours at UEA I have enjoyed great opportunities in working as a Javascript developer at Darktrace where I remain today.
           I've had a chance to put my skills to practice as well as pick up a few new ones. I have finally learned how to use git properly for starters (about time I learned there are branches other than master!)
           as well as working with some more advanced tools you might encounter when working in industry and peer reviewing work done by others. With a bit of graft I've found myself reaping benefits!</p>
         <p>From Python to C, from SQL to ARM assembly code, I have had some experience working with plenty of different languages. While I may be a web developer, mainly I have most experience in:</p>
-      </div>  
+      </div>
+    </div>  
 
-      <SkillsPanelList :skillsList="skills" />
-  
-      <div class="homepage-section">
-        <h2 class="subheading">My Stats</h2>
-        <p>circa May 2024</p>
-        <div class="stats-grid">
-          <div class="stats-child">
-            <h3 class="stat-name">Years as professional dev:</h3>
-            <h2 class="stat-metric">3</h2>
-          </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Merge requests successfully deployed:</h3>
-            <h2 class="stat-metric">224</h2>
-          </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
-            <h2 class="stat-metric">390</h2>
-          </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Major projects lead:</h3>
-            <h2 class="stat-metric">3</h2>
-          </div>
-          <div class="stats-child">
-            <h3 class="stat-name">Countries visited:</h3>
-            <h2 class="stat-metric">8</h2>
-          </div>
+    <SkillsPanelList :skillsList="skills" />
+
+    <div class="homepage-section">
+      <h2 class="subheading">My Stats</h2>
+      <p>circa May 2024</p>
+      <div class="stats-grid">
+        <div class="stats-child">
+          <h3 class="stat-name">Years as professional dev:</h3>
+          <h2 class="stat-metric">3</h2>
+        </div>
+        <div class="stats-child">
+          <h3 class="stat-name">Merge requests successfully deployed:</h3>
+          <h2 class="stat-metric">224</h2>
+        </div>
+        <div class="stats-child">
+          <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
+          <h2 class="stat-metric">390</h2>
+        </div>
+        <div class="stats-child">
+          <h3 class="stat-name">Major projects lead:</h3>
+          <h2 class="stat-metric">3</h2>
+        </div>
+        <div class="stats-child">
+          <h3 class="stat-name">Countries visited:</h3>
+          <h2 class="stat-metric">8</h2>
         </div>
       </div>
     </div>
@@ -96,6 +96,22 @@ export default {
   .homepage-section{
     margin: 5% 10% 0 10%;
   }
+
+  .profile-container{
+    background-color: var(--background-hex);
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 2px solid var(--main-hex);
+    padding: 20px 30px;
+  }
+
+  .home-text-section {
+    background-color: var(--background-hex);
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 2px solid var(--main-hex);
+    padding: 10px 30px;
+    margin: 10px 0;
+  }
+
   /* Intro */
   
   .title-subheading {
