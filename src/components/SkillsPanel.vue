@@ -41,5 +41,9 @@ export default {
     .list_items {
         max-width: 65%;
     }
+
+    .skillName {
+        font-size: 18px;
+    }
 }
 </style>

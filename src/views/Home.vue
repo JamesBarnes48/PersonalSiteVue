@@ -93,27 +93,6 @@ export default {
     height: 450px;
   }
 
-  .homepage-section{
-    margin: 5% 10% 0 10%;
-  }
-
-  .profile-container{
-    background-color: var(--background-hex);
-    border-top: 2px solid var(--main-hex);
-    border-bottom: 2px solid var(--main-hex);
-    padding: 20px 30px;
-  }
-
-  .home-text-section {
-    background-color: var(--background-hex);
-    border-top: 2px solid var(--main-hex);
-    border-bottom: 2px solid var(--main-hex);
-    padding: 10px 30px;
-    margin: 10px 0;
-  }
-
-  /* Intro */
-  
   .title-subheading {
     color: var(--off-main-hex);
     font-family: 'Montserrat', serif;
@@ -133,6 +112,43 @@ export default {
     height: 280px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @media (max-width: 1250px){
+    .title-container{
+      height: 200px;
+    }
+
+    #nameTitle {
+      font-size: 53px;
+    }
+
+    .title-subheading {
+      font-size: 24px;
+    }
+
+    #imageOfMe{
+      height: 200px;
+    }
+  }
+
+  .homepage-section{
+    margin: 5% 10% 0 10%;
+  }
+
+  .profile-container{
+    background-color: var(--background-hex);
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 2px solid var(--main-hex);
+    padding: 20px 30px;
+  }
+
+  .home-text-section {
+    background-color: var(--background-hex);
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 2px solid var(--main-hex);
+    padding: 10px 30px;
+    margin: 10px 0;
   }
   
   .section-heading {
@@ -180,25 +196,24 @@ export default {
   
   @media (max-width: 1250px){
     .homepage-section {
-        margin: 2% 3% 0 3%;
-      }
-      
-      .title-subheading {
-        font-size: 1.9rem;
-      }
+      margin: 2% 3% 0 3%;
+    }
   
-      #nameTitle{
-        top: 5%;
-        font-size: 4.2rem;
-      }
-  
-      #professionTitle{
-        bottom: 34%;
-        font-size: 2.5rem;
-      }
-  
-      #imageOfMe{
-        height: 320px;
-      }
+    #professionTitle{
+      bottom: 34%;
+      font-size: 2.5rem;
+    }
+
+    .stats-child{
+      width: 40%;
+    }
+
+    .stat-name{
+      font-size: 0.9rem;
+    }
+
+    .stat-metric{
+      font-size: 1.3rem;
+    }
   }
   </style>
