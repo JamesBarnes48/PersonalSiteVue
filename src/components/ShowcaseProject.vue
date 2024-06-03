@@ -48,4 +48,14 @@ export default {
     width: 60%;
     margin: auto;
 }
+
+@media(max-width: 1280px){
+    .project-container{
+        padding: 25px 20px;
+    }
+
+    .carousel-container {
+        width: 100%;
+    }
+}
 </style>
