@@ -33,6 +33,14 @@ export default {
             </v-list-item>
         </v-list>
     </v-navigation-drawer>
+    <v-fab
+        class="hidden-md-and-up"
+        icon="mdi-menu"
+        location="top start"
+        size="44"
+        absolute
+        appear
+      ></v-fab>
 </template>
 
 <style scoped>
