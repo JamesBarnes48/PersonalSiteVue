@@ -2,7 +2,7 @@
 export default {
     name: 'NavigationBar',
     data: () => ({
-        drawer: false,
+        drawer: true,
         items: [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'}
