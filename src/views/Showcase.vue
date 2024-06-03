@@ -130,12 +130,18 @@ export default {
             ]
         }
   }),
-  components: {ShowcaseProject}
+  components: {ShowcaseProject},
+  computed: {
+        isMobile(){
+            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
+        }
+    },
 }
 </script>
 
 <template>
-    <v-app-bar class="appbar" title="Contents" scroll-behaviour="elevate" >
+    <v-app-bar class="appbar" scroll-behaviour="elevate" >
+        <v-toolbar-title v-if="!isMobile" class="appbar-title">Contents</v-toolbar-title>
         <div class="appbar-inner-container">
             <div>
                 <a href="#webdev">Web Development</a>
@@ -215,10 +221,15 @@ section {
     font-family: 'Montserrat', serif;
     color: var(--main-hex);
     text-decoration: none;
+    font-size: 22px;
 }
 
 .appbar a:hover{
     font-weight: bold;
+}
+
+.appbar .appbar-title{
+    font-size: 20px;
 }
 
 .appbar-inner-container {
@@ -228,8 +239,19 @@ section {
     position: relative;
 }
 
-.appbar-inner-container div{
-    width: 100%;
+@media (max-width: 1280px){
+    .appbar a{
+        font-size: 16px;
+    }
+
+    .appbar-inner-container{
+        width: 80%;
+        left: 50px;
+    }
+
+    .appbar .appbar-title{
+        font-size: 16px;
+    }
 }
 
 </style>
