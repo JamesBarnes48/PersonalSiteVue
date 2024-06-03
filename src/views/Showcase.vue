@@ -252,6 +252,15 @@ section {
     .appbar .appbar-title{
         font-size: 16px;
     }
+
+    .showcase-title{
+        font-size: 40px;
+    }
+
+    .section-title{
+        font-size: 28px;
+        margin: 20px 0;
+    }
 }
 
 </style>
