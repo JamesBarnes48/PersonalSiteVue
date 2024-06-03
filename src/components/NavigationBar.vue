@@ -10,7 +10,7 @@ export default {
     }),
     computed: {
         isMobile(){
-            return ['xs', 'sm', 'md'].includes(this.$vuetify.display.name)? true: false;
+            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
         }
     },
     methods: {
