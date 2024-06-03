@@ -8,12 +8,16 @@ export default {
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'}
         ]
     }),
-
 }
 </script>
 
 <template>
-    <v-navigation-drawer id="navbar" expand-on-hover rail>
+    <v-navigation-drawer 
+        id="navbar" 
+        color="white"
+        mobile-breakpoint="md"
+        expand-on-hover 
+        rail>
         <v-list dense nav>
             <v-list-item
                 v-for="item in items"
@@ -40,5 +44,6 @@ export default {
 
 .navbar-icon  {
     color: var(--main-hex);
+    font-size: 25px;
 }
 </style>
