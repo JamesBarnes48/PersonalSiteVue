@@ -67,9 +67,10 @@
     font-weight: bold;
   }
 
-  @media (max-width: 1250px) {
+  @media (max-width: 1280px) {
     body {
         font-size: 1.7rem;
+        margin: 0;
       }
   
       p {

@@ -37,7 +37,7 @@ export default {
     max-width: 40%;
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1280px) {
     .list_items {
         max-width: 65%;
     }

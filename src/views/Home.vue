@@ -114,7 +114,7 @@ export default {
     margin-right: auto;
   }
 
-  @media (max-width: 1250px){
+  @media (max-width: 1280px){
     .title-container{
       height: 200px;
     }
@@ -194,7 +194,7 @@ export default {
     font-size: 1.5rem;
   }
   
-  @media (max-width: 1250px){
+  @media (max-width: 1280px){
     .homepage-section {
       margin: 2% 3% 0 3%;
     }
