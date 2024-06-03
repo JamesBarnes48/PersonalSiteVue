@@ -2,22 +2,33 @@
 export default {
     name: 'NavigationBar',
     data: () => ({
-        drawer: null,
+        drawer: false,
         items: [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'}
         ]
     }),
+    computed: {
+        isMobile(){
+            return ['xs', 'sm', 'md'].includes(this.$vuetify.display.name)? true: false;
+        }
+    },
+    methods: {
+        updateDrawer() {
+            this.drawer = !this.drawer
+        }
+    }
 }
 </script>
 
 <template>
     <v-navigation-drawer 
         id="navbar" 
+        v-model="drawer"
         color="white"
         mobile-breakpoint="md"
         expand-on-hover 
-        rail>
+        :rail="isMobile? false: true">
         <v-list dense nav>
             <v-list-item
                 v-for="item in items"
@@ -41,6 +52,7 @@ export default {
         app
         color="orange"
         position="sticky"
+        @click="updateDrawer"
         appear
       ></v-fab>
 </template>
