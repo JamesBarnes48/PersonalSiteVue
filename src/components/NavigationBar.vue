@@ -34,11 +34,13 @@ export default {
         </v-list>
     </v-navigation-drawer>
     <v-fab
-        class="hidden-md-and-up"
+        class="hidden-md-and-up mobile-btn"
         icon="mdi-menu"
         location="top start"
         size="44"
-        absolute
+        app
+        color="orange"
+        position="sticky"
         appear
       ></v-fab>
 </template>
@@ -53,5 +55,9 @@ export default {
 .navbar-icon  {
     color: var(--main-hex);
     font-size: 25px;
+}
+
+.mobile-btn {
+    font-size: 20px;
 }
 </style>
