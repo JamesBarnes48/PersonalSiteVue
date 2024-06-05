@@ -168,6 +168,7 @@ export default {
     <section id="java">
         <CardShowcaseSection
             sectionTitle="Java"
+            :inverted="true"
             :projectsInfo="projects.java"
         ></CardShowcaseSection>
     </section>

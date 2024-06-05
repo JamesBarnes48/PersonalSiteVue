@@ -3,13 +3,14 @@ export default {
     name: 'CardShowcaseSection',
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
+        inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}}
     }
 }
 </script>
 
 <template>
-    <div class="main-container">
+    <div class="main-container" :class="{invertedStyle: !!inverted}">
         <h3 class="section-title">{{ sectionTitle }}</h3>
 
         <div class="project-cards-container">
@@ -37,7 +38,7 @@ export default {
     background-color: var(--off-background-hex);
 }
 
-.main-container:nth-of-type(even) {
+.main-container.invertedStyle{
     background-color: var(--background-hex);
 }
 
@@ -70,8 +71,13 @@ export default {
     color: var(--background-hex);
 }
 
-.project-cards-container .v-card:nth-of-type(even) {
+.main-container.invertedStyle .project-cards-container .v-card {
     background-color: var(--off-background-hex);
+}
+
+.main-container.invertedStyle .project-cards-container .v-card:hover {
+    background-color: var(--main-hex);
+    color: var(--background-hex);
 }
 
 @media (max-width: 1280px){
