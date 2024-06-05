@@ -1,5 +1,5 @@
 <script>
-import ShowcaseProject from '../components/ShowcaseProject.vue';
+import ShowcaseProjectDialog from '../components/ShowcaseProjectDialog.vue';
 
 export default {
     name: 'CardShowcaseSection',
@@ -8,7 +8,7 @@ export default {
         inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}}
     },
-    components: {ShowcaseProject}
+    components: {ShowcaseProjectDialog}
 }
 </script>
 
@@ -35,13 +35,13 @@ export default {
                         </v-card>
                     </template>
                     <template v-slot:default="{ isActive }">
-                        <ShowcaseProject
+                        <ShowcaseProjectDialog
                         :title="project.title"
                         :mainText="project.mainText"
                         :repoLink="project.repoLink"
                         :repoLinkText="project.repoLinkText"
                         :projectImages="project.projectImages"
-                        ></ShowcaseProject>
+                        ></ShowcaseProjectDialog>
                     </template>
                 </v-dialog>
             </div>
