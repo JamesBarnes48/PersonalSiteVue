@@ -1,5 +1,6 @@
 <script>
 import ShowcaseProject from '../components/ShowcaseProject.vue';
+import CardShowcaseSection from '../components/CardShowcaseSection.vue';
 import * as showcaseImages from '../utilities/showcase-images.js'
 
 export default {
@@ -130,7 +131,7 @@ export default {
             ]
         }
   }),
-  components: {ShowcaseProject},
+  components: {ShowcaseProject, CardShowcaseSection},
   computed: {
         isMobile(){
             return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
@@ -158,11 +159,10 @@ export default {
     <h1 class="showcase-title">Project Showcase</h1>
 
     <section id="webdev">
-        <h3 class="section-title">Web Development</h3>
-
-        
-        <v-card title="Card title" text="..."></v-card>
-
+        <CardShowcaseSection
+            sectionTitle="Web Development"
+            :projectsInfo="projects.webdev"
+        ></CardShowcaseSection>
     </section>
 
     <!-- Java -->
@@ -205,11 +205,6 @@ section {
     margin-top: 75px;
 }
 
-.section-title {
-    margin: 50px 0;
-    font-size: 30px;
-}
-
 /* Navigation Bars */
 .appbar a{
     font-family: 'Montserrat', serif;
@@ -249,11 +244,6 @@ section {
 
     .showcase-title{
         font-size: 40px;
-    }
-
-    .section-title{
-        font-size: 28px;
-        margin: 20px 0;
     }
 }
 
