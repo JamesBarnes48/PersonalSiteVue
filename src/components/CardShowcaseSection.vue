@@ -3,10 +3,18 @@ import ShowcaseProjectDialog from '../components/ShowcaseProjectDialog.vue';
 
 export default {
     name: 'CardShowcaseSection',
+    data: () => ({
+        models: {}
+    }),
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
         inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}}
+    },
+    methods: {
+        closeDialog(index){
+            this.models[index] = false;
+        }
     },
     components: {ShowcaseProjectDialog}
 }
@@ -17,8 +25,11 @@ export default {
         <h3 class="section-title">{{ sectionTitle }}</h3>
 
         <div class="project-cards-container">
-            <div v-for="project in projectsInfo">
-                <v-dialog>
+            <div 
+            v-for="(project, index) in projectsInfo"
+            :key="index"
+            >
+                <v-dialog v-model="models[index]">
                     <template v-slot:activator="{ props: activatorProps }">
                         <v-card 
                         v-bind="activatorProps"
@@ -36,6 +47,7 @@ export default {
                     </template>
                     <template v-slot:default="{ isActive }">
                         <ShowcaseProjectDialog
+                        v-on:close-dialog="closeDialog(index)"
                         :title="project.title"
                         :mainText="project.mainText"
                         :repoLink="project.repoLink"
