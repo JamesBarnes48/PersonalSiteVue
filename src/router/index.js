@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Showcase from '../views/Showcase.vue'
+//import Showcase from '../views/Showcase.vue'
+import CardShowcase from '../views/CardShowcase.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
 
@@ -15,7 +16,7 @@ const router = createRouter({
     {
       path: '/showcase',
       name: 'showcase',
-      component: Showcase
+      component: CardShowcase
     },
     {
       path: '/:catchAll(.*)*',
