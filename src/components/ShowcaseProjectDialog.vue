@@ -52,7 +52,7 @@ export default {
     color: black;
     padding: 20px 35px;
     border: 2px solid var(--main-hex);
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .close-btn{
