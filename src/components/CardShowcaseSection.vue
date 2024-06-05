@@ -51,7 +51,6 @@ export default {
                         :title="project.title"
                         :mainText="project.mainText"
                         :repoLink="project.repoLink"
-                        :repoLinkText="project.repoLinkText"
                         :projectImages="project.projectImages"
                         ></ShowcaseProjectDialog>
                     </template>

@@ -28,7 +28,6 @@ export default {
                         One of the key features of Bootstrap 4 is it's tools for making mobile-friendly sites so I developed this site
                         with mobile in mind. Take a look at it on mobile too and see what it looks like!`,
                     repoLink: 'https://jamesbarnes48.github.io/Tindog/',
-                    repoLinkText: 'Check it out yourself ',
                     projectImages: [showcaseImages.tindog1, showcaseImages.tindog2, showcaseImages.tindog3],
                 },
                 {
@@ -39,7 +38,6 @@ export default {
                         to gain those effects as well as showing which effects have ingredients in common with each other. I paid special attention to ensure
                         the site works just as well on mobile as on desktop, as it should!`,
                     repoLink: 'https://jamesbarnes48.github.io/Alchemy-Lab/',
-                    repoLinkText: 'Check it out yourself ',
                     projectImages: [showcaseImages.alc1, showcaseImages.alc2, showcaseImages.alc3],
                 },
                 {
@@ -48,7 +46,6 @@ export default {
                         the buttons light up in and press them. The game uses client-side javascript to run the game on your computer. This was a simple
                         project where I could work on a single real programming challenge in Javascript which was getting the game to run on a loop and increment each time.`,
                     repoLink: 'https://jamesbarnes48.github.io/Simon-Game/',
-                    repoLinkText: 'Have a play around with it yourself ',
                     projectImages: [showcaseImages.simon1, showcaseImages.simon2],
                 },
                 {

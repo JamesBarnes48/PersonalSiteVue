@@ -4,7 +4,6 @@ export default {
     props: {
         title: {type: String, default: 'Project title'},
         mainText: {type: String, default: 'Main text'},
-        repoLinkText: {type: String, default: 'Find the Github repository '},
         repoLink: {type: String},
         projectImages: {type: Array, default() {return []}}
     }
@@ -19,7 +18,7 @@ export default {
         @click="this.$emit('close-dialog');"
         ></v-btn>
         <div class="carousel-container">
-            <v-carousel height="350" cycle>
+            <v-carousel height="325" cycle>
                 <v-carousel-item
                 v-for="img in projectImages"
                 :src="img"
@@ -38,13 +37,14 @@ export default {
 
 <style scoped>
 .project-container{
-    width: 80vw;
+    width: 90vw;
     height: 90vh;
     margin: auto;
     background-color: white;
     color: black;
     padding: 20px 35px;
     border: 2px solid var(--main-hex);
+    overflow: scroll;
 }
 
 .close-btn{
