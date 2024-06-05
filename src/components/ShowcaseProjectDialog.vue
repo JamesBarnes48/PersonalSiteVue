@@ -13,6 +13,11 @@ export default {
 
 <template>
     <div class="project-container">
+        <v-btn 
+        class="close-btn" 
+        icon="mdi-window-close"
+        @click="this.$emit('close-dialog');"
+        ></v-btn>
         <div class="carousel-container">
             <v-carousel height="350" cycle>
                 <v-carousel-item
@@ -40,6 +45,10 @@ export default {
     color: black;
     padding: 20px 35px;
     border: 2px solid var(--main-hex);
+}
+
+.close-btn{
+    float: right;
 }
 
 .carousel-container {
