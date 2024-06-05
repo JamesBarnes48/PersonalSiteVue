@@ -165,30 +165,18 @@ export default {
         ></CardShowcaseSection>
     </section>
 
-    <!-- Java -->
     <section id="java">
-        <h3 class="section-title">Java</h3>
-
-        <ShowcaseProject
-            v-for="project in projects.java"
-            :title="project.title"
-            :mainText="project.mainText"
-            :repoLink="project.repoLink"
-            :repoLinkText="project.repoLinkText"
-            :projectImages="project.projectImages"
-        ></ShowcaseProject>
+        <CardShowcaseSection
+            sectionTitle="Java"
+            :projectsInfo="projects.java"
+        ></CardShowcaseSection>
     </section>
-    <section id="c">
-        <h3 class="section-title">C/C++</h3>
 
-        <ShowcaseProject
-            v-for="project in projects.c"
-            :title="project.title"
-            :mainText="project.mainText"
-            :repoLink="project.repoLink"
-            :repoLinkText="project.repoLinkText"
-            :projectImages="project.projectImages"
-        ></ShowcaseProject>
+    <section id="c">
+        <CardShowcaseSection
+            sectionTitle="C++"
+            :projectsInfo="projects.c"
+        ></CardShowcaseSection>
     </section>
 </template>
 
