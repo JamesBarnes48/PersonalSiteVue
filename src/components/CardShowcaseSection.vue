@@ -9,25 +9,40 @@ export default {
 </script>
 
 <template>
-    <h3 class="section-title">{{ sectionTitle }}</h3>
+    <div class="main-container">
+        <h3 class="section-title">{{ sectionTitle }}</h3>
 
-    <div class="project-cards-container">
-        <div v-for="project in projectsInfo">
-            <v-card width="100%">
-                <v-img
-                height="65%"
-                :src="project.projectImages[0]"
-                cover
-                ></v-img>
-                <v-card-title>{{ project.title }}</v-card-title>
-            </v-card>
+        <div class="project-cards-container">
+            <div v-for="project in projectsInfo">
+                <v-card 
+                width="100%"
+                border="sm"
+                hover
+                >
+                    <v-img
+                    height="160"
+                    cover
+                    :src="project.projectImages[0]"
+                    ></v-img>
+                    <v-card-title>{{ project.title }}</v-card-title>
+                </v-card>
+            </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+.main-container {
+    padding: 40px 0;
+    background-color: var(--off-background-hex);
+}
+
+.main-container:nth-of-type(even) {
+    background-color: var(--background-hex);
+}
+
 .section-title {
-    margin: 50px 0;
+    margin-bottom: 30px;
     font-size: 30px;
 }
 
@@ -38,19 +53,28 @@ export default {
     flex-flow: row wrap;
     justify-content: space-around;
     row-gap: 40px;
-    column-gap: 15%;
+    column-gap: 5%;
 }
 
 .project-cards-container div{
-    flex: 35%;
-    background-color: brown;
-    border: 1px solid blue;
+    flex: 0 0 30%;
+    background-color: var(--background-hex);
+    color: var(--main-hex);
+}
+
+.project-cards-container div:hover{
+    background-color: var(--main-hex);
+    color: var(--background-hex);
+}
+
+.project-cards-container div:nth-of-type(even) {
+    background-color: var(--off-background-hex);
 }
 
 @media (max-width: 1280px){
     .section-title{
         font-size: 28px;
-        margin: 20px 0;
+        margin-bottom: 20px;
     }
 }
 </style>
