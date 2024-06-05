@@ -29,6 +29,6 @@ export default {
 
 <style scoped>
 .panels-container {
-    margin: 60px 60px;
+    margin: 60px 60px 30px 60px;
 }
 </style>
