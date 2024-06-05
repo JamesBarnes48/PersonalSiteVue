@@ -1,6 +1,6 @@
 <script>
 import ShowcaseProject from '../components/ShowcaseProject.vue';
-import * as showcaseImages from '../utilities/showcase-images.js'
+import * as showcaseImages from '../../utilities/showcase-images.js'
 
 export default {
   data:() => ({

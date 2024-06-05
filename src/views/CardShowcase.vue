@@ -1,5 +1,4 @@
 <script>
-import ShowcaseProject from '../components/ShowcaseProject.vue';
 import CardShowcaseSection from '../components/CardShowcaseSection.vue';
 import * as showcaseImages from '../utilities/showcase-images.js'
 
@@ -128,7 +127,7 @@ export default {
             ]
         }
   }),
-  components: {ShowcaseProject, CardShowcaseSection},
+  components: {CardShowcaseSection},
   computed: {
         isMobile(){
             return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
