@@ -82,11 +82,12 @@ export default {
     flex-flow: row wrap;
     justify-content: space-around;
     row-gap: 40px;
-    column-gap: 5%;
+    column-gap: 3%;
 }
 
 .project-cards-container div{
     flex: 0 0 30%;
+    width: 370px;
 }
 
 .project-cards-container .v-card{
@@ -108,10 +109,19 @@ export default {
     color: var(--background-hex);
 }
 
+.project-cards-container .v-card .v-img{
+    margin: auto;
+    width: 100%;
+}
+
 @media (max-width: 1280px){
     .section-title{
         font-size: 28px;
         margin-bottom: 20px;
     }
+
+    .project-cards-container div{
+    width: 340px;
+}
 }
 </style>
