@@ -58,16 +58,19 @@ export default {
 
 .project-cards-container div{
     flex: 0 0 30%;
+}
+
+.project-cards-container .v-card{
     background-color: var(--background-hex);
     color: var(--main-hex);
 }
 
-.project-cards-container div:hover{
+.project-cards-container .v-card:hover{
     background-color: var(--main-hex);
     color: var(--background-hex);
 }
 
-.project-cards-container div:nth-of-type(even) {
+.project-cards-container .v-card:nth-of-type(even) {
     background-color: var(--off-background-hex);
 }
 
