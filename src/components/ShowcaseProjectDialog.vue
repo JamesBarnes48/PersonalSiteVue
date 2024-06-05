@@ -29,7 +29,15 @@ export default {
             <h3 class="subheading">{{ title }}</h3>
             <p>{{ mainText }}</p>
             <div v-if="repoLink">
-                <p>{{ repoLinkText }} <a :href="repoLink">here</a></p>
+                <v-btn 
+                class="view-btn"
+                block
+                hover
+                size="large"
+                color="grey-lighten-3"
+                :href="repoLink"
+                border="sm"
+                >View Project</v-btn>
             </div>
         </div>
     </div>
@@ -49,6 +57,10 @@ export default {
 
 .close-btn{
     float: right;
+}
+
+.view-btn{
+    margin-top: 30px;
 }
 
 .carousel-container {

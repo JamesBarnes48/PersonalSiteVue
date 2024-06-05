@@ -138,21 +138,6 @@ export default {
 </script>
 
 <template>
-    <v-app-bar class="appbar" scroll-behaviour="elevate" >
-        <v-toolbar-title v-if="!isMobile" class="appbar-title">Contents</v-toolbar-title>
-        <div class="appbar-inner-container">
-            <div>
-                <a href="#webdev">Web Development</a>
-            </div>
-            <div>
-                <a href="#java">Java</a>
-            </div>
-            <div>
-                <a href="#c">C/C++</a>
-            </div>
-        </div>
-    </v-app-bar>
-
     <h1 class="showcase-title">Project Showcase</h1>
 
     <section id="webdev">
@@ -188,7 +173,7 @@ section {
 /* Headings */
 
 .showcase-title {
-    margin-top: 75px;
+    margin-top: 10px;
 }
 
 /* Navigation Bars */
