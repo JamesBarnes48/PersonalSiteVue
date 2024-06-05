@@ -1,11 +1,14 @@
 <script>
+import ShowcaseProject from '../components/ShowcaseProject.vue';
+
 export default {
     name: 'CardShowcaseSection',
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
         inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}}
-    }
+    },
+    components: {ShowcaseProject}
 }
 </script>
 
@@ -15,18 +18,32 @@ export default {
 
         <div class="project-cards-container">
             <div v-for="project in projectsInfo">
-                <v-card 
-                width="100%"
-                border="sm"
-                hover
-                >
-                    <v-img
-                    height="160"
-                    cover
-                    :src="project.projectImages[0]"
-                    ></v-img>
-                    <v-card-title>{{ project.title }}</v-card-title>
-                </v-card>
+                <v-dialog>
+                    <template v-slot:activator="{ props: activatorProps }">
+                        <v-card 
+                        v-bind="activatorProps"
+                        width="100%"
+                        border="sm"
+                        hover
+                        >
+                            <v-img
+                            height="160"
+                            cover
+                            :src="project.projectImages[0]"
+                            ></v-img>
+                            <v-card-title>{{ project.title }}</v-card-title>
+                        </v-card>
+                    </template>
+                    <template v-slot:default="{ isActive }">
+                        <ShowcaseProject
+                        :title="project.title"
+                        :mainText="project.mainText"
+                        :repoLink="project.repoLink"
+                        :repoLinkText="project.repoLinkText"
+                        :projectImages="project.projectImages"
+                        ></ShowcaseProject>
+                    </template>
+                </v-dialog>
             </div>
         </div>
     </div>
