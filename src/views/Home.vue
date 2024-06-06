@@ -81,9 +81,13 @@ export default {
         <h2 class="subheading"> What am I up to?</h2>
         <div class="text-container">
           <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
+          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
           <p>After graduating with my Bachelors degree in Computer Science at UEA I have enjoyed great opportunities in working as a full stack developer at Darktrace where I remain today.</p>
+          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
           <p>I've had the chance to greatly enhance my skills at software engineering by developing and maintaining bespoke CRM software all the way from tasking up the ticket to deploying it.</p>
+          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
           <p>I've been taking the opportunity to travel to as many places as I can. Krakow, Edinburgh and Cologne so far this year!</p>
+          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
           <p>On top of all this I have even been practicing hard to be able to make the perfect loaf of bread! Rest assured I have been busy.</p>
         </div>
       </div>
@@ -137,6 +141,7 @@ export default {
 
   .star-icon {
     margin: 0 20px;
+    font-size: 18px;
     color: black;
     animation-name: starShimmer;
     animation-duration: 5s;
@@ -195,7 +200,7 @@ export default {
   }
 
   .text-container p{
-    margin: 10px 0;
+    margin: 7px 0;
   }
 
   @media (max-width: 1280px){
