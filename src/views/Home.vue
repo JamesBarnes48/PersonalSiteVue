@@ -38,7 +38,12 @@ export default {
       listDescription: 'Some C++ projects I have worked on include:',
       listItems: ['Offline movie database', '2D arcade game']
     }]
-  })
+  }),
+  computed: {
+        isMobile(){
+            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
+        }
+    },
   }
 </script>
 
@@ -49,7 +54,15 @@ export default {
     </div>
   
     <div class="profile-container">
-      <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
+      <div class="me-container">
+        <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
+        <v-icon 
+          icon="mdi-star-four-points-outline" 
+          class="shimmer-icon"
+          color="white"
+          :size="isMobile? '7px': '9px'"
+          ></v-icon>
+      </div>
       <h2 class="section-heading">Hello!</h2>
       <div class="text-container">
         <p>A chap with an affinity for all things digital.</p>
@@ -129,6 +142,30 @@ export default {
     margin-right: auto;
   }
 
+  .me-container{
+    margin: auto;
+    width: fit-content;
+    position: relative;
+  }
+
+  @keyframes toothShimmer {
+    0%   {opacity: 0;}
+    50%  {opacity: 1;}
+    100% {opacity: 0;}
+  }
+
+  .shimmer-icon{
+    position: absolute;
+    bottom: 165px;
+    right: 136px;
+    opacity: 0;
+  }
+
+  .me-container:hover > .shimmer-icon{
+    animation-name: toothShimmer;
+    animation-duration: 0.6s;
+  }
+
   .text-container{
     border: 1px solid var(--main-hex);
     background-color: white;
@@ -154,6 +191,11 @@ export default {
 
     #imageOfMe{
       height: 200px;
+    }
+
+    .shimmer-icon{
+      bottom: 125px;
+      right: 95px;
     }
   }
 
