@@ -7,26 +7,36 @@ export default {
   data: () => ({
     skills: [
     {
+      skillName: 'Core Web Development',
+      skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
+                  Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I delved deeper
+                  into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library and jQuery.
+                  We have fancy frameworks and everything but if your core knowledge is weak the foundations will crumble. I have ensured this isn't the case.`,
+      listDescription: 'Some websites I have created include:',
+      listItems: ["Personal site", 'Virtual garage']
+    },
+    {
+      skillName: 'Vue',
+      skillDesc: `There's a plethora of fancy frameworks to choose from now: React, Vue, Angular. It's the most pressing question for the modern Javascript dev; which do you choose?
+                  I had the opportunity to learn Vue.js at Darktrace as I was tasked with migrating a page from vanilla JS into another application written in PHP/Vue. This meant essentially
+                  learning Vue and PHP as I went. PHP I was definitely not as huge a fan of but Vue I took to like a duck to water. So streamlined! So handy! It's definitely my favourite way to code right now.
+                  I even rewrote my site to be in Vue which is the version you are seeing now!`,
+      listDescription: 'Some Vue projects I have worked on include:',
+      listItems: ['Current personal site', 'Migrated page']
+    },
+    {
       skillName: 'Java',
-      skillDesc: 'As my primary language I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
+      skillDesc: 'As my primary language at university I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
       listDescription: 'Some of projects I have made in Java include:',
       listItems: ['"Cheat" card game', 'Word auto-completion algorithm', 'Toll road system']
     },
     {
       skillName: 'C++',
-      skillDesc: `I am relatively new to C++, only starting learning it in late 2019, but after a few projects using it I am seeing the merits of it already. It is very similar to C# which I had experience
+      skillDesc: `I only got to do a few projects in C++ but they were all certainly memorable ones. It is very similar to C# which I had experience
                   using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
                   which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
       listDescription: 'Some C++ projects I have worked on include:',
       listItems: ['Offline movie database', '2D arcade game']
-    },
-    {
-      skillName: 'Web Development',
-      skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
-                  Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I have delved deeper
-                  into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library, jQuery, DOM manipulation and more.`,
-      listDescription: 'Some websites I have created include:',
-      listItems: ["Personal site (you're looking at it now!)", 'Virtual garage']
     }]
   })
   }
