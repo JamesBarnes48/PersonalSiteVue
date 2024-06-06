@@ -156,7 +156,7 @@ export default {
 
   .shimmer-icon{
     position: absolute;
-    bottom: 165px;
+    bottom: 169px;
     right: 136px;
     opacity: 0;
   }
