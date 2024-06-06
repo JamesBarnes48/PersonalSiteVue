@@ -64,13 +64,20 @@ export default {
           ></v-icon>
       </div>
       <h2 class="section-heading">Hello!</h2>
-      <div class="text-container">
-        <p>A chap with an affinity for all things digital.</p>
+      <div v-if="isMobile" class="text-container">
+        <p>A fellow with an affinity for all things digital.</p>
+        <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
+        <p>From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a Japanese white box under my TV yet persists.</p>
+        <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
+        <p>Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.</p>
+      </div>
+      <div v-else class="text-container">
+        <p><v-icon class="star-icon" icon="mdi-star-circle"></v-icon>A chap with an affinity for all things digital.<v-icon class="star-icon" icon="mdi-star-circle"></v-icon></p>
         <p>From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a Japanese white box under my TV yet persists.</p>
         <p>Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.</p>
       </div>
 
-      <div class="home-text-sectiono">
+      <div class="home-text-section">
         <h2 class="subheading"> What am I up to?</h2>
         <div class="text-container">
           <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
@@ -126,6 +133,21 @@ export default {
     font-family: 'Montserrat', serif;
     font-size: 36px;
     font-weight: bolder;
+  }
+
+  .star-icon {
+    margin: 0 20px;
+    color: black;
+    animation-name: starShimmer;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes starShimmer {
+    0%   {color: black;}
+    60%  {color: black;}
+    80% {color: var(--main-hex);}
+    100% {color: black;}
   }
   
   #nameTitle {
@@ -197,6 +219,10 @@ export default {
       bottom: 125px;
       right: 95px;
     }
+
+    .star-icon{
+      font-size: 20px;
+    }
   }
 
   .homepage-section{
@@ -208,14 +234,6 @@ export default {
     border-top: 2px solid var(--main-hex);
     border-bottom: 2px solid var(--main-hex);
     padding: 20px 30px;
-  }
-
-  .home-text-section {
-    background-color: var(--background-hex);
-    border-top: 2px solid var(--main-hex);
-    border-bottom: 2px solid var(--main-hex);
-    padding: 10px 30px;
-    margin: 10px 0;
   }
   
   .section-heading {
