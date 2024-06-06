@@ -41,16 +41,21 @@ export default {
     <div class="profile-container">
       <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
       <h2 class="section-heading">Hello!</h2>
-      <p>A chap with a particular affinity for all things digital. Hooked on Super Mario from a young age and a controller in my hand ever since.
-          Equipped with a pop culture reference for any occasion and a connoisseur of the coffee break at the office. I am anything but your average software developer.</p>
+      <div class="text-container">
+        <p>A chap with an affinity for all things digital.</p>
+        <p>From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a Japanese white box under my TV yet persists.</p>
+        <p>Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.</p>
+      </div>
 
       <div class="home-text-sectiono">
         <h2 class="subheading"> What am I up to?</h2>
-        <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
-        <p>After completing my BSc Computer Science and graduating with 2.1 honours at UEA I have enjoyed great opportunities in working as a Javascript developer at Darktrace where I remain today.
-          I've had a chance to put my skills to practice as well as pick up a few new ones. I have finally learned how to use git properly for starters (about time I learned there are branches other than master!)
-          as well as working with some more advanced tools you might encounter when working in industry and peer reviewing work done by others. With a bit of graft I've found myself reaping benefits!</p>
-        <p>From Python to C, from SQL to ARM assembly code, I have had some experience working with plenty of different languages. While I may be a web developer, mainly I have most experience in:</p>
+        <div class="text-container">
+          <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
+          <p>After graduating with my Bachelors degree in Computer Science at UEA I have enjoyed great opportunities in working as a full stack developer at Darktrace where I remain today.</p>
+          <p>I've had the chance to greatly enhance my skills at software engineering by developing and maintaining bespoke CRM software all the way from tasking up the ticket to deploying it.</p>
+          <p>I've been taking the opportunity to travel to as many places as I can. Krakow, Edinburgh and Cologne so far this year!</p>
+          <p>On top of all this I have even been practicing hard to be able to make the perfect loaf of bread! Rest assured I have been busy.</p>
+        </div>
       </div>
     </div>  
 
@@ -112,6 +117,16 @@ export default {
     height: 280px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .text-container{
+    border: 1px solid var(--main-hex);
+    background-color: white;
+    padding: 7px 10px;
+  }
+
+  .text-container p{
+    margin: 10px 0;
   }
 
   @media (max-width: 1280px){
