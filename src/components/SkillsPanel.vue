@@ -7,6 +7,16 @@ export default {
         listDescription: {type: String},
         listItems: {type: Array, default() {return []}}
     }
+
+    /*
+    listItems html - getting rid for now as looks ugly
+                <div v-if="listItems.length">
+                    <p>{{ listDescription }}</p>
+                    <ul class="list_items">
+                        <li v-for="item in listItems">{{ item }}</li>
+                    </ul>
+                </div>
+    */
 }
 </script>
 
@@ -15,12 +25,6 @@ export default {
         <v-expansion-panel-title class="skillName" >{{ skillName }}</v-expansion-panel-title>
         <v-expansion-panel-text>
             <p>{{ skillDesc }}</p>
-            <div v-if="listItems.length">
-                <p>{{ listDescription }}</p>
-                <ul class="list_items">
-                    <li v-for="item in listItems">{{ item }}</li>
-                </ul>
-            </div>
         </v-expansion-panel-text>
     </v-expansion-panel>
 </template>
@@ -35,6 +39,7 @@ export default {
     margin: auto;
     margin-top: 20px;
     max-width: 40%;
+    font-size: 16px;
 }
 
 @media (max-width: 1280px) {
