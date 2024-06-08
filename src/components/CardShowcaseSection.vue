@@ -114,6 +114,10 @@ export default {
     width: 100%;
 }
 
+.project-cards-container .v-card .v-card-title{
+    margin: auto;
+}
+
 @media (max-width: 1280px){
     .section-title{
         font-size: 28px;
