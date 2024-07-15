@@ -20,6 +20,7 @@ export default {
             v-for="skill in skillsList"
             :skillName="skill.skillName"
             :skillDesc="skill.skillDesc"
+            :skillStyle="skill.skillStyle"
             :iconImport="skill.iconImport"
             :listDescription="skill.listDescription"
             :listItems="skill.listItems"

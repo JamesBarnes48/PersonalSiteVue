@@ -4,6 +4,7 @@ export default {
     props: {
         skillName: {type: String, default: 'A Skill'},
         skillDesc: {type: String, default: 'Skill Description'},
+        skillStyle: {type: String, default: ''},
         iconImport: {type: Array, default() {return []}},
         listDescription: {type: String},
         listItems: {type: Array, default() {return []}}

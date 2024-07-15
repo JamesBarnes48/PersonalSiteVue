@@ -8,6 +8,7 @@ export default {
     skills: [
     {
       skillName: 'Core Web Development',
+      skillStyle: 'webdev',
       iconImport: ['fas', 'globe'],
       skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
                   Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I delved deeper
@@ -18,6 +19,7 @@ export default {
     },
     {
       skillName: 'Vue',
+      skillStyle: 'vue',
       iconImport: ['fab', 'vuejs'],
       skillDesc: `There's a plethora of fancy frameworks to choose from now: React, Vue, Angular. It's the most pressing question for the modern Javascript dev; which do you choose?
                   I had the opportunity to learn Vue.js at Darktrace as I was tasked with migrating a page from vanilla JS into another application written in PHP/Vue. This meant essentially
@@ -28,6 +30,7 @@ export default {
     },
     {
       skillName: 'Java',
+      skillStyle: 'java',
       iconImport: ['fab', 'java'],
       skillDesc: 'As my primary language at university I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
       listDescription: 'Some of projects I have made in Java include:',
@@ -35,6 +38,7 @@ export default {
     },
     {
       skillName: 'C++',
+      skillStyle: 'c++',
       skillDesc: `I only got to do a few projects in C++ but they were all certainly memorable ones. It is very similar to C# which I had experience
                   using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
                   which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
