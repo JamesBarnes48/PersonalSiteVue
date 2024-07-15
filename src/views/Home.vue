@@ -217,7 +217,8 @@ export default {
     }
 
     #nameTitle {
-      font-size: 53px;
+      font-size: 50px;
+      margin-left: 15px;
     }
 
     .title-subheading {
