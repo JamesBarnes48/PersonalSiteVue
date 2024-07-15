@@ -13,6 +13,7 @@
 
 .skill-name.webdev {
     color: white;
+    text-shadow: 0 0 2px black;
 }
 
 .skill-icon.webdev {
@@ -24,19 +25,25 @@
 }
 
 .skill-name.vue {
-    color: white;}
+    color: white;
+    text-shadow: 0 0 2px black;
+
+}
 
 .skill-icon.vue {
     color: #01941c;
 }
 
 .skill-title.java {
-    background-color: #ffdbb3;
+    background-color: #fca972;
 }
 
 .skill-name.java {
-    color: white;}
+    color: white;
+    text-shadow: 0 0 2px black;
+
+}
 
 .skill-icon.java {
-    color: #f78a0c;
+    color: #fc231c;
 }
