@@ -5,7 +5,8 @@ export default {
         drawer: true,
         items: [
             {name: 'Home', path: '/', icon: 'mdi-home'},
-            {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'}
+            {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
+            {name: 'Armoury', path: '/armoury', icon: 'mdi-fencing'},
         ]
     }),
     computed: {
