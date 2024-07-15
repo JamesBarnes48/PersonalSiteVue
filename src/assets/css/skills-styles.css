@@ -1,0 +1,51 @@
+.skill-title {
+    width: 80%;
+}
+
+.skill-name {
+    display: inline;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+
+.skill-title.webdev {
+    width: 80%;
+}
+
+.skill-name.webdev {
+    display: inline;
+}
+
+.skill-icon.webdev {
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+
+.skill-title.vue {
+    width: 80%;
+}
+
+.skill-name.vue {
+    display: inline;
+}
+
+.skill-icon.vue {
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+
+.skill-title.java {
+    width: 80%;
+}
+
+.skill-name.java {
+    display: inline;
+}
+
+.skill-icon.java {
+    font-size: 1.5rem;
+    margin-right: 30px;
+}

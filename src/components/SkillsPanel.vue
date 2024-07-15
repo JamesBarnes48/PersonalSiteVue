@@ -24,10 +24,14 @@ export default {
 <template>
     <v-expansion-panel>
         <v-expansion-panel-title >
-            <div class="skill-title">
-                <font-awesome-icon class="skill-icon" :icon="iconImport" />
-                <h3 class="skill-name">{{ skillName }}</h3>
-            </div>
+            <v-hover>
+            <template v-slot:default="{ isHovering, props }">
+                <div class="skill-title" :class="isHovering? skillName: ''">
+                    <font-awesome-icon class="skill-icon" :class="isHovering? skillName: ''" :icon="iconImport" />
+                    <h3 class="skill-name" :class="isHovering? skillName: ''">{{ skillName }}</h3>
+                </div>
+            </template>
+            </v-hover>
         </v-expansion-panel-title>
 
         <v-expansion-panel-text>
@@ -36,22 +40,8 @@ export default {
     </v-expansion-panel>
 </template>
 
+<style lang="css" scoped src="../assets/css/skills-styles.css"></style>
 <style scoped>
-.skill-title {
-    width: 80%;
-}
-
-.skill-name {
-    display: inline;
-}
-
-.skill-icon {
-    font-size: 1.5rem;
-    margin-right: 30px;
-}
-
-
-
 .list_items {
     margin: auto;
     margin-top: 20px;
