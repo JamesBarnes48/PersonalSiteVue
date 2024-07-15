@@ -23,22 +23,20 @@ export default {
 </script>
 
 <template>
-    <v-expansion-panel>
-        <v-expansion-panel-title >
-            <v-hover>
-            <template v-slot:default="{ isHovering, props }">
-                <div class="skill-title" :class="isHovering? skillName: ''">
-                    <font-awesome-icon class="skill-icon" :class="isHovering? skillName: ''" :icon="iconImport" />
-                    <h3 class="skill-name" :class="isHovering? skillName: ''">{{ skillName }}</h3>
-                </div>
-            </template>
-            </v-hover>
-        </v-expansion-panel-title>
+    <v-hover>
+        <template v-slot:default="{ isHovering, props }">
+        <v-expansion-panel v-bind="props">
+            <v-expansion-panel-title class="skill-title" :class="isHovering? skillStyle: ''">
+                <font-awesome-icon class="skill-icon" :class="isHovering? skillStyle: ''" :icon="iconImport" />
+                <h3 class="skill-name" :class="isHovering? skillStyle: ''">{{ skillName }}</h3>
+            </v-expansion-panel-title>
 
-        <v-expansion-panel-text>
-            <p>{{ skillDesc }}</p>
-        </v-expansion-panel-text>
-    </v-expansion-panel>
+            <v-expansion-panel-text>
+                <p>{{ skillDesc }}</p>
+            </v-expansion-panel-text>
+        </v-expansion-panel>
+        </template>
+    </v-hover>
 </template>
 
 <style lang="css" scoped src="../assets/css/skills-styles.css"></style>
