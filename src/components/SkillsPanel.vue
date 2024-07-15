@@ -4,6 +4,7 @@ export default {
     props: {
         skillName: {type: String, default: 'A Skill'},
         skillDesc: {type: String, default: 'Skill Description'},
+        iconImport: {type: Array, default() {return []}},
         listDescription: {type: String},
         listItems: {type: Array, default() {return []}}
     }
@@ -22,7 +23,13 @@ export default {
 
 <template>
     <v-expansion-panel>
-        <v-expansion-panel-title class="skillName" >{{ skillName }}</v-expansion-panel-title>
+        <v-expansion-panel-title >
+            <div class="skill-title">
+                <font-awesome-icon class="skill-icon" :icon="iconImport" />
+                <h3 class="skill-name">{{ skillName }}</h3>
+            </div>
+        </v-expansion-panel-title>
+
         <v-expansion-panel-text>
             <p>{{ skillDesc }}</p>
         </v-expansion-panel-text>
@@ -30,10 +37,20 @@ export default {
 </template>
 
 <style scoped>
-.skillName {
-    color: var(--main-hex);
-    font-size: 24px;
+.skill-title {
+    width: 80%;
 }
+
+.skill-name {
+    display: inline;
+}
+
+.skill-icon {
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+
+
 
 .list_items {
     margin: auto;

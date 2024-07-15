@@ -8,6 +8,7 @@ export default {
     skills: [
     {
       skillName: 'Core Web Development',
+      iconImport: ['fas', 'globe'],
       skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
                   Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I delved deeper
                   into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library and jQuery.
@@ -17,6 +18,7 @@ export default {
     },
     {
       skillName: 'Vue',
+      iconImport: ['fab', 'vuejs'],
       skillDesc: `There's a plethora of fancy frameworks to choose from now: React, Vue, Angular. It's the most pressing question for the modern Javascript dev; which do you choose?
                   I had the opportunity to learn Vue.js at Darktrace as I was tasked with migrating a page from vanilla JS into another application written in PHP/Vue. This meant essentially
                   learning Vue and PHP as I went. PHP I was definitely not as huge a fan of but Vue I took to like a duck to water. So streamlined! So handy! It's definitely my favourite way to code right now.
@@ -26,6 +28,7 @@ export default {
     },
     {
       skillName: 'Java',
+      iconImport: ['fab', 'java'],
       skillDesc: 'As my primary language at university I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
       listDescription: 'Some of projects I have made in Java include:',
       listItems: ['"Cheat" card game', 'Word auto-completion algorithm', 'Toll road system']
