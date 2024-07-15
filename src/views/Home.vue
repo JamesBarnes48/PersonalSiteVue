@@ -38,7 +38,8 @@ export default {
     },
     {
       skillName: 'C++',
-      skillStyle: 'c++',
+      skillStyle: 'c',
+      iconImport: ['fas', 'c'],
       skillDesc: `I only got to do a few projects in C++ but they were all certainly memorable ones. It is very similar to C# which I had experience
                   using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
                   which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,

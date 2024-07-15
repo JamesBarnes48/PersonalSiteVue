@@ -47,3 +47,17 @@
 .skill-icon.java {
     color: #fc231c;
 }
+
+.skill-title.c {
+    background-color: #fffc61;
+}
+
+.skill-name.c {
+    color: white;
+    text-shadow: 0 0 2px black;
+
+}
+
+.skill-icon.c {
+    color: #adab02;
+}
