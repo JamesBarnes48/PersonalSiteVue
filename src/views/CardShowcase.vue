@@ -174,6 +174,7 @@ section {
 
 .showcase-title {
     margin-top: 10px;
+    font-size: 55px;
 }
 
 /* Navigation Bars */
