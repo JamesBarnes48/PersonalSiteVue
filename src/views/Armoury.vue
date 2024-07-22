@@ -4,18 +4,27 @@
 export default {
   name: 'Armoury',
   created() {
-
+    this.queryApi('weapons');
   },
   data() {
     return {
       erdtreeImage: erdtreeImage,
+      builds: []
     }
   },
   props: {
    
   },
   methods: {
-   
+    async queryApi(category, params){
+      await fetch(
+        `https://eldenring.fanapis.com/api/${category}?name=Bloody%20Helice`
+      ).then((response) => {
+        response.json().then((data) => {
+          console.info(data);
+        })
+      })
+    }
   },
 }
 </script>
@@ -44,7 +53,7 @@ export default {
 .build-container {
   border: 1px solid var(--main-hex);
   background-color: #24211a;
-  height: 650px;
+  height: 850px;
 }
 
 .erdtree-image {
