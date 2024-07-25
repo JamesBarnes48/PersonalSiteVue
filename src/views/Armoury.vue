@@ -9,7 +9,18 @@ export default {
   data() {
     return {
       erdtreeImage: erdtreeImage,
-      builds: []
+      builds: [
+        {'Lightning Knight': {
+          'main': 'Death Knight\'s Longhaft Axe',
+          'offhand': 'Clawmark Seal',
+          'spells': ['Knight\'s Lightning Spear', 'Ancient Dragon\'s Lightning Strike', 'Fortissax\'s Lightning Spear', 'Wrath of Gold', 'Aspects of the Crucible: Horns', 'Divine Beast Tornado', 'Golden Vow', 'Flame, Grant Me Strength', 'Blessing of the Erdtree'],
+          'helmet': 'Oathseeker Knight Helm',
+          'chest': 'Gelmir Knight Armour',
+          'legs': 'Death Knight Greaves',
+          'arms': 'Death Knight Gauntlets',
+          'talismans': ['Two-Headed Turtle Talisman', 'Godfrey Icon', 'Lightning Scorpion Charm', 'Flock\'s Canvas Talisman']
+        }}
+      ]
     }
   },
   props: {
@@ -18,7 +29,7 @@ export default {
   methods: {
     async queryApi(category, params){
       await fetch(
-        `https://eldenring.fanapis.com/api/${category}?name=Bloody%20Helice`
+        `https://eldenring.fanapis.com/api/${category}?name=Great%Katana`
       ).then((response) => {
         response.json().then((data) => {
           console.info(data);
