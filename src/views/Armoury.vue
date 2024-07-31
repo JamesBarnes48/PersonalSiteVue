@@ -77,6 +77,7 @@ export default {
 .elden-container {
   border: 1px solid var(--main-hex);
   background-color: #24211a;
+  padding-left: 30px;
   height: 850px;
 }
 

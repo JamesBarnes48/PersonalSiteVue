@@ -22,17 +22,28 @@ export default {
         <h3>{{this.title}}</h3>
         <div class="bar-container">
             <div
-            class="datum-container"
-            v-for="datum in rankingData"
+            class="item-container"
+            v-for="item in rankingData"
             >
-                <img class="datum-image" :src="datum?.apiData?.image">
-                <p>{{ datum.name }}</p>
+                <img class="item-image" :src="item?.apiData?.image">
+                <p>{{ item.name }}</p>
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+@keyframes highlightItem {
+    0% {
+        transform: scale(1);
+        background-color: var(--off-main-hex);
+    }
+    100% {
+        transform: scale(1.05);
+        background-color: var(--main-hex);
+    }
+}
+
 .ranking-bar-container {
     margin: 18px 14px;
     width: fit-content;
@@ -49,13 +60,24 @@ export default {
     border: 2px solid var(--off-main-hex);
 }
 
-.datum-container {
+.item-container {
     height: fit-content;
     padding: 10px 13px;
-    background-color: white;
+    background-color: var(--off-main-hex);
 }
 
-.datum-image {
+.item-container:hover {
+    animation-name: highlightItem;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.item-container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item-image {
     object-fit: cover;
     height: 100px;
 }
