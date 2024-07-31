@@ -31,12 +31,14 @@ export default {
 <style scoped>
 .ranking-bar-container {
     margin: 18px 14px;
-    width: 100%;
+    width: fit-content;
 }
 
 .bar-container{
     margin: auto;
     position: relative;
+    display: flex;
+    justify-content: center;
     z-index: 2;
     padding: 10px 12px;
     background-color: black;
@@ -44,7 +46,7 @@ export default {
 }
 
 .datum-container {
-    height: 300px;
+    height: 100px;
     background-color: white;
 }
 </style>
