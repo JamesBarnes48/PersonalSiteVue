@@ -4,12 +4,15 @@ import SkillsPanel from './SkillsPanel.vue'
 export default {
     name: 'RankingBar',
     created() {
-        console.info(this.rankingData);
+        
     },
     components: {SkillsPanel},
     props: {
         rankingData: {type: Array, required: true},
         title: {type: String, required: true}
+    },
+    methods: {
+
     }
 }
 </script>
@@ -22,6 +25,7 @@ export default {
             class="datum-container"
             v-for="datum in rankingData"
             >
+                <img class="datum-image" :src="datum?.apiData?.image">
                 <p>{{ datum.name }}</p>
             </div>
         </div>
@@ -46,7 +50,13 @@ export default {
 }
 
 .datum-container {
-    height: 100px;
+    height: fit-content;
+    padding: 10px 13px;
     background-color: white;
+}
+
+.datum-image {
+    object-fit: cover;
+    height: 100px;
 }
 </style>
