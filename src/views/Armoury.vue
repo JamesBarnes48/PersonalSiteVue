@@ -1,10 +1,12 @@
 <script>
-  import erdtreeImage from '../assets/images/armoury/erdtree.webp';
+import erdtreeImage from '../assets/images/armoury/erdtree.webp';
+import armaments from '../assets/data/armaments.js';
 
 export default {
   name: 'Armoury',
   created() {
-    this.queryApi('weapons');
+    console.info(armaments);
+    //this.queryApi('weapons');
   },
   data() {
     return {
@@ -27,10 +29,8 @@ export default {
    
   },
   methods: {
-    async queryApi(category, params){
-      await fetch(
-        `https://eldenring.fanapis.com/api/${category}?name=Great%Katana`
-      ).then((response) => {
+    async queryApi(route){
+      await fetch(route).then((response) => {
         response.json().then((data) => {
           console.info(data);
         })
