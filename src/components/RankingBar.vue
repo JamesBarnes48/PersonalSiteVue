@@ -36,9 +36,10 @@ export default {
 
 .bar-container{
     margin: auto;
-    padding: 10px 12px;
-    background-color: green;
+    position: relative;
     z-index: 2;
+    padding: 10px 12px;
+    background-color: black;
     border: 2px solid var(--off-main-hex);
 }
 
