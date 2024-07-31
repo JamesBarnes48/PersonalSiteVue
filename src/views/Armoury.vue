@@ -2,6 +2,8 @@
 import erdtreeImage from '../assets/images/armoury/erdtree.webp';
 import armaments from '../assets/data/armaments.js';
 
+import RankingBar from '../components/RankingBar.vue';
+
 export default {
   name: 'Armoury',
   async created() {
@@ -31,6 +33,7 @@ export default {
   props: {
    
   },
+  components: {RankingBar},
   methods: {
     async queryApi(route){
       const rawRes = await fetch(route);
@@ -46,7 +49,14 @@ export default {
     <h1 class="armoury-title">Armoury</h1>
     <div class="build-container">
       <img :src="erdtreeImage" class="erdtree-image">
-
+      <v-row>
+        <v-col col="6">
+          <RankingBar
+          :rankingData="this.armaments"
+          />
+        </v-col>
+        <v-col col="6"></v-col>
+      </v-row>
     </div>
   </div>
 </template>
