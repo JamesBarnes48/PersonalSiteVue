@@ -47,12 +47,13 @@ export default {
 <template>
   <div class="armoury-container">
     <h1 class="armoury-title">Armoury</h1>
-    <div class="build-container">
+    <div class="elden-container">
       <img :src="erdtreeImage" class="erdtree-image">
       <v-row>
         <v-col col="6">
           <RankingBar
           :rankingData="this.armaments"
+          title="Armaments"
           />
         </v-col>
         <v-col col="6"></v-col>
@@ -70,9 +71,10 @@ export default {
 .armoury-title {
   margin-top: 10px; 
   font-size: 55px;
+  color: var(--off-main-hex)
 }
 
-.build-container {
+.elden-container {
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   height: 850px;
