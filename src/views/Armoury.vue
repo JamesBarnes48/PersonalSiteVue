@@ -4,13 +4,16 @@ import armaments from '../assets/data/armaments.js';
 
 export default {
   name: 'Armoury',
-  created() {
-    console.info(armaments);
-    //this.queryApi('weapons');
+  async created() {
+    for(let i = 0; i < this.armaments.length; i++){
+      this.armaments[i].apiData = await this.queryApi(this.armaments[i].apiRoute);
+    }
+    console.info(this.armaments);
   },
   data() {
     return {
       erdtreeImage: erdtreeImage,
+      armaments: armaments,
       builds: [
         {'Lightning Knight': {
           'main': 'Death Knight\'s Longhaft Axe',
@@ -30,11 +33,9 @@ export default {
   },
   methods: {
     async queryApi(route){
-      await fetch(route).then((response) => {
-        response.json().then((data) => {
-          console.info(data);
-        })
-      })
+      const rawRes = await fetch(route);
+      const resJson = await rawRes.json();
+      return resJson?.data || {};
     }
   },
 }
