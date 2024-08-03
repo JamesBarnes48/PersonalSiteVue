@@ -8,5 +8,10 @@ export default [
       name: 'Death\'s Poker',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Death%27s%20Poker',
       description: 'great poker'
+    },
+    {
+      name: 'Death Knight\'s Longhaft Axe',
+      imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
+      description: 'big axe'
     }
 ]

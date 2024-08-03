@@ -9,9 +9,8 @@ export default {
   name: 'Armoury',
   async created() {
     for(let i = 0; i < this.armaments.length; i++){
-      this.armaments[i].apiData = (await this.queryApi(this.armaments[i].apiRoute))[0];
+      this.armaments[i].apiData = this.armaments[i].apiRoute? (await this.queryApi(this.armaments[i].apiRoute))[0]: [];
     }
-    console.info(this.armaments);
   },
   data() {
     return {
