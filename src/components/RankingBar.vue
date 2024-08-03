@@ -12,7 +12,10 @@ export default {
         title: {type: String, required: true}
     },
     methods: {
-
+        getImgUrl(item){
+            if(item?.apiRoute) return item?.apiData?.image;
+            return new URL(item.imgSrc,import.meta.url).href;
+        }
     }
 }
 </script>
@@ -26,7 +29,7 @@ export default {
             v-for="item in rankingData"
             @click="this.$emit('select-build', item)"
             >
-                <img class="item-image" :src="item?.apiData?.image">
+                <img class="item-image" :src="getImgUrl(item)">
                 <p>{{ item.name }}</p>
             </div>
         </div>
