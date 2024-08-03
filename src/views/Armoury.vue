@@ -49,15 +49,13 @@ export default {
     <h1 class="armoury-title">Armoury</h1>
     <div class="elden-container">
       <img :src="erdtreeImage" class="erdtree-image">
-      <v-row>
-        <v-col col="6">
-          <RankingBar
-          :rankingData="this.armaments"
-          title="Armaments"
-          />
-        </v-col>
-        <v-col col="6"></v-col>
-      </v-row>
+      <RankingBar
+      :rankingData="this.armaments"
+      title="Choose an Armament"
+      />
+      <div class="build-container">
+
+      </div>
     </div>
   </div>
 </template>
@@ -77,8 +75,18 @@ export default {
 .elden-container {
   border: 1px solid var(--main-hex);
   background-color: #24211a;
-  padding-left: 30px;
-  height: 850px;
+  padding: 20px 15px;
+  height: 950px;
+}
+
+.build-container {
+  width: 95%;
+  height: 70%;
+  position: relative;
+  z-index: 2;
+  margin: 25px auto;
+  border: 1px solid var(--off-main-hex);
+  background-color: blue;
 }
 
 .erdtree-image {

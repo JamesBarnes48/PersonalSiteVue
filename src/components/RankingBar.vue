@@ -45,7 +45,7 @@ export default {
 }
 
 .ranking-bar-container {
-    margin: 18px 14px;
+    margin: auto;
     width: fit-content;
 }
 
