@@ -3,6 +3,7 @@ import erdtreeImage from '../assets/images/armoury/erdtree.webp';
 import armaments from '../assets/data/armaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
+import Build from '../components/Build.vue';
 
 export default {
   name: 'Armoury',
@@ -17,6 +18,7 @@ export default {
       erdtreeImage: erdtreeImage,
       armaments: armaments,
       showBuild: false,
+      displayedBuild: null,
       builds: [
         {'Lightning Knight': {
           'main': 'Death Knight\'s Longhaft Axe',
@@ -31,7 +33,7 @@ export default {
       ]
     }
   },
-  components: {RankingBar},
+  components: {RankingBar, Build},
   methods: {
     async queryApi(route){
       const rawRes = await fetch(route);
@@ -40,8 +42,13 @@ export default {
     },
 
     buildSelected(build) {
-      console.info(build);
-      this.showBuild = !this.showBuild;
+      if(!this.displayedBuild){ this.showBuild = true; }
+      if(this.displayedBuild === build){ 
+        this.showBuild = false;
+        this.displayedBuild = null;
+        return;
+      }
+      this.displayedBuild = build;
     }
   },
 }
@@ -58,12 +65,10 @@ export default {
       @select-build="buildSelected"
       />
       <Transition name="openbuild">
-        <div 
-        class="build-container"
+        <Build
         v-if="showBuild"
-        >
-
-        </div>
+        :buildData="this.displayedBuild"
+        />
       </Transition>
     </div>
   </div>
@@ -86,16 +91,6 @@ export default {
   background-color: #24211a;
   padding: 20px 15px;
   height: 950px;
-}
-
-.build-container {
-  width: 95%;
-  height: 70%;
-  position: relative;
-  z-index: 2;
-  margin: 25px auto;
-  border: 1px solid var(--off-main-hex);
-  background-color: blue;
 }
 
 .openbuild-enter-active,
