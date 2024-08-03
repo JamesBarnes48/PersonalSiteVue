@@ -24,6 +24,7 @@ export default {
             <div
             class="item-container"
             v-for="item in rankingData"
+            @click="this.$emit('select-build', item)"
             >
                 <img class="item-image" :src="item?.apiData?.image">
                 <p>{{ item.name }}</p>

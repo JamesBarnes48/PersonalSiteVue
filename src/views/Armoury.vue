@@ -16,6 +16,7 @@ export default {
     return {
       erdtreeImage: erdtreeImage,
       armaments: armaments,
+      showBuild: false,
       builds: [
         {'Lightning Knight': {
           'main': 'Death Knight\'s Longhaft Axe',
@@ -30,15 +31,17 @@ export default {
       ]
     }
   },
-  props: {
-   
-  },
   components: {RankingBar},
   methods: {
     async queryApi(route){
       const rawRes = await fetch(route);
       const resJson = await rawRes.json();
       return resJson?.data || {};
+    },
+
+    buildSelected(build) {
+      console.info(build);
+      this.showBuild = !this.showBuild;
     }
   },
 }
@@ -52,10 +55,16 @@ export default {
       <RankingBar
       :rankingData="this.armaments"
       title="Choose an Armament"
+      @select-build="buildSelected"
       />
-      <div class="build-container">
+      <Transition name="openbuild">
+        <div 
+        class="build-container"
+        v-if="showBuild"
+        >
 
-      </div>
+        </div>
+      </Transition>
     </div>
   </div>
 </template>
@@ -87,6 +96,16 @@ export default {
   margin: 25px auto;
   border: 1px solid var(--off-main-hex);
   background-color: blue;
+}
+
+.openbuild-enter-active,
+.openbuild-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.openbuild-enter-from,
+.openbuild-leave-to {
+  opacity: 0;
 }
 
 .erdtree-image {
