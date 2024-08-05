@@ -29,6 +29,11 @@ export default {
             <v-col cols="6">
                 <img class="character-image" :src="this.characterImages[0]" alt="">
             </v-col>
+            <v-col cols="6">
+                <div class="desc-container">
+                    <p>{{ buildData.description }}</p>
+                </div>
+            </v-col>
         </v-row>
     </div>
 </template>
@@ -47,5 +52,11 @@ export default {
 .character-image {
     border: 1px solid black;
     width: 100%;
+}
+
+.desc-container {
+    border: 1px solid var(--off-main-hex);
+    padding: 5px 7px;
+    background-color: var(--off-main-hex);
 }
 </style>
