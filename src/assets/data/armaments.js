@@ -3,7 +3,8 @@ export default [
       name: 'Bloody Helice',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Bloody%20Helice',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69987c03l0i1pdyutp139wmu1sh.png',
-      description: 'great sword'
+      description: 'great sword',
+      characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg']
     },
     {
       name: 'Death\'s Poker',
