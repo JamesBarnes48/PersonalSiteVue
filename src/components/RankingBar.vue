@@ -13,7 +13,7 @@ export default {
     },
     methods: {
         getImgUrl(item){
-            if(item?.apiRoute) return item?.apiData?.image;
+            if(item.thumbnail) return item?.thumbnail;
             return new URL(item.imgSrc,import.meta.url).href;
         }
     }

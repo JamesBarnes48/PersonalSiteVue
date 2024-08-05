@@ -17,7 +17,11 @@ export default {
 
 <template>
     <div class="build-container">
-
+        <v-row>
+            <v-col cols="6">
+                <img src="" alt="">
+            </v-col>
+        </v-row>
     </div>
 </template>
 

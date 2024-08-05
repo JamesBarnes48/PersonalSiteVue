@@ -8,9 +8,11 @@ import Build from '../components/Build.vue';
 export default {
   name: 'Armoury',
   async created() {
+    /* no api query required yet
     for(let i = 0; i < this.armaments.length; i++){
       this.armaments[i].apiData = this.armaments[i].apiRoute? (await this.queryApi(this.armaments[i].apiRoute))[0]: [];
     }
+      */
   },
   data() {
     return {
