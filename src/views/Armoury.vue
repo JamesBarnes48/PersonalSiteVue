@@ -96,12 +96,12 @@ export default {
 
 .openbuild-enter-active,
 .openbuild-leave-active {
-  transition: width 0.6s ease-in;
+  transition: opacity 0.6s ease-in;
 }
 
 .openbuild-enter-from,
 .openbuild-leave-to {
-  width: 0px;
+  opacity: 0;
 }
 
 .erdtree-image {
