@@ -3,18 +3,29 @@ export default [
       name: 'Bloody Helice',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Bloody%20Helice',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69987c03l0i1pdyutp139wmu1sh.png',
-      description: 'great sword',
+      descriptionFlavour: 'Ominous piercing sword with a winding blade. Carried by the noble servants of the Lord of Blood.',
+      descriptionParagraphs: [`An elegant weapon for the more discerning blood-drunk sadist, this heavy thrusting sword is a contender for my favourite weapon in the game. 
+        This weapon starts strong with a C scaling in dex and a B scaling in arcane, meaning you can pump arcane to not only boost base damage but also take full advantage of the 
+        blood loss buildup afforded by the winding corkscrew blade.`,
+        `So we have a strong heavy thrusting sword moveset, combine that with high arcane damage scaling and innate blood loss which on a full arcane build
+        will afford us insane burst damage. We haven't even talked about the best part yet; Dynast's Finesse. Everyone loves weapon arts where you press L2 to blow
+        everything up; they're simple and they work. The Bloody Helice thinks this is all quite unsophisticated and instead has a three-part weapon art. Starting with a 
+        elegant backwards manoeuver which crucially has iframes similar to bloodhounds step. Optionally you can follow this up with a quick forwards lunge which hits hard
+        and does heavy stance damage and then again follow up with a double swipe to close out the combo if you so please.`, 
+        `This is so powerful just from how you have control over
+        every part of the combo. If you think the enemy is going to follow up then after each manoeuver you can end the combo there. You can even unlock the camera
+        before you do the iframe dodge to direct it in any direction if you want to be really techy. Overall this weapon can be manipulated to pull off some awesome techs and is extremely strong.`],
       characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg']
     },
     {
       name: 'Death\'s Poker',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Death%27s%20Poker',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d8a812l0i1p7s9xmq3zqql69.png',
-      description: 'great poker'
+      descriptionParagraphs: ['great poker']
     },
     {
       name: 'Death Knight\'s Longhaft Axe',
       imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
-      description: 'big axe'
+      descriptionParagraphs: ['big axe']
     }
 ]
