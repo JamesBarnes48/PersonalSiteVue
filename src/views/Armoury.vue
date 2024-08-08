@@ -63,7 +63,7 @@ export default {
       <RankingBar
       :rankingData="this.armaments"
       title="Choose an Armament"
-      @select-build="buildSelected"
+      @selected="buildSelected"
       />
       <Transition name="openbuild">
         <Build

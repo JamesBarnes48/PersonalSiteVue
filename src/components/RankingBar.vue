@@ -1,12 +1,9 @@
 <script>
-import SkillsPanel from './SkillsPanel.vue'
-
 export default {
     name: 'RankingBar',
     created() {
         
     },
-    components: {SkillsPanel},
     props: {
         rankingData: {type: Array, required: true},
         title: {type: String, required: true}
@@ -27,7 +24,7 @@ export default {
             <div
             class="item-container"
             v-for="item in rankingData"
-            @click="this.$emit('select-build', item)"
+            @click="this.$emit('selected', item)"
             >
                 <img class="item-image" :src="getImgUrl(item)">
                 <p>{{ item.name }}</p>
