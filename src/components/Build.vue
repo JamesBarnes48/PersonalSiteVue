@@ -12,13 +12,25 @@ export default {
     },
     data() {
         return {
-            characterImages: []
+            characterImages: [],
+            displayedTalisman: null,
+            showTalisman: false
         };
     },
     methods: {
         imagesToUrl(images){
             if(!images?.length) return ['temp'];
             return images.map((img) => {return new URL(img,import.meta.url).href});
+        },
+
+        talismanSelected(talisman){
+            if(!this.displayedTalisman){ this.showTalisman = true; }
+            if(this.displayedTalisman === talisman){ 
+                this.showTalisman = false;
+                this.displayedTalisman = null;
+                return;
+            }
+            this.displayedTalisman = talisman;       
         }
     }
 }
@@ -31,8 +43,17 @@ export default {
                 <img class="character-image" :src="this.characterImages[0]" alt="">
                 <RankingBar 
                 :rankingData="buildData.talismans"
-                name="Talismans"
+                title="Talismans"
+                @selected="talismanSelected"
                 />
+                <Transition name="opentalisman">
+                    <div 
+                    class="desc-container"
+                    v-if="showTalisman"
+                    >
+                        <p class=desc-paragraph>{{ displayedTalisman.description }}</p>
+                    </div>
+                </Transition>
             </v-col>
             <v-col cols="6">
                 <div class="desc-container">
@@ -75,6 +96,16 @@ export default {
     margin-bottom: 20px;
     font-weight: bold;
     font-style: italic;
+}
+
+.opentalisman-enter-active,
+.opentalisman-leave-active {
+    transition: opacity 0.6s ease-in;
+}
+
+.opentalisman-enter-from,
+.opentalisman-leave-to {
+    opacity: 0;
 }
 
 </style>

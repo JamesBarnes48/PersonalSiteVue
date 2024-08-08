@@ -14,24 +14,28 @@ export default [
         and does heavy stance damage and then again follow up with a double swipe to close out the combo if you so please.`, 
         `This is so powerful just from how you have control over
         every part of the combo. If you think the enemy is going to follow up then after each manoeuver you can end the combo there. You can even unlock the camera
-        before you do the iframe dodge to direct it in any direction if you want to be really techy. Overall this weapon can be manipulated to pull off some awesome techs and is extremely strong.`],
+        before you do the iframe dodge to direct it in any direction if you want to be really techy. Overall this weapon can be manipulated to pull off some awesome techs and is an extremely strong choice.`],
       characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg'],
       talismans: [
         {
           name: 'Lord of Blood\'s Exultation',
-          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png'
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png',
+          description: 'great talis'
         },
         {
           name: 'Rotten Winged Sword Insignia',
-          imgSrc: '../assets/images/armoury/wingedsword.webp'
+          imgSrc: '../assets/images/armoury/wingedsword.webp',
+          description: 'assas talis'
         },
         {
           name: 'Shard of Alexander',
-          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png'
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png',
+          description: 'ree talis'
         },
         {
           name: 'Spear Talisman',
-          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e13918l0i2syr0vvb0gg1l8xg.png'
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e13918l0i2syr0vvb0gg1l8xg.png',
+          description: 'ddd talis'
         }
       ]
     },
