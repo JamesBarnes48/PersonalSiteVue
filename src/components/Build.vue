@@ -100,7 +100,7 @@ export default {
 
 .opentalisman-enter-active,
 .opentalisman-leave-active {
-    transition: opacity 0.6s ease-in;
+    transition: opacity 0.3s ease-in;
 }
 
 .opentalisman-enter-from,

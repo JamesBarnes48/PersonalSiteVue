@@ -20,22 +20,22 @@ export default [
         {
           name: 'Lord of Blood\'s Exultation',
           thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png',
-          description: 'great talis'
+          description: 'A mainstay on any blood loss build worth it\'s salt, this will buff us on the many occasions we trigger bleed. A must have.'
         },
         {
           name: 'Rotten Winged Sword Insignia',
           imgSrc: '../assets/images/armoury/wingedsword.webp',
-          description: 'assas talis'
+          description: 'Heavy thrusting swords afford for rapid attacks and Dynast\'s Finesse lets us keep up the pressure, ensuring this talisman keeps us buffed.'
         },
         {
           name: 'Shard of Alexander',
           thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png',
-          description: 'ree talis'
+          description: 'Extra damage on skills make this talisman hard to refuse, especially with one as good as this.'
         },
         {
           name: 'Spear Talisman',
           thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e13918l0i2syr0vvb0gg1l8xg.png',
-          description: 'ddd talis'
+          description: 'This gives extra damage on counterattacks, so when you attack the enemy during their attack or their recovery frames you do huge additional damage. Our skill is designed for hitting enemies during recovery animations!'
         }
       ]
     },
