@@ -49,6 +49,28 @@ export default [
       name: 'Death Knight\'s Longhaft Axe',
       imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
       characterImages: ['../assets/images/armoury/longhaft1.jpg', '../assets/images/armoury/longhaft2.jpg'],
-      descriptionParagraphs: ['big axe']
+      descriptionParagraphs: ['big axe'],
+      talismans: [
+        {
+          name: 'Lightning Scorpion Charm',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e2a905l0i2ssrfz1ym5wgjvc.png',
+          description: 'This build has a strong focus on lightning damage so this talisman is essential to maximise that.'
+        },
+        {
+          name: 'Godfrey Icon',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c0c973l0i2sw8w6uvbwqiqfmy.png',
+          description: 'Two of our most powerful spells on this build are Knight\'s Lightning Spear and Ancient Dragon\'s Lightning Strike. These are two spells you\'re always looking to charge if you can as they can deal overwhelming damage. This talisman only makes them stronger in this regard.'
+        },
+        {
+          name: 'Flock\'s Canvas Talisman',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f6976f6b0l0i2szav175mw9xww9x.png',
+          description: 'This helps you push the damage of those lightning spells even higher to keep up the pressure.'
+        },
+        {
+          name: 'Two-Headed Turtle Talisman',
+          imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
+          description: 'Faster stamina recovery is always welcome, especially when using a heavy greataxe and when our use of ranged spells might keep us from fully recovering in moments of respite.'
+        }
+      ]
     }
 ]
