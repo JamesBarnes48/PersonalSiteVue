@@ -49,7 +49,11 @@ export default [
       name: 'Death Knight\'s Longhaft Axe',
       imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
       characterImages: ['../assets/images/armoury/longhaft1.jpg', '../assets/images/armoury/longhaft2.jpg'],
-      descriptionParagraphs: ['big axe'],
+      descriptionFlavour: 'A long-hafted golden axe wielded by the Death Knight. Bears a representation of a decayed golden ring. Crackles with lightning, the power of the capital\'s ancient dragon cult',
+      descriptionParagraphs: [`We might not have gotten Godwyn in the DLC but we got his Death Knights: undead edgelords who use lightning lavishly. You pinch this greataxe when you defeat one of them
+        and rest assured it was worth seeking out. As if lightning builds needed to be any more powerful; this boasts a B scaling in strength and a D in faith but the split lightning damage will ensure 
+        your faith investment won\'t go amiss and begets a nice even stat split between strength and faith. 
+                              `],
       talismans: [
         {
           name: 'Lightning Scorpion Charm',
