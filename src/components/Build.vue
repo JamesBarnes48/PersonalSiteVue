@@ -1,11 +1,12 @@
 <script>
+import RankingBar from './RankingBar.vue';
 
 export default {
     name: 'Build',
     created() {
         this.characterImages = this.imagesToUrl(this.buildData.characterImages);
     },
-    components: {},
+    components: {RankingBar},
     props: {
         buildData: {type: Object, required: true}
     },
@@ -28,9 +29,14 @@ export default {
         <v-row>
             <v-col cols="6">
                 <img class="character-image" :src="this.characterImages[0]" alt="">
+                <RankingBar 
+                :rankingData="buildData.talismans"
+                name="Talismans"
+                />
             </v-col>
             <v-col cols="6">
                 <div class="desc-container">
+                    <p class="desc-flavour">{{ buildData.descriptionFlavour }}</p>
                     <p class="desc-paragraph" v-for="desc in buildData.descriptionParagraphs">{{ desc }}</p>
                 </div>
             </v-col>
@@ -56,13 +62,19 @@ export default {
 
 .desc-container {
     border: 1px solid var(--off-main-hex);
-    padding: 8px 10px;
+    padding: 14px 12px;
     background-color: var(--off-main-hex);
+    font-size: 15px;
 }
 
 .desc-paragraph {
-    font-size: 15px;
     margin: 10px 0;
+}
+
+.desc-flavour {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 </style>

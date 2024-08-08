@@ -3,7 +3,7 @@ export default [
       name: 'Bloody Helice',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Bloody%20Helice',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69987c03l0i1pdyutp139wmu1sh.png',
-      descriptionFlavour: 'Ominous piercing sword with a winding blade. Carried by the noble servants of the Lord of Blood.',
+      descriptionFlavour: '\"Ominous piercing sword with a winding blade. Carried by the noble servants of the Lord of Blood.\"',
       descriptionParagraphs: [`An elegant weapon for the more discerning blood-drunk sadist, this heavy thrusting sword is a contender for my favourite weapon in the game. 
         This weapon starts strong with a C scaling in dex and a B scaling in arcane, meaning you can pump arcane to not only boost base damage but also take full advantage of the 
         blood loss buildup afforded by the winding corkscrew blade.`,
@@ -15,7 +15,25 @@ export default [
         `This is so powerful just from how you have control over
         every part of the combo. If you think the enemy is going to follow up then after each manoeuver you can end the combo there. You can even unlock the camera
         before you do the iframe dodge to direct it in any direction if you want to be really techy. Overall this weapon can be manipulated to pull off some awesome techs and is extremely strong.`],
-      characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg']
+      characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg'],
+      talismans: [
+        {
+          name: 'Lord of Blood\'s Exultation',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png'
+        },
+        {
+          name: 'Rotten Winged Sword Insignia',
+          imgSrc: '../assets/images/armoury/wingedsword.webp'
+        },
+        {
+          name: 'Shard of Alexander',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png'
+        },
+        {
+          name: 'Spear Talisman',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e13918l0i2syr0vvb0gg1l8xg.png'
+        }
+      ]
     },
     {
       name: 'Death\'s Poker',
