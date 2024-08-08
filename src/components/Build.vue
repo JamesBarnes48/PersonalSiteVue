@@ -10,6 +10,11 @@ export default {
     props: {
         buildData: {type: Object, required: true}
     },
+    watch: { 
+        buildData: function(newBuild, oldBuild) { // watch it
+          this.characterImages = this.imagesToUrl(newBuild.characterImages);
+        }
+    },
     data() {
         return {
             characterImages: [],

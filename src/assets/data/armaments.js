@@ -48,6 +48,7 @@ export default [
     {
       name: 'Death Knight\'s Longhaft Axe',
       imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
+      characterImages: ['../assets/images/armoury/longhaft1.jpg', '../assets/images/armoury/longhaft2.jpg'],
       descriptionParagraphs: ['big axe']
     }
 ]
