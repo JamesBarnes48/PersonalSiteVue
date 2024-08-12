@@ -73,7 +73,7 @@ export default {
 <style scoped>
 .build-container {
   width: 95%;
-  height: 70%;
+  height: fit-content;
   position: relative;
   z-index: 2;
   margin: 25px auto;

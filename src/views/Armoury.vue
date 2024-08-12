@@ -91,7 +91,7 @@ export default {
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;
-  height: 1150px;
+  height: 1300px;
 }
 
 .openbuild-enter-active,
