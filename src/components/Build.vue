@@ -19,7 +19,9 @@ export default {
         return {
             characterImages: [],
             displayedTalisman: null,
-            showTalisman: false
+            displayedSpell: null,
+            showTalisman: false,
+            showSpell: false,
         };
     },
     methods: {
@@ -36,6 +38,16 @@ export default {
                 return;
             }
             this.displayedTalisman = talisman;       
+        },
+        
+        spellSelected(spell){
+            if(!this.displayedSpell){ this.showSpell = true; }
+            if(this.displayedSpell === spell){ 
+                this.showSpell = false;
+                this.displayedSpell = null;
+                return;
+            }
+            this.displayedSpell = spell;       
         }
     }
 }
@@ -51,12 +63,25 @@ export default {
                 title="Talismans"
                 @selected="talismanSelected"
                 />
-                <Transition name="opentalisman">
+                <Transition>
                     <div 
                     class="desc-container"
                     v-if="showTalisman"
                     >
                         <p class=desc-paragraph>{{ displayedTalisman.description }}</p>
+                    </div>
+                </Transition>
+                <RankingBar 
+                :rankingData="buildData.spells"
+                title="Spells"
+                @selected="spellSelected"
+                />
+                <Transition>
+                    <div 
+                    class="desc-container"
+                    v-if="showSpell"
+                    >
+                        <p class=desc-paragraph>{{ displayedSpell.description }}</p>
                     </div>
                 </Transition>
             </v-col>
@@ -103,13 +128,13 @@ export default {
     font-style: italic;
 }
 
-.opentalisman-enter-active,
-.opentalisman-leave-active {
+.v-enter-active,
+.v-leave-active {
     transition: opacity 0.3s ease-in;
 }
 
-.opentalisman-enter-from,
-.opentalisman-leave-to {
+.v-enter-from,
+.v-leave-to {
     opacity: 0;
 }
 

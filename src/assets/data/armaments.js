@@ -38,7 +38,29 @@ export default [
         {
           name: 'Spear Talisman',
           thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69e13918l0i2syr0vvb0gg1l8xg.png',
-          description: 'This gives extra damage on counterattacks, so when you attack the enemy during their attack or their recovery frames you do huge additional damage. Our skill is designed for hitting enemies during recovery animations!'
+          description: 'This gives extra damage on counterattacks, so when you attack the enemy during their attack or their recovery frames you do huge additional damage. Our skill excels at hitting enemies during recovery!'
+        }
+      ],
+      spells: [
+        {
+          name: 'Bloodboon',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f68fd9537l0hynv7q0d210i53bym9.png',
+          description: 'Complete the blood lord servant look! Fling burning blood to serve as a nice standard ranged option and leaves an area hazard to keep accumulating blood loss from a distance.'
+        },
+        {
+          name: 'Dragonmaw',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f68f9d130l0hynx3f1brjxtzdk9j.png',
+          description: 'This incantation offers one thing: it hurts. Quite a lot in fact. It just so happens that that\'s all I wanted.'
+        },
+        {
+          name: 'Dragonclaw',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f695ee05cl0hynwvuh9iqspb3fmk.png',
+          description: 'Similar to Dragonmaw but this time with more of a focus on slapping as many enemies at once as possible with a big angry hand.'
+        },
+        {
+          name: 'Dragonfire',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f6919abe5l0hynwx7opzx5u5zvs.png',
+          description: 'A nice bit of crowd control for wiping out big groups of enemies. You could swap this with any breath incantation but everybody knows fire breath is the OG.'
         }
       ]
     },
@@ -78,7 +100,7 @@ export default [
         {
           name: 'Godfrey Icon',
           thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c0c973l0i2sw8w6uvbwqiqfmy.png',
-          description: 'Two of our most powerful spells on this build are Knight\'s Lightning Spear and Ancient Dragon\'s Lightning Strike. These are two spells you\'re always looking to charge if you can as they can deal overwhelming damage. This talisman only makes them stronger in this regard.'
+          description: 'Two of our most busted spells are Knight\'s Lightning Spear and Ancient Dragon\'s Lightning Strike. These are two spells you\'re always looking to charge if you can as they can deal overwhelming damage. This talisman only makes them stronger in this regard.'
         },
         {
           name: 'Flock\'s Canvas Talisman',
@@ -88,7 +110,7 @@ export default [
         {
           name: 'Two-Headed Turtle Talisman',
           imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
-          description: 'Faster stamina recovery is always welcome, especially when using a heavy greataxe and when our use of ranged spells might keep us from fully recovering in moments of respite.'
+          description: 'Faster stamina recovery is always appreciated, especially when using a heavy greataxe and when our use of ranged spells might keep us from fully recovering in moments of respite.'
         }
       ]
     }
