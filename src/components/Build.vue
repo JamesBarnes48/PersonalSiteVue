@@ -72,6 +72,7 @@ export default {
                     </div>
                 </Transition>
                 <RankingBar 
+                v-if="buildData.spells"
                 :rankingData="buildData.spells"
                 title="Spells"
                 @selected="spellSelected"
