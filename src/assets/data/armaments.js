@@ -79,9 +79,8 @@ export default [
         and rest assured it was worth seeking out. As if lightning builds needed to be any more powerful; this boasts a B scaling in strength and a D in faith but the split lightning damage will ensure 
         your faith investment won\'t go amiss and begets a nice even stat split between strength and faith.`,
         `This faith is crucial as it introduces lightning incantations into this build which are some of the strongest in the game. The new Knight\'s Lightning Spear is our bread and butter spell with its ferocious damage,
-        sweet delayed attacks and dazzling finesse. You hurl a lightning spear, shortly followed by a torrent of mini-spears that materialise overhead whose delayed action makes this an incredible ranged option even against enemies who will
-        try to dodge the first spear. Our second main incantation is Ancient Dragon\'s Lightning Strike which is quite situational. It\'s slow to come out and has a tendency to miss small targets but against large enemies the damage is ludicrous.
-        Lightning sweeps the area around you and the larger an enemy is the more strikes they will be caught by, resulting in insane damage. I accidentally shredded half of Putrescent Knight\'s health by giving him a taste of this. Put on any other spells that suit you
+        sweet delayed attacks and dazzling finesse. Our second main incantation is Ancient Dragon\'s Lightning Strike which is quite situational. It\'s slow to come out and has a tendency to miss small targets but against large enemies the damage is ludicrous.
+        I accidentally shredded half of Putrescent Knight\'s health by giving him a taste of this. Put on any other spells that suit you
         like any Crucible ones (Horns is hard to say no to, flipping humanoids like a pancake) to give your build some real utility!`,
         `Of course we can\'t forget the star of the show which is the axe. The greataxe moveset is beautiful in it\'s simplicity: overhead smash. It also features probably the coolest skill of any weapon which is Blinkbolt.
         It\'s actually very similar to Bloody Helice in that the first press is a manoeuver with built-in iframes. Surge forwards, vanishing into a bolt of electricity to deliver you a few feet forward and poise you for an epic follow-up where you
@@ -111,6 +110,18 @@ export default [
           name: 'Two-Headed Turtle Talisman',
           imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
           description: 'Faster stamina recovery is always appreciated, especially when using a heavy greataxe and when our use of ranged spells might keep us from fully recovering in moments of respite.'
+        }
+      ],
+      spells: [
+        {
+          name: 'Knight\'s Lightning Spear',
+          imgSrc: '../assets/images/armoury/lightningspear.png',
+          description: 'Launch a spear of furious lightning shortly followed by a torrent of mini-spears that materialise overhead to smite anything stupid enough to still stand. For such a quick cast speed this spell does obscene damage and the delayed action makes it effective even against enemies that dodge the first spear. This has everything going for it. It is cracked.'
+        },
+        {
+          name: 'Ancient Dragon\'s Lightning Strike',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f696c7ce7l0hynrwmh6d0r0rwk2.png',
+          description: 'The ultimate \"blow everything up\" incantation; lightning sweeps the area around you to decimate your surroundings. It\'s quite sluggish to come out and tends to miss smaller enemies more often but use this on a chunky boss and watch them disintegrate into a fine powder as you wonder why anybody thought this game was difficult.'
         }
       ]
     }
