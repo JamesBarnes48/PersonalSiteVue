@@ -62,6 +62,16 @@ export default [
           thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f6919abe5l0hynwx7opzx5u5zvs.png',
           description: 'A nice bit of crowd control for wiping out big groups of enemies. You could swap this with any breath incantation but everybody knows fire breath is the OG.'
         }
+      ],
+      videos: [
+        {
+          id: "tDTAlxr4Kgo",
+          title: "Bloody Helice humbles Mohg"
+        },
+        {
+          id: '0k8NmfadLo8',
+          title: 'Death Knight meets death again at the hand of Bloody Helice'
+        }
       ]
     },
     {

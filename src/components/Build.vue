@@ -23,6 +23,7 @@ export default {
             displayedSpell: null,
             showTalisman: false,
             showSpell: false,
+            videoNumber: 0,
         };
     },
     methods: {
@@ -95,8 +96,8 @@ export default {
             </v-col>
         </v-row>
         <EmbeddedVideo
-            id="tDTAlxr4Kgo"
-            title="Bloody Helice humbles Mohg"
+            v-if="buildData.videos?.length"
+            :video="buildData.videos[this.videoNumber]"
             :thumbnail="this.characterImages[1]"
         />
     </div>

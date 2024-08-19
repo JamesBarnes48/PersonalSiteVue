@@ -9,13 +9,13 @@ export default {
     },
     components: {LiteYouTubeEmbed},
     props: {
-        id: {type: String, required: true},
-        title: {type: String, required: true},
+        video: {type: Object, required: true},
         thumbnail: {type: String, required: false}
     },
     data() {
         return {
-            
+            id: this.video.id,
+            title: this.video.title,
         };
     },
     methods: {
