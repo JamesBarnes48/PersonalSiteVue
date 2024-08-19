@@ -1,15 +1,13 @@
 <script>
 import RankingBar from './RankingBar.vue';
-//embedded youtube video player
-import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
-import 'vue-lite-youtube-embed/style.css'
+import EmbeddedVideo from './EmbeddedVideo.vue';
 
 export default {
     name: 'Build',
     created() {
         this.characterImages = this.imagesToUrl(this.buildData.characterImages);
     },
-    components: {RankingBar, LiteYouTubeEmbed},
+    components: {RankingBar, EmbeddedVideo},
     props: {
         buildData: {type: Object, required: true}
     },
@@ -96,7 +94,7 @@ export default {
                 </div>
             </v-col>
         </v-row>
-        <LiteYouTubeEmbed
+        <EmbeddedVideo
             id="tDTAlxr4Kgo"
             title="Bloody Helice humbles Mohg"
         />
