@@ -97,9 +97,25 @@ export default {
         </v-row>
         <EmbeddedVideo
             v-if="buildData.videos?.length"
-            :video="buildData.videos[this.videoNumber]"
-            :thumbnail="this.characterImages[1]"
+            :video="buildData.videos[videoNumber]"
+            :thumbnail="characterImages[videoNumber]"
         />
+        <div class="video-nav-container">
+            <v-btn 
+            class="video-nav-btn"
+            :disabled="videoNumber < 1"
+            @click="videoNumber--;"
+            >
+                Previous Video
+            </v-btn>
+            <v-btn 
+            class="video-nav-btn"
+            :disabled="videoNumber >= buildData.videos.length - 1"
+            @click="videoNumber++;"
+            >
+                Next Video
+            </v-btn>
+        </div>
     </div>
 </template>
 
@@ -134,6 +150,17 @@ export default {
     margin-bottom: 20px;
     font-weight: bold;
     font-style: italic;
+}
+
+.video-nav-container {
+    margin: 10px auto;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+}
+
+.video-nav-btn {
+    background-color: var(--main-hex);
 }
 
 .v-enter-active,

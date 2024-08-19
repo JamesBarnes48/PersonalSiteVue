@@ -5,12 +5,17 @@ import 'vue-lite-youtube-embed/style.css'
 export default {
     name: 'EmbeddedVideo',
     created() {
-
     },
     components: {LiteYouTubeEmbed},
     props: {
         video: {type: Object, required: true},
         thumbnail: {type: String, required: false}
+    },
+    watch: { 
+        video: function(newVid, oldVid) { // watch it
+          this.id = newVid.id;
+          this.title = newVid.title;
+        }
     },
     data() {
         return {
@@ -27,6 +32,7 @@ export default {
 <template>
     <div class="video-container">
         <LiteYouTubeEmbed
+            :key="this.id"
             :id="this.id"
             :title="this.title"
             :thumbnail="this.thumbnail"
