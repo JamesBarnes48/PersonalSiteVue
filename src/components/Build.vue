@@ -97,6 +97,7 @@ export default {
         <EmbeddedVideo
             id="tDTAlxr4Kgo"
             title="Bloody Helice humbles Mohg"
+            :thumbnail="this.characterImages[1]"
         />
     </div>
 </template>
