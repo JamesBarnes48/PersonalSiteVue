@@ -65,12 +65,12 @@ export default [
       ],
       videos: [
         {
-          id: "tDTAlxr4Kgo",
+          id: "-o3bSuOE3AE",
           title: "Bloody Helice humbles Mohg"
         },
         {
-          id: '0k8NmfadLo8',
-          title: 'Death Knight meets death again at the hand of Bloody Helice'
+          id: '7u8W6LBXGp8',
+          title: 'Death Knight is reacquainted with death by Bloody Helice'
         }
       ]
     },
@@ -136,8 +136,8 @@ export default [
       ],
       videos: [
         {
-          id: 'rd3IjQyi_h4',
-          name: 'Deathblight Dancing Beast gets beasted by Death Knight Axe'
+          id: 'XC72vSWy0Yw',
+          title: 'Deathblight Dancing Beast gets beasted by Death Knight Axe'
         }
       ]
     }
