@@ -133,6 +133,12 @@ export default [
           thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f696c7ce7l0hynrwmh6d0r0rwk2.png',
           description: 'The ultimate \"blow everything up\" incantation; lightning sweeps the area around you to decimate your surroundings. It\'s quite sluggish to come out and tends to miss smaller enemies more often but use this on a chunky boss and watch them disintegrate into a fine powder as you wonder why anybody thought this game was difficult.'
         }
+      ],
+      videos: [
+        {
+          id: 'rd3IjQyi_h4',
+          name: 'Deathblight Dancing Beast gets beasted by Death Knight Axe'
+        }
       ]
     }
 ]
