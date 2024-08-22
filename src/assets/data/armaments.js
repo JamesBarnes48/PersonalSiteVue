@@ -132,6 +132,16 @@ export default [
           name: 'Ancient Dragon\'s Lightning Strike',
           thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f696c7ce7l0hynrwmh6d0r0rwk2.png',
           description: 'The ultimate \"blow everything up\" incantation; lightning sweeps the area around you to decimate your surroundings. It\'s quite sluggish to come out and tends to miss smaller enemies more often but use this on a chunky boss and watch them disintegrate into a fine powder as you wonder why anybody thought this game was difficult.'
+        },
+        {
+          name: 'Fortissax\'s Lightning Spear',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f693ad486l0hynztvo8jus81t2uf.png',
+          description: 'While it\'s not one of your main spells, it\'s fun to dunk on groups of weaklings with as it is better at hitting smaller enemies than Ancient Dragon\'s Lightning Strike.'
+        },
+        {
+          name: 'Aspect of the Crucible: Horns',
+          thumbnail: 'https://eldenring.fanapis.com/images/incantations/17f695ad891l0hynrxcposdnx7gy9h.png',
+          description: 'There is nothing not to love about this one; charge forth and flip most enemies like pancakes. Simple as that.'
         }
       ],
       videos: [
