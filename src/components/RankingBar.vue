@@ -62,8 +62,8 @@ export default {
 }
 
 .item-container {
-    height: fit-content;
     padding: 10px 13px;
+    flex-grow: 1;
     background-color: var(--off-main-hex);
 }
 
