@@ -99,6 +99,28 @@ export default [
         do obscene amounts of damage so with frost vulnerability and you are going to be peggling everything. The best part? These skills ALSO build up frostbite. The R1 hazard builds up loads of it so you\'ll probably proc it twice against bosses.`,
         `In conclusion this build features lots of variety, with plenty of fun and unique tools to mix in to your gameplay and style on your opponents. You have a solid weapon with an absurdly good weapon skill alongside fun and powerful sorceries. Most importantly you are going to do big hurty. What more could you ask for?`
       ],
+      talismans: [
+        {
+          name: 'Shard of Alexander',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png',
+          description: 'No surprises here. This will turn Ghostflame Ignition from stupid to ridiculous.'
+        },
+        {
+          name: 'Graven-mass Talisman',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69ee87e3l0i2swe4iei5nanxbr.png',
+          description: 'A decent damage boost to our sorceries will make them even more capable.'
+        },
+        {
+          name: 'Blade of Mercy',
+          imgSrc: '../assets/images/armoury/bladeofmercy.webp',
+          description: 'The R2 attack on Ghostflame Ignition can stance break surprisingly often so this helps pump up our damage even more.'
+        },
+        {
+          name: 'Two-Headed Turtle Talisman',
+          imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
+          description: 'We essentially have a free slot here so we might as well get faster stamina recovery to maintain our aggression.'
+        }
+      ],
     },
     {
       name: 'Death Knight\'s Longhaft Axe',
