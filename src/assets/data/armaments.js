@@ -116,28 +116,32 @@ export default [
           description: 'The R2 attack on Ghostflame Ignition can stance break surprisingly often so this helps pump up our damage even more.'
         },
         {
-          name: 'Two-Headed Turtle Talisman',
-          imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
-          description: 'We essentially have a free slot here so we might as well get faster stamina recovery to maintain our aggression.'
-        }
+          name: 'Enraged Divine Beast',
+          imgSrc: '../assets/images/armoury/enragedbeast.webp',
+          description: 'This talisman specifically targets our Zamor Ice Storm which is one of my favourite implements in our arsenal. You could go for a more generic boost like Two-Headed Turtle talisman but where\'s the fun in that? Live a little. Storms!'
+        },
       ],
       spells: [
         {
           name: 'Rings of Spectral Light',
           imgSrc: '../assets/images/armoury/spectrallight.png',
-          description: 'Sorcerors have no shortage of magic balls to shoot. You could swap this for comet or the like for more damage faster at the cost of more FP but I like this one. It matches our theme, has a delayed action, offers frost buildup and most importantly looks cool!'
+          description: 'Sorcerors have no shortage of magic balls to shoot. You could swap this for comet or the like for more damage at the cost of more FP but I like this one. It matches our theme, has a delayed action, offers frost buildup and most importantly looks cool!'
         },
         {
           name: 'Adula\'s Moonblade',
           thumbnail: 'https://eldenring.fanapis.com/images/sorceries/17f69501669l0hykrly1hkzqhsjkgf.png',
-          description: 'This is a lovely little offering to mix up our close quarters game. Swing a giant spectral greatsword horizontally that shoots out a beam of light. It does everything: frost buildup, strikes in a wide arc to control crowds, does competitive damage up close and even if you whiff the beam will hurt. Can\'t go wrong!'
+          description: 'This just puts so much on the table it\'s hard to refuse. Swing a giant spectral greatsword horizontally that shoots out a beam of light. It does everything: frost buildup, strikes in a wide arc to control crowds, does competitive damage up close and even if you whiff the beam will hurt. Can\'t go wrong!'
         },
         {
           name: 'Zamor Ice Storm',
           thumbnail: 'https://eldenring.fanapis.com/images/sorceries/17f693b4e3cl0hyl4rjaph3b2vbtk5.png',
-          description: 'I like this. If you can get it off the area hazard it creates will decimate big guys as well as quite static opponents who like a big windup. If they hang around in this storm they WILL suffer frostbite and jiggle around a lot in the process as they take damage from the storm which is funny. Without the divine beast talisman the focus is the frost but with it the damage becomes brutal to match.'
+          description: 'I like this. If you can get it off then the area hazard it creates will decimate big guys as well as quite static opponents who like a big windup. If they hang around in this storm they will suffer frostbite quickly, not to mention them jiggling around as they take repeated damage which is very amusing. Without the divine beast talisman the focus is the frost but with it the damage becomes brutal to match.'
         },
-        
+        {
+          name: 'Meteorite of Astel',
+          thumbnail: 'https://eldenring.fanapis.com/images/sorceries/17f68fe64del0hyl068olsfxrrts7.png',
+          description: 'Is it very good? No not really. Is it disrespectful? You better believe it. We\'ll take the lot!'
+        },
       ],
     },
     {
