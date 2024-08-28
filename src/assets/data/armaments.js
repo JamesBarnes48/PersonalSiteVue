@@ -78,7 +78,26 @@ export default [
       name: 'Death\'s Poker',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Death%27s%20Poker',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d8a812l0i1p7s9xmq3zqql69.png',
-      descriptionParagraphs: ['great poker']
+      descriptionFlavour: '\"Barbed rod carried by Deathbirds.\"',
+      descriptionParagraphs: [`A laconic description for a weapon that appears rudimentary in nature. On the surface this weapon is a charred, jagged stick that seems more suited to fetching things from under the sofa
+        than taking on a demigod with. If you know anything about FromSoftware games though it\'s that the weapons that nobody in their right mind would use are always the most powerful; this is no exception!`,
+        `First of all, it\'s a greatsword which are some of the most robust weapons in the game. You cannot go wrong with a greatsword. They do good stance damage, swing fairly fast and have a strong and varied moveset.
+        Pretty much press any button and you will be pleased with what happens. Alongisde a strong B scaling in dex we will also make use of the humble D intelligence scaling. This is because the death\'s poker is best served with a side of MAGIC!`,
+        `Sorceries are better in Elden Ring than they ever have been before.  We don\'t just have \"shoot magic ball\" and \"shoot bigger magic ball\" to choose from now. Granted, I do love a magic ball every now and then but 
+        dig deeper and you\'ll find ones that are fun and afford lots of creative play.
+        We are embracing the edginess of the death\'s poker and turning death\'s chilling grasp on our foes, also known as Frostbite! Frostbite triggers burst damage and
+        reduces damage absorption by 20% to begin to really shatter their health. Rings of Spectral Light has all the best qualities of a ranged option and is great for kicking off fights. Once we close the distance we can use Adula\'s Moonblade to provide unmatched crowd control with great damage both up close and afar. 
+        Assert your dominance over the arena by dropping a Zamor Ice Storm which leaves a lingering hazard to essentially guarantee frost on anything caught in the middle.
+        If somebody has really got on your wick you can call in a meteor shower on them. That is just cruel. I love it! Every one of these sorceries are extremely potent and all have a role to play.
+        I love setting up cool plays and using your kit in interesting ways to dunk on your opponents and each of these excel at that.`,
+        `These sorceries also have one thing in common: frostbite buildup. Death\'s Poker has frostbite buildup too so pretty much all of your kit works to accumulate it so 
+        it won\'t take long for you to hear that satisfying cold snap. Now they are vulnerable and the real fun begins. Our ace in the hole is our skill: Ghostflame Ignition.
+        This skill is nuts. First you thrust out the sword to manifest a flaming ball before you that remains for a brief moment, dealing decent damage to anything touching it which is a decent noncommittal attack on its own. 
+        Should you decide to ruin your opponents day however, you can follow up with an R1 which casts the ghostflame out in a line in front of you. This covers decent distance and leaving a lingering hazard. The damage this can do is just absurd.
+        If your opponent remains in the hazard (enemy AI doesn\'t detect it) they will be absolutely shredded by this. If you follow up with an R2 you will ignite the ball in a massive explosion which does good stance damage and basically deletes everything in your postcode. Both of these 
+        do obscene amounts of damage so with frost vulnerability and you are going to be peggling everything. The best part? These skills ALSO build up frostbite. The R1 hazard builds up loads of it so you\'ll probably proc it twice against bosses.`,
+        `In conclusion this build features lots of variety, with plenty of fun and unique tools to mix in to your gameplay and style on your opponents. You have a solid weapon with an absurdly good weapon skill alongside fun and powerful sorceries. Most importantly you are going to do big hurty. What more could you ask for?`
+      ],
     },
     {
       name: 'Death Knight\'s Longhaft Axe',

@@ -110,7 +110,7 @@ export default {
             </v-btn>
             <v-btn 
             class="video-nav-btn"
-            :disabled="videoNumber >= buildData.videos.length - 1"
+            :disabled="videoNumber >= buildData.videos?.length - 1"
             @click="videoNumber++;"
             >
                 Next Video
