@@ -78,6 +78,7 @@ export default [
       name: 'Death\'s Poker',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Death%27s%20Poker',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d8a812l0i1p7s9xmq3zqql69.png',
+      characterImages: ['../assets/images/armoury/poker1.jpg', '../assets/images/armoury/poker2.jpg'],
       descriptionFlavour: '\"Barbed rod carried by Deathbirds.\"',
       descriptionParagraphs: [`A laconic description for a weapon that appears rudimentary in nature. On the surface this weapon is a charred, jagged stick that seems more suited to fetching things from under the sofa
         than taking on a demigod with. If you know anything about FromSoftware games though it\'s that the weapons that nobody in their right mind would use are always the most powerful; this is no exception!`,
