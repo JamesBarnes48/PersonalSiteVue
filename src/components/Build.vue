@@ -150,6 +150,13 @@ export default {
   border: 1px solid var(--off-main-hex);
 }
 
+@media(max-width: 600px){
+    .build-container{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+}
+
 .character-image {
     border: 1px solid black;
     width: 100%;

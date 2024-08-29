@@ -103,7 +103,8 @@ export default {
 
 @media(max-width: 600px){
     .elden-container{
-        padding-left: 20px;
+        padding-left: 0px;
+        padding-right: 0px
     }
 
     .armoury-title {

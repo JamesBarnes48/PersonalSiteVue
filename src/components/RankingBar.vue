@@ -20,7 +20,7 @@ export default {
 
 <template>
     <div class="ranking-bar-container">
-        <h3>{{this.title}}</h3>
+        <h3 class="bar-title">{{this.title}}</h3>
         <div class="bar-container">
             <div
             class="item-container"
@@ -49,6 +49,10 @@ export default {
 .ranking-bar-container {
     margin: auto;
     width: fit-content;
+}
+
+.bar-title {
+    font-size: 30px;
 }
 
 .bar-container{
@@ -94,13 +98,17 @@ export default {
     }
 }
 
-@media(max-width: 550px){
+@media(max-width: 600px){
     .item-image{
-        height: 55px;
+        height: 53px;
     }
 
     .item-container p {
         font-size: 11px;
+    }
+
+    .bar-title {
+        font-size: 23px;
     }
 }
 
