@@ -105,6 +105,10 @@ export default {
     .elden-container{
         padding-left: 20px;
     }
+
+    .armoury-title {
+      font-size: 35px;
+    }
 }
 
 .openbuild-enter-active,
