@@ -33,6 +33,7 @@ export default {
     },
     methods: {
         imagesToUrl(images){
+            return images;
             if(!images?.length) return ['temp'];
             return images.map((img) => {return new URL(img,import.meta.url).href});
         },

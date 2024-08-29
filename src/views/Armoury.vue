@@ -1,5 +1,5 @@
 <script>
-import erdtreeImage from '../assets/images/armoury/erdtree.webp';
+import erdtreeImage from '/armoury/erdtree.webp';
 import armaments from '../assets/data/armaments.js';
 
 import RankingBar from '../components/RankingBar.vue';

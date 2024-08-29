@@ -18,7 +18,7 @@ export default [
         `This is so powerful just from how you have control over
         every part of the combo. If you think the enemy is going to follow up then after each manoeuver you can end the combo there. You can even unlock the camera
         before you do the iframe dodge to direct it in any direction if you want to be really techy. Overall this weapon can be manipulated to pull off some awesome techs and is an extremely strong choice.`],
-      characterImages: ['../assets/images/armoury/helice1.jpg', '../assets/images/armoury/helice2.jpg', '../assets/images/armoury/helice3.jpg'],
+      characterImages: ['/armoury/helice1.jpg', '/armoury/helice2.jpg', '/armoury/helice3.jpg'],
       talismans: [
         {
           name: 'Lord of Blood\'s Exultation',
@@ -27,7 +27,7 @@ export default [
         },
         {
           name: 'Rotten Winged Sword Insignia',
-          imgSrc: '../assets/images/armoury/wingedsword.webp',
+          imgSrc: '/armoury/wingedsword.webp',
           description: 'Heavy thrusting swords afford for rapid attacks and Dynast\'s Finesse lets us keep up the pressure, ensuring this talisman keeps us buffed.'
         },
         {
@@ -82,7 +82,7 @@ export default [
       name: 'Death\'s Poker',
       apiRoute: 'https://eldenring.fanapis.com/api/weapons?name=Death%27s%20Poker',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d8a812l0i1p7s9xmq3zqql69.png',
-      characterImages: ['../assets/images/armoury/poker1.jpg', '../assets/images/armoury/poker2.jpg'],
+      characterImages: ['/armoury/poker1.jpg', '/armoury/poker2.jpg'],
       descriptionFlavour: '\"Barbed rod carried by Deathbirds.\"',
       descriptionParagraphs: [`A laconic description for a weapon that appears rudimentary in nature. On the surface this weapon is a charred, jagged stick that seems more suited to fetching things from under the sofa
         than taking on a demigod with. If you know anything about FromSoftware games though it\'s that the weapons that nobody in their right mind would use are always the most powerful; this is no exception!`,
@@ -116,19 +116,19 @@ export default [
         },
         {
           name: 'Blade of Mercy',
-          imgSrc: '../assets/images/armoury/bladeofmercy.webp',
+          imgSrc: '/armoury/bladeofmercy.webp',
           description: 'The R2 attack on Ghostflame Ignition can stance break surprisingly often so this helps pump up our damage even more.'
         },
         {
           name: 'Enraged Divine Beast',
-          imgSrc: '../assets/images/armoury/enragedbeast.webp',
+          imgSrc: '/armoury/enragedbeast.webp',
           description: 'This talisman specifically targets our Zamor Ice Storm which is one of my favourite implements in our arsenal. You could go for a more generic boost like Two-Headed Turtle talisman but where\'s the fun in that? Live a little. Storms!'
         },
       ],
       spells: [
         {
           name: 'Rings of Spectral Light',
-          imgSrc: '../assets/images/armoury/spectrallight.png',
+          imgSrc: '/armoury/spectrallight.png',
           description: 'Sorcerors have no shortage of magic balls to shoot. You could swap this for comet or the like for more damage at the cost of more FP but I like this one. It matches our theme, has a delayed action, offers frost buildup and most importantly looks cool!'
         },
         {
@@ -164,8 +164,8 @@ export default [
     },
     {
       name: 'Death Knight\'s Longhaft Axe',
-      imgSrc: '../assets/images/armoury/dklonghaftaxe.webp',
-      characterImages: ['../assets/images/armoury/longhaft1.jpg', '../assets/images/armoury/longhaft2.jpg'],
+      imgSrc: '/armoury/dklonghaftaxe.webp',
+      characterImages: ['/armoury/longhaft1.jpg', '/armoury/longhaft2.jpg'],
       descriptionFlavour: 'A long-hafted golden axe wielded by the Death Knight. Bears a representation of a decayed golden ring. Crackles with lightning, the power of the capital\'s ancient dragon cult',
       descriptionParagraphs: [`We might not have gotten Godwyn in the DLC but we got his Death Knights: undead edgelords who use lightning lavishly. You pinch this greataxe when you defeat one of them
         and rest assured it was worth seeking out. As if lightning builds needed to be any more powerful; this boasts a B scaling in strength and a D in faith but the split lightning damage will ensure 
@@ -200,14 +200,14 @@ export default [
         },
         {
           name: 'Two-Headed Turtle Talisman',
-          imgSrc: '../assets/images/armoury/twoheadedturtle.webp',
+          imgSrc: '/armoury/twoheadedturtle.webp',
           description: 'Faster stamina recovery is always appreciated, especially when using a heavy greataxe and when our use of ranged spells might keep us from fully recovering in moments of respite.'
         }
       ],
       spells: [
         {
           name: 'Knight\'s Lightning Spear',
-          imgSrc: '../assets/images/armoury/lightningspear.png',
+          imgSrc: '/armoury/lightningspear.png',
           description: 'Launch a spear of furious lightning shortly followed by a torrent of mini-spears that materialise overhead to smite anything stupid enough to still stand. For such a quick cast speed this spell does obscene damage and the delayed action makes it effective even against enemies that dodge the first spear. This has everything going for it. It is cracked.'
         },
         {
