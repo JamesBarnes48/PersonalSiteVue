@@ -57,7 +57,7 @@ export default {
 
 <template>
   <div class="armoury-container">
-    <h1 class="armoury-title">Armoury</h1>
+    <h1 class="armoury-title">Elden Ring Armoury</h1>
     <div class="elden-container">
       <img :src="erdtreeImage" class="erdtree-image">
       <RankingBar

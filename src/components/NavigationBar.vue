@@ -6,7 +6,7 @@ export default {
         items: [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
-            {name: 'Armoury', path: '/armoury', icon: 'mdi-fencing'},
+            {name: 'Armoury (Elden Ring)', path: '/armoury', icon: 'mdi-sword-cross'},
         ]
     }),
     computed: {
