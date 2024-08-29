@@ -15,6 +15,10 @@ export default {
         buildData: function(newBuild, oldBuild) { // watch it
           this.characterImages = this.imagesToUrl(newBuild.characterImages);
           this.videoNumber = 0;
+          this.displayedTalisman = null;
+          this.displayedSpell = null;
+          this.showTalisman = false;
+          this.showSpell = false;
         }
     },
     data() {
