@@ -33,6 +33,11 @@ export default {
             return images.map((img) => {return new URL(img,import.meta.url).href});
         },
 
+        getVideoThumbnail(){
+            const thumb = this.characterImages[this.videoNumber];
+            return !!thumb? thumb: this.characterImages[this.videoNumber - this.characterImages.length]
+        },
+
         talismanSelected(talisman){
             if(!this.displayedTalisman){ this.showTalisman = true; }
             if(this.displayedTalisman === talisman){ 
@@ -99,7 +104,7 @@ export default {
         <EmbeddedVideo
             v-if="buildData.videos?.length"
             :video="buildData.videos[videoNumber]"
-            :thumbnail="characterImages[videoNumber]"
+            :thumbnail="getVideoThumbnail()"
         />
         <div class="video-nav-container">
             <v-btn 
