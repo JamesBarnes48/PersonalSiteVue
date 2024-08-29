@@ -6,7 +6,8 @@ export default {
     },
     props: {
         rankingData: {type: Array, required: true},
-        title: {type: String, required: true}
+        title: {type: String},
+        hideTitle: {type: Boolean, default: false},
     },
     methods: {
         getImgUrl(item){
@@ -27,7 +28,7 @@ export default {
             @click="this.$emit('selected', item)"
             >
                 <img class="item-image" :src="getImgUrl(item)">
-                <p>{{ item.name }}</p>
+                <p v-if="!hideTitle">{{ item.name }}</p>
             </div>
         </div>
     </div>
@@ -95,11 +96,11 @@ export default {
 
 @media(max-width: 550px){
     .item-image{
-        height: 65px;
+        height: 55px;
     }
 
     .item-container p {
-        font-size: 12px;
+        font-size: 11px;
     }
 }
 

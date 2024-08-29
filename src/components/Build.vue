@@ -31,6 +31,11 @@ export default {
             videoNumber: 0,
         };
     },
+    computed: {
+        isMobile(){
+            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
+        }
+    },
     methods: {
         imagesToUrl(images){
             return images;
@@ -74,6 +79,7 @@ export default {
                 <RankingBar 
                 :rankingData="buildData.talismans"
                 title="Talismans"
+                :hideTitle="isMobile"
                 @selected="talismanSelected"
                 />
                 <Transition>
@@ -81,13 +87,15 @@ export default {
                     class="desc-container"
                     v-if="showTalisman"
                     >
-                        <p class=desc-paragraph>{{ displayedTalisman.description }}</p>
+                        <p class="desc-title" v-if="isMobile">{{ displayedTalisman.name }}</p>
+                        <p class="desc-paragraph">{{ displayedTalisman.description }}</p>
                     </div>
                 </Transition>
                 <RankingBar 
                 v-if="buildData.spells"
                 :rankingData="buildData.spells"
                 title="Spells"
+                :hideTitle="isMobile"
                 @selected="spellSelected"
                 />
                 <Transition>
@@ -95,6 +103,7 @@ export default {
                     class="desc-container"
                     v-if="showSpell"
                     >
+                        <p class="desc-title" v-if="isMobile">{{displayedSpell.name}}</p>
                         <p class=desc-paragraph>{{ displayedSpell.description }}</p>
                     </div>
                 </Transition>
@@ -151,6 +160,11 @@ export default {
     padding: 14px 12px;
     background-color: var(--off-main-hex);
     font-size: 15px;
+}
+
+.desc-title {
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .desc-paragraph {
