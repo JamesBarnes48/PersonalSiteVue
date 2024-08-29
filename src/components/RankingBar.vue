@@ -82,4 +82,25 @@ export default {
     object-fit: cover;
     height: 100px;
 }
+
+@media(max-width: 700px){
+    .item-image{
+        height: 75px;
+    }
+
+    .item-container p {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 550px){
+    .item-image{
+        height: 65px;
+    }
+
+    .item-container p {
+        font-size: 12px;
+    }
+}
+
 </style>

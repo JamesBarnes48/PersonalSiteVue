@@ -95,6 +95,18 @@ export default {
   min-height: 500px;
 }
 
+@media(max-width: 1280px){
+    .elden-container{
+        padding-left: 53px;
+    }
+}
+
+@media(max-width: 600px){
+    .elden-container{
+        padding-left: 20px;
+    }
+}
+
 .openbuild-enter-active,
 .openbuild-leave-active {
   transition: opacity 0.6s ease-in;
