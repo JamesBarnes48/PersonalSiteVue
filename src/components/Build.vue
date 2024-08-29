@@ -14,6 +14,7 @@ export default {
     watch: { 
         buildData: function(newBuild, oldBuild) { // watch it
           this.characterImages = this.imagesToUrl(newBuild.characterImages);
+          this.videoNumber = 0;
         }
     },
     data() {

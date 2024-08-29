@@ -71,6 +71,10 @@ export default [
         {
           id: '7u8W6LBXGp8',
           title: 'Death Knight is reacquainted with death by Bloody Helice'
+        },
+        {
+          id: 'qBqzVwEU3wk',
+          title: 'Munching on Gideon'
         }
       ]
     },
@@ -143,6 +147,20 @@ export default [
           description: 'Is it very good? No not really. Is it disrespectful? You better believe it. We\'ll take the lot!'
         },
       ],
+      videos: [
+        {
+          id: 'l78OOz0s6x8',
+          title: 'Godskin Apostle takes a ghostflame bath courtesy of Deaths Poker'
+        },
+        {
+          id: 'jQhBXzinjvE',
+          title: 'Putrid Avatar is purged in Deaths Poker\'s flame'
+        },
+        {
+          id: 'eteGS4n0FI8',
+          title: 'Godrick meets a sorceror and it doesn\'t go well'
+        }
+      ]
     },
     {
       name: 'Death Knight\'s Longhaft Axe',
