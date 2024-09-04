@@ -232,5 +232,35 @@ export default [
           title: 'Deathblight Dancing Beast gets beasted by Death Knight Axe'
         }
       ]
+    },
+    {
+      name: 'Eleonora\'s Poleblade',
+      thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d7ad55l0i1pqhdj20wzeg63ts.png',
+      characterImages: ['/armoury/longhaft1.jpg', '/armoury/longhaft2.jpg'],
+      descriptionFlavour: 'Twinned naginata forged in the Land of Reeds. Chosen weapon of Eleonora, Violet Bloody Finger.',
+      descriptionParagraphs: [`lar de dar`
+      ],
+      talismans: [
+        {
+          name: 'Lord of Blood\'s Exultation',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png',
+          description: 'Comes hand in hand with any build where blood loss is a factor. Our rapid flurries of attacks will proc bleed quickly and this talisman will strengthen us for it.'
+        },
+        {
+          name: 'Rotten Winged Sword Insignia',
+          imgSrc: '../assets/images/armoury/wingedsword.webp',
+          description: 'Twinblades hit multiple times for their entire moveset, even on light attacks. The boost from this will embolden our assault and keep us aggressive.'
+        },
+        {
+          name: 'Shard of Alexander',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png',
+          description: 'What, you\'re surprised?'
+        },
+        {
+          name: 'Two-Handed Sword Talisman',
+          imgSrc: '/armoury/twohandedtalisman.png',
+          description: 'Seems mad not to take advantage of a nice 15% boost to all of our attacks!'
+        }
+      ]
     }
 ]
