@@ -236,7 +236,7 @@ export default [
     {
       name: 'Eleonora\'s Poleblade',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d7ad55l0i1pqhdj20wzeg63ts.png',
-      characterImages: ['/armoury/longhaft1.jpg', '/armoury/longhaft2.jpg'],
+      characterImages: ['../assets/images/armoury/eleonora1.jpg', '../assets/images/armoury/eleonora2.jpg'],
       descriptionFlavour: 'Twinned naginata forged in the Land of Reeds. Chosen weapon of Eleonora, Violet Bloody Finger.',
       descriptionParagraphs: [`lar de dar`
       ],
@@ -261,6 +261,20 @@ export default [
           imgSrc: '/armoury/twohandedtalisman.png',
           description: 'Seems mad not to take advantage of a nice 15% boost to all of our attacks!'
         }
+      ],
+      videos: [
+        {
+          id: 'xPLD0gJLBGg',
+          title: 'Eleonora\'s Poleblade puts Malenia through a blender'
+        },
+        {
+          id: 'IiejCPfwV8k',
+          title: 'Commander Niall fumbles against Eleonora\'s Poleblade'
+        },
+        {
+          id: 'HHOnMoTg7BU',
+          title: 'Eleonora\'s Poleblade shreds a Tree Sentinel'
+        },
       ]
     }
 ]
