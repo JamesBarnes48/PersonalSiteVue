@@ -110,6 +110,10 @@ export default {
     .bar-title {
         font-size: 23px;
     }
+
+    .item-container {
+        padding: 3px 5px;
+    }
 }
 
 </style>

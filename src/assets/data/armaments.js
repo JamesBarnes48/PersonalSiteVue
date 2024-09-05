@@ -236,7 +236,7 @@ export default [
     {
       name: 'Eleonora\'s Poleblade',
       thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d7ad55l0i1pqhdj20wzeg63ts.png',
-      characterImages: ['../assets/images/armoury/eleonora1.jpg', '../assets/images/armoury/eleonora2.jpg'],
+      characterImages: ['/armoury/eleonora1.jpg', '/armoury/eleonora2.jpg'],
       descriptionFlavour: 'Twinned naginata forged in the Land of Reeds. Chosen weapon of Eleonora, Violet Bloody Finger.',
       descriptionParagraphs: [`It\'s fairly obvious to anybody with half a braincell that twinblades are awesome. Elegant and complex, Elden Ring has a few twinblade options for you to become Darth Maul and
         carve your enemies with deadly finesse. Out of all the options Eleonora\'s Poleblade stands out from the others. This strikingly crimson-red weapon is an even split between dex and arcane. Yep, thats right: it\'s a blood loss weapon again.
@@ -258,7 +258,7 @@ export default [
         },
         {
           name: 'Rotten Winged Sword Insignia',
-          imgSrc: '../assets/images/armoury/wingedsword.webp',
+          imgSrc: '/armoury/wingedsword.webp',
           description: 'Twinblades hit multiple times for their entire moveset, even on light attacks. The boost from this will embolden our assault and keep us aggressive.'
         },
         {
