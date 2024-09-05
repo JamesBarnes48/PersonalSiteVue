@@ -89,12 +89,6 @@ export default {
 }
 
 @media(max-width: 700px){
-    .bar-container{
-        padding: 3px 4px;
-        margin-left: 5px;
-        margin-right: 5px;
-    }
-    
     .item-image{
         height: 75px;
     }
@@ -109,6 +103,11 @@ export default {
 }
 
 @media(max-width: 600px){
+    .bar-container{
+        padding: 3px 4px;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
 
     .item-image{
         height: 51px;
