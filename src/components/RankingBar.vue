@@ -108,7 +108,7 @@ export default {
     }
 
     .item-image{
-        height: 53px;
+        height: 51px;
     }
 
     .item-container p {
