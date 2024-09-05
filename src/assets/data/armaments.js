@@ -232,5 +232,59 @@ export default [
           title: 'Deathblight Dancing Beast gets beasted by Death Knight Axe'
         }
       ]
+    },
+    {
+      name: 'Eleonora\'s Poleblade',
+      thumbnail: 'https://eldenring.fanapis.com/images/weapons/17f69d7ad55l0i1pqhdj20wzeg63ts.png',
+      characterImages: ['../assets/images/armoury/eleonora1.jpg', '../assets/images/armoury/eleonora2.jpg'],
+      descriptionFlavour: 'Twinned naginata forged in the Land of Reeds. Chosen weapon of Eleonora, Violet Bloody Finger.',
+      descriptionParagraphs: [`It\'s fairly obvious to anybody with half a braincell that twinblades are awesome. Elegant and complex, Elden Ring has a few twinblade options for you to become Darth Maul and
+        carve your enemies with deadly finesse. Out of all the options Eleonora\'s Poleblade stands out from the others. This strikingly crimson-red weapon is an even split between dex and arcane. Yep, thats right: it\'s a blood loss weapon again.
+        You already guessed I\'m a fan of these. Can you blame me? Just look at this monster. It\'s got strong light attacks and trades a good jump attack for a very capable running heavy attack which can pile on stance damage.
+        It has a unique heavy attack too which, while not being that great, is an acrobatic whirlwind of an attack that is pure ferocity.`,
+        `The fiercest feature of this weapon is it\'s skill, Bloodblade Dance. You leap forward and unleash a deadly dance, blade enwreathed in blood. You can then follow up with another input to perform a final flourish
+        and leap backwards again. This skill is excellent for clearing out groups of mobs as you will cleave your way through them as a big spinning ball of death. Enemies that can\'t poise through it will be repeatedly staggered and take huge damage.
+        It\'s an exceptionally fun skill to use in all scenarios and is a real all-or-nothing move. It does great blood loss buildup as well as stance damage too, so you will most likely get a burst of 
+        blood loss during it and it does break your enemies stance more than you\'d expect, resulting in a huge burst of damage.`,
+        `If you love to risk it all and play really aggressively then this is an incredible weapon for you. Keep up the pressure with your light attacks and running heavies and when you see the opportunity you can throw out a Bloodblade Dance.
+        Gambling on this skill is so much fun. So what if the enemy attacks you? You\'ve got hyperarmour for days during the skill. Dance and cavort and your recklessness might be rewarded with a bleed proc or a stance break. I love this weapon
+        because you can play it like a total lunatic and trade however you please while also looking so cool.`
+      ],
+      talismans: [
+        {
+          name: 'Lord of Blood\'s Exultation',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f69c66a45l0i2sswom5whqqzshn.png',
+          description: 'Comes hand in hand with any build where blood loss is a factor. Our rapid flurries of attacks will proc bleed quickly and this talisman will strengthen us for it.'
+        },
+        {
+          name: 'Rotten Winged Sword Insignia',
+          imgSrc: '../assets/images/armoury/wingedsword.webp',
+          description: 'Twinblades hit multiple times for their entire moveset, even on light attacks. The boost from this will embolden our assault and keep us aggressive.'
+        },
+        {
+          name: 'Shard of Alexander',
+          thumbnail: 'https://eldenring.fanapis.com/images/talismans/17f698e1ea9l0i2sy8csbpc3y128lo.png',
+          description: 'What, you\'re surprised?'
+        },
+        {
+          name: 'Two-Handed Sword Talisman',
+          imgSrc: '/armoury/twohandedtalisman.png',
+          description: 'Seems mad not to take advantage of a nice 15% boost to all of our attacks!'
+        }
+      ],
+      videos: [
+        {
+          id: 'xPLD0gJLBGg',
+          title: 'Eleonora\'s Poleblade puts Malenia through a blender'
+        },
+        {
+          id: 'IiejCPfwV8k',
+          title: 'Commander Niall fumbles against Eleonora\'s Poleblade'
+        },
+        {
+          id: 'HHOnMoTg7BU',
+          title: 'Eleonora\'s Poleblade shreds a Tree Sentinel'
+        },
+      ]
     }
 ]
