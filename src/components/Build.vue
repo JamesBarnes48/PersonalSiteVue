@@ -74,7 +74,7 @@ export default {
 <template>
     <div class="build-container">
         <v-row>
-            <v-col lg="6" md="12" sm="12">
+            <v-col lg="6" md="12" sm="12" xs="12">
                 <img class="character-image" :src="this.characterImages[0]" alt="">
                 <RankingBar 
                 :rankingData="buildData.talismans"
@@ -108,7 +108,7 @@ export default {
                     </div>
                 </Transition>
             </v-col>
-            <v-col lg="6" md="12" sm="12">
+            <v-col lg="6" md="12" sm="12" xs="12">
                 <div class="desc-container">
                     <p class="desc-flavour">{{ buildData.descriptionFlavour }}</p>
                     <p class="desc-paragraph" v-for="desc in buildData.descriptionParagraphs">{{ desc }}</p>

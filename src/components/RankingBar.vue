@@ -103,6 +103,10 @@ export default {
 }
 
 @media(max-width: 600px){
+    .bar-container{
+        padding: 3px 4px;
+    }
+
     .item-image{
         height: 53px;
     }
