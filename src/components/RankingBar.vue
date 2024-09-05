@@ -96,6 +96,10 @@ export default {
     .item-container p {
         font-size: 15px;
     }
+
+    .item-container {
+        padding: 3px 5px;
+    }
 }
 
 @media(max-width: 600px){
@@ -109,10 +113,6 @@ export default {
 
     .bar-title {
         font-size: 23px;
-    }
-
-    .item-container {
-        padding: 3px 5px;
     }
 }
 
