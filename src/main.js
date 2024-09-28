@@ -24,4 +24,5 @@ const app = createApp(App);
 app.use(router)
 app.use(vuetify)
 app.component("FontAwesomeIcon", FontAwesomeIcon)
+app
 app.mount('#app')
