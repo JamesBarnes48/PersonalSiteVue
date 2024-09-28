@@ -17,7 +17,9 @@ export default {
 
 <template>
   <div class="parent-container">
-    <h1 class="page-title">Travel Pinboard</h1>
+    <div class="title-container">
+      <h1 class="page-title">Travel Pinboard</h1>
+    </div>
     <WorldMap></WorldMap>
   </div>
 </template>
@@ -25,7 +27,13 @@ export default {
 <style scoped>
 
 .parent-container {
-  background-color: var(--off-background-hex);
+  background-color: var(--background-hex);
+}
+
+.title-container {
+  background-color: white;
+  padding-top: 10px;
+  border-bottom: solid 1px var(--main-hex);
 }
 
 .page-title {
