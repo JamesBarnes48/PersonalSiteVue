@@ -3,6 +3,7 @@ import Home from '../views/Home.vue'
 //import Showcase from '../views/Showcase.vue'
 import CardShowcase from '../views/CardShowcase.vue'
 import Armoury from '../views/Armoury.vue'
+import TravelPinboard from '../views/TravelPinboard.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
 
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/armoury',
       name: 'armoury',
       component: Armoury
+    },
+    {
+      path: '/travelpinboard',
+      name: 'travelpinboard',
+      component: TravelPinboard
     },
     {
       path: '/:catchAll(.*)*',

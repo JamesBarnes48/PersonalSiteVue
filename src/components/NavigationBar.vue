@@ -7,6 +7,7 @@ export default {
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
             {name: 'Armoury (Elden Ring)', path: '/armoury', icon: 'mdi-sword-cross'},
+            {name: 'Travel Pinboard', path: '/travelpinboard', icon: 'mdi-airplane-takeoff'},
         ]
     }),
     computed: {
