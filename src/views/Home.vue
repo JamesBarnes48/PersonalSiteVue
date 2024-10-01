@@ -240,7 +240,7 @@ export default {
   }
 
   .homepage-section{
-    margin: 5% 10% 0 10%;
+    margin: 5% 10%;
   }
 
   .profile-container{
