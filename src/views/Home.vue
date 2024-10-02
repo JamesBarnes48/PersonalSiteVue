@@ -113,7 +113,7 @@ export default {
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Merge requests successfully deployed:</h3>
-          <h2 class="stat-metric">224</h2>
+          <h2 class="stat-metric">246</h2>
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
@@ -121,11 +121,11 @@ export default {
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Major projects lead:</h3>
-          <h2 class="stat-metric">3</h2>
+          <h2 class="stat-metric">4</h2>
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Countries visited:</h3>
-          <h2 class="stat-metric">8</h2>
+          <h2 class="stat-metric">9</h2>
         </div>
       </div>
     </div>
@@ -211,34 +211,6 @@ export default {
     margin: 7px 0;
   }
 
-  @media (max-width: 1280px){
-    .title-container{
-      height: 200px;
-    }
-
-    #nameTitle {
-      font-size: 50px;
-      margin-left: 15px;
-    }
-
-    .title-subheading {
-      font-size: 24px;
-    }
-
-    #imageOfMe{
-      height: 200px;
-    }
-
-    .shimmer-icon{
-      bottom: 125px;
-      right: 95px;
-    }
-
-    .star-icon{
-      font-size: 20px;
-    }
-  }
-
   .homepage-section{
     margin: 5% 10%;
   }
@@ -313,6 +285,32 @@ export default {
 
     .stat-metric{
       font-size: 1.3rem;
+    }
+
+    .title-container{
+      height: 200px;
+    }
+
+    #nameTitle {
+      font-size: 50px;
+      margin-left: 15px;
+    }
+
+    .title-subheading {
+      font-size: 24px;
+    }
+
+    #imageOfMe{
+      height: 200px;
+    }
+
+    .shimmer-icon{
+      bottom: 125px;
+      right: 95px;
+    }
+
+    .star-icon{
+      font-size: 20px;
     }
   }
   </style>

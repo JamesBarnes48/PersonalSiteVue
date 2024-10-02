@@ -9,16 +9,6 @@ export default {
         listDescription: {type: String},
         listItems: {type: Array, default() {return []}}
     }
-
-    /*
-    listItems html - getting rid for now as looks ugly
-                <div v-if="listItems.length">
-                    <p>{{ listDescription }}</p>
-                    <ul class="list_items">
-                        <li v-for="item in listItems">{{ item }}</li>
-                    </ul>
-                </div>
-    */
 }
 </script>
 
@@ -51,10 +41,6 @@ export default {
 @media (max-width: 1280px) {
     .list_items {
         max-width: 65%;
-    }
-
-    .skillName {
-        font-size: 18px;
     }
 }
 </style>

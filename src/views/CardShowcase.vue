@@ -128,16 +128,11 @@ export default {
         }
   }),
   components: {CardShowcaseSection},
-  computed: {
-        isMobile(){
-            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
-        }
-    },
 }
 </script>
 
 <template>
-    <h1 class="showcase-title">Project Showcase</h1>
+    <h1 class="page-title">Project Showcase</h1>
 
     <section id="webdev">
         <CardShowcaseSection
@@ -168,55 +163,6 @@ export default {
 section {
     border-top: 1px solid var(--main-hex);
     border-bottom: 1px solid var(--main-hex);
-}
-
-/* Headings */
-
-.showcase-title {
-    margin-top: 10px;
-    font-size: 55px;
-}
-
-/* Navigation Bars */
-.appbar a{
-    font-family: 'Montserrat', serif;
-    color: var(--main-hex);
-    text-decoration: none;
-    font-size: 22px;
-}
-
-.appbar a:hover{
-    font-weight: bold;
-}
-
-.appbar .appbar-title{
-    font-size: 20px;
-}
-
-.appbar-inner-container {
-    width: 85%;
-    display: flex;
-    justify-content: space-evenly;
-    position: relative;
-}
-
-@media (max-width: 1280px){
-    .appbar a{
-        font-size: 16px;
-    }
-
-    .appbar-inner-container{
-        width: 80%;
-        left: 50px;
-    }
-
-    .appbar .appbar-title{
-        font-size: 16px;
-    }
-
-    .showcase-title{
-        font-size: 40px;
-    }
 }
 
 </style>

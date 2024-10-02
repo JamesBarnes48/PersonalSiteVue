@@ -57,7 +57,7 @@ export default {
 
 <template>
   <div class="armoury-container">
-    <h1 class="armoury-title">Elden Ring Armoury</h1>
+    <h1 class="page-title">Elden Ring Armoury</h1>
     <div class="elden-container">
       <img :src="erdtreeImage" class="erdtree-image">
       <RankingBar
@@ -81,10 +81,8 @@ export default {
   background-color: var(--off-background-hex);
 }
 
-.armoury-title {
-  margin-top: 10px; 
-  font-size: 55px;
-  color: var(--off-main-hex)
+.armoury-container h1 {
+  color: var(--off-main-hex);
 }
 
 .elden-container {
@@ -96,20 +94,20 @@ export default {
 }
 
 @media(max-width: 1280px){
-    .elden-container{
-        padding-left: 53px;
-    }
+  .elden-container{
+    padding-left: 53px;
+  }
+
+  .erdtree-image {
+    width: 43%;
+  }
 }
 
 @media(max-width: 600px){
-    .elden-container{
-        padding-left: 0px;
-        padding-right: 0px
-    }
-
-    .armoury-title {
-      font-size: 35px;
-    }
+  .elden-container{
+      padding-left: 0px;
+      padding-right: 0px
+  }
 }
 
 .openbuild-enter-active,
@@ -135,12 +133,6 @@ export default {
   filter: alpha(opacity=50);  
   -moz-opacity: 0.5;  
   -khtml-opacity: 0.5; 
-}
-
-@media(max-width: 1280px){
-  .erdtree-image {
-    width: 43%;
-  }
 }
 
 </style>

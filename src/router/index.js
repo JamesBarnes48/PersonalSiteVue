@@ -1,6 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-//import Showcase from '../views/Showcase.vue'
 import CardShowcase from '../views/CardShowcase.vue'
 import Armoury from '../views/Armoury.vue'
 import PageNotFound from '../views/PageNotFound.vue'
