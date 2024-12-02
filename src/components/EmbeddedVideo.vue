@@ -44,8 +44,6 @@ export default {
 
 .video-container {
     margin: 20px auto;
-    padding: 10px;
-    background-color: var(--off-main-hex);
     width: 90%;
 }
 
