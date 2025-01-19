@@ -87,7 +87,7 @@ export default [
       descriptionParagraphs: [`A laconic description for a weapon that appears rudimentary in nature. On the surface this weapon is a charred, jagged stick that seems more suited to fetching things from under the sofa
         than taking on a demigod with. If you know anything about FromSoftware games though it\'s that the weapons that nobody in their right mind would use are always the most powerful; this is no exception!`,
         `First of all, it\'s a greatsword which are some of the most robust weapons in the game. You cannot go wrong with a greatsword. They do good stance damage, swing fairly fast and have a strong and varied moveset.
-        Pretty much press any button and you will be pleased with what happens. Alongisde a strong B scaling in dex we will also make use of the humble D intelligence scaling. This is because the death\'s poker is best served with a side of MAGIC!`,
+        Pretty much press any button and you will be pleased with what happens. Alongside a strong B scaling in dex we will also make use of the humble D intelligence scaling. This is because the death\'s poker is best served with a side of MAGIC!`,
         `Sorceries are better in Elden Ring than they ever have been before.  We don\'t just have \"shoot magic ball\" and \"shoot bigger magic ball\" to choose from now. Granted, I do love a magic ball every now and then but 
         dig deeper and you\'ll find ones that are fun and afford lots of creative play.
         We are embracing the edginess of the death\'s poker and turning death\'s chilling grasp on our foes, also known as Frostbite! Frostbite triggers burst damage and

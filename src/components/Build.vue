@@ -167,6 +167,31 @@ export default {
     padding: 14px 12px;
     background-color: var(--off-main-hex);
     font-size: 15px;
+    max-height: 950px;
+    overflow-y: auto;
+
+    /*firefox only*/
+    scrollbar-width: thin; 
+    scrollbar-color: var(--main-hex) #000; 
+}
+
+/* Webkit browser scrollbar customizations (Chrome, Safari, Edge) */
+.desc-container::-webkit-scrollbar {
+    width: 8px; /* Vertical scrollbar width */
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.desc-container::-webkit-scrollbar-track {
+    background: #000; /* Black background for the track */
+}
+
+.desc-container::-webkit-scrollbar-thumb {
+    background: #888; /* Grey color for the thumb */
+    border-radius: 10px; /* Optional: Rounded corners for the thumb */
+}
+
+.desc-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker grey for thumb when hovered */
 }
 
 .desc-title {
