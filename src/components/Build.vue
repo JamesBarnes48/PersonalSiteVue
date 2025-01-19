@@ -1,7 +1,10 @@
 <script>
 import RankingBar from './RankingBar.vue';
 import EmbeddedVideo from './EmbeddedVideo.vue';
+import {ref, computed, watch, onMounted} from 'vue';
+import {useDisplay} from 'vuetify';
 
+//this uses Vue3 syntax - need to use this in future
 export default {
     name: 'Build',
     created() {
@@ -11,63 +14,84 @@ export default {
     props: {
         buildData: {type: Object, required: true}
     },
-    watch: { 
-        buildData: function(newBuild, oldBuild) { // watch it
-          this.characterImages = this.imagesToUrl(newBuild.characterImages);
-          this.videoNumber = 0;
-          this.displayedTalisman = null;
-          this.displayedSpell = null;
-          this.showTalisman = false;
-          this.showSpell = false;
-        }
-    },
-    data() {
-        return {
-            characterImages: [],
-            displayedTalisman: null,
-            displayedSpell: null,
-            showTalisman: false,
-            showSpell: false,
-            videoNumber: 0,
-        };
-    },
-    computed: {
-        isMobile(){
-            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
-        }
-    },
-    methods: {
-        imagesToUrl(images){
-            return images;
-            if(!images?.length) return ['temp'];
-            return images.map((img) => {return new URL(img,import.meta.url).href});
-        },
+    setup(props) {
+    // Reactive state
+    const characterImages = ref([]);
+    const displayedTalisman = ref(null);
+    const displayedSpell = ref(null);
+    const showTalisman = ref(false);
+    const showSpell = ref(false);
+    const videoNumber = ref(0);
 
-        getVideoThumbnail(){
-            const thumb = this.characterImages[this.videoNumber];
-            return !!thumb? thumb: this.characterImages[this.videoNumber - this.characterImages.length]
-        },
+    // Computed property for isMobile
+    const isMobile = computed(() => {
+        const display = useDisplay();
+        ['xs', 'sm'].includes(display.name);
+    });
 
-        talismanSelected(talisman){
-            if(!this.displayedTalisman){ this.showTalisman = true; }
-            if(this.displayedTalisman === talisman){ 
-                this.showTalisman = false;
-                this.displayedTalisman = null;
-                return;
-            }
-            this.displayedTalisman = talisman;       
-        },
-        
-        spellSelected(spell){
-            if(!this.displayedSpell){ this.showSpell = true; }
-            if(this.displayedSpell === spell){ 
-                this.showSpell = false;
-                this.displayedSpell = null;
-                return;
-            }
-            this.displayedSpell = spell;       
-        }
+    watch(
+      () => props.buildData, //watch() requires a function as its first arg - returning the val you want to watch
+      (newBuild) => {
+        characterImages.value = imagesToUrl(newBuild.characterImages);
+        videoNumber.value = 0;
+        displayedTalisman.value = null;
+        displayedSpell.value = null;
+        showTalisman.value = false;
+        showSpell.value = false;
+      }
+    );
+
+    // Created lifecycle hook equivalent (onMounted for Vue 3)
+    onMounted(() => {
+      characterImages.value = imagesToUrl(props.buildData.characterImages);
+    });
+
+    // Method equivalents
+    function imagesToUrl(images) {
+      if (!images?.length) return ['temp'];
+      return images.map((img) => new URL(img, import.meta.url).href);
     }
+
+    function getVideoThumbnail() {
+      const thumb = characterImages.value[videoNumber.value];
+      return thumb ? thumb : characterImages.value[videoNumber.value - characterImages.value.length];
+    }
+
+    function talismanSelected(talisman) {
+      if (!displayedTalisman.value) { showTalisman.value = true; }
+      if (displayedTalisman.value === talisman) {
+        showTalisman.value = false;
+        displayedTalisman.value = null;
+        return;
+      }
+      displayedTalisman.value = talisman;
+    }
+
+    function spellSelected(spell) {
+      if (!displayedSpell.value) { showSpell.value = true; }
+      if (displayedSpell.value === spell) {
+        showSpell.value = false;
+        displayedSpell.value = null;
+        return;
+      }
+      displayedSpell.value = spell;
+    }
+
+    // Return all reactive state and methods
+    return {
+      characterImages,
+      displayedTalisman,
+      displayedSpell,
+      showTalisman,
+      showSpell,
+      videoNumber,
+      isMobile,
+      imagesToUrl,
+      getVideoThumbnail,
+      talismanSelected,
+      spellSelected
+    };
+  }
 }
 </script>
 
