@@ -175,6 +175,10 @@ export default {
     scrollbar-color: var(--main-hex) #000; 
 }
 
+@media(max-width: 1280px){
+    .desc-container {max-height: 420px;}
+}
+
 /* Webkit browser scrollbar customizations (Chrome, Safari, Edge) */
 .desc-container::-webkit-scrollbar {
     width: 8px; /* Vertical scrollbar width */
