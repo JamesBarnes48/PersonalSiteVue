@@ -1,30 +1,35 @@
 <script>
 import LiteYouTubeEmbed from 'vue-lite-youtube-embed'
 import 'vue-lite-youtube-embed/style.css'
+import {ref, watch} from 'vue';
 
 export default {
     name: 'EmbeddedVideo',
-    created() {
-    },
     components: {LiteYouTubeEmbed},
     props: {
         video: {type: Object, required: true},
         thumbnail: {type: String, required: false}
     },
-    watch: { 
-        video: function(newVid, oldVid) { // watch it
-          this.id = newVid.id;
-          this.title = newVid.title;
-        }
-    },
-    data() {
-        return {
-            id: this.video.id,
-            title: this.video.title,
-        };
-    },
-    methods: {
+    setup(props){
+        let id = ref(props.video.id),
+        title = ref(props.video.title),
+        thumbnail = ref(props.thumbnail);
 
+        watch(() => props.video,
+            (newVid) => {
+                id.value = newVid.id;
+                title.value = newVid.title;
+                thumbnail.value = props.thumbnail;
+            },
+            {immediate: true}
+        );
+
+
+        return {
+            id,
+            title,
+            thumbnail
+        };
     }
 }
 </script>
