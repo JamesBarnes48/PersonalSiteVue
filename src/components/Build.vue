@@ -26,7 +26,7 @@ export default {
     // Computed property for isMobile
     const isMobile = computed(() => {
         const display = useDisplay();
-        ['xs', 'sm'].includes(display.name);
+        return ['xs', 'sm'].includes(display.name);
     });
 
     watch(

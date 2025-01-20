@@ -1,23 +1,35 @@
 <script>
+import { ref, computed } from 'vue';
+import {useDisplay} from 'vuetify';
+
 export default {
     name: 'NavigationBar',
-    data: () => ({
-        drawer: true,
-        items: [
+    setup(props){
+        //constants
+        const items = [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
             {name: 'Armoury (Elden Ring)', path: '/armoury', icon: 'mdi-sword-cross'},
-        ]
-    }),
-    computed: {
-        isMobile(){
-            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
-        }
-    },
-    methods: {
-        updateDrawer() {
-            this.drawer = !this.drawer
-        }
+        ];
+
+        //reactive state
+        let drawer = ref(true);
+
+        //computed methods
+        const isMobile = computed(() => {
+            const display = useDisplay();
+            return ['xs', 'sm'].includes(display.name);
+        });
+
+        //methods
+        const updateDrawer = () => {drawer.value = !this.drawer}
+
+        return {
+            items,
+            drawer,
+            isMobile,
+            updateDrawer
+        };
     }
 }
 </script>
