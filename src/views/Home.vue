@@ -1,11 +1,13 @@
 <script>
 import SkillsPanelList from '../components/SkillsPanelList.vue';
+import {computed} from 'vue';
+import { useDisplay } from 'vuetify';
 
 export default {
   name: 'Home',
   components: {SkillsPanelList},
-  data: () => ({
-    skills: [
+  setup(props){
+    const skills = [
     {
       skillName: 'Core Web Development',
       skillStyle: 'webdev',
@@ -45,14 +47,19 @@ export default {
                   which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
       listDescription: 'Some C++ projects I have worked on include:',
       listItems: ['Offline movie database', '2D arcade game']
-    }]
-  }),
-  computed: {
-        isMobile(){
-            return ['xs', 'sm'].includes(this.$vuetify.display.name)? true: false;
-        }
-    },
+    }];
+
+    const isMobile = computed(() => {
+        const display = useDisplay();
+        return ['xs', 'sm'].includes(display.name);
+    });
+
+    return {
+      skills,
+      isMobile
+    };
   }
+}
 </script>
 
 <template>
