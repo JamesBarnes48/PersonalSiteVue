@@ -94,7 +94,7 @@ export default {
     <div class="build-container">
         <v-row>
             <v-col lg="6" md="12" sm="12" xs="12">
-                <img class="character-image" :src="this.characterImages[0]" alt="">
+                <img class="character-image" :src="characterImages[0]" alt="">
                 <RankingBar 
                 :rankingData="buildData.talismans"
                 title="Talismans"
