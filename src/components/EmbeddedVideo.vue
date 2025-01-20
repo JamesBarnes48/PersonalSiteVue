@@ -37,10 +37,10 @@ export default {
 <template>
     <div class="video-container">
         <LiteYouTubeEmbed
-            :key="this.id"
-            :id="this.id"
-            :title="this.title"
-            :thumbnail="this.thumbnail"
+            :key="id"
+            :id="id"
+            :title="title"
+            :thumbnail="thumbnail"
         />
     </div>
 </template>
