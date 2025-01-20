@@ -18,7 +18,7 @@ export default {
 
 <template>
     <div class="ranking-bar-container">
-        <h3 class="bar-title">{{this.title}}</h3>
+        <h3 class="bar-title">{{title}}</h3>
         <div class="bar-container">
             <div
             class="item-container"

@@ -22,7 +22,7 @@ export default {
         });
 
         //methods
-        const updateDrawer = () => {drawer.value = !this.drawer}
+        const updateDrawer = () => {drawer.value = !drawer}
 
         return {
             items,
