@@ -1,19 +1,17 @@
 <script>
 export default {
     name: 'RankingBar',
-    created() {
-        
-    },
     props: {
         rankingData: {type: Array, required: true},
         title: {type: String},
         hideTitle: {type: Boolean, default: false},
     },
-    methods: {
-        getImgUrl(item){
-            if(item.thumbnail) return item?.thumbnail;
-            return item.imgSrc;
-        }
+    setup(props){
+        const getImgUrl = (item) => item.thumbnail ? item.thumbnail : item.imgSrc;
+
+        return {
+            getImgUrl
+        };
     }
 }
 </script>
