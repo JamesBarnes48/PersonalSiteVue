@@ -1,22 +1,29 @@
 <script>
 import ShowcaseProjectDialog from '../components/ShowcaseProjectDialog.vue';
+import {ref} from 'vue';
 
 export default {
     name: 'CardShowcaseSection',
-    data: () => ({
-        models: {}
-    }),
+    components: {ShowcaseProjectDialog},
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
         inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}}
     },
-    methods: {
-        closeDialog(index){
-            this.models[index] = false;
-        }
-    },
-    components: {ShowcaseProjectDialog}
+    setup(props){
+        const [sectionTitle, inverted, projectsInfo] = [props.sectionTitle, props.inverted, props.projectsInfo];
+
+        let models = ref({});
+        const closeDialog = (index) => {models.value[index] = false}
+
+        return {
+            sectionTitle,
+            inverted,
+            projectsInfo,
+            models,
+            closeDialog
+        };
+    }
 }
 </script>
 
