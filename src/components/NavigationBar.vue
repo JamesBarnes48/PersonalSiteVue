@@ -5,20 +5,20 @@ import {useDisplay} from 'vuetify';
 export default {
     name: 'NavigationBar',
     setup(props){
-        //constants
+        //static
         const items = [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
             {name: 'Armoury (Elden Ring)', path: '/armoury', icon: 'mdi-sword-cross'},
         ];
+        const display = useDisplay();
 
         //reactive state
         let drawer = ref(true);
 
         //computed methods
         const isMobile = computed(() => {
-            const display = useDisplay();
-            return ['xs', 'sm'].includes(display.name);
+            return ['xs', 'sm'].includes(display.name.value);
         });
 
         //methods
@@ -27,6 +27,7 @@ export default {
         return {
             items,
             drawer,
+            display,
             isMobile,
             updateDrawer
         };

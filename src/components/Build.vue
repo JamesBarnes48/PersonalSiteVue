@@ -20,10 +20,12 @@ export default {
     const showSpell = ref(false);
     const videoNumber = ref(0);
 
+    //static
+    const display = useDisplay();
+
     // Computed property for isMobile
     const isMobile = computed(() => {
-        const display = useDisplay();
-        return ['xs', 'sm'].includes(display.name);
+        return ['xs', 'sm'].includes(display.name.value);
     });
 
     watch(
@@ -77,6 +79,7 @@ export default {
       showTalisman,
       showSpell,
       videoNumber,
+      display,
       isMobile,
       imagesToUrl,
       getVideoThumbnail,

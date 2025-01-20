@@ -56,15 +56,17 @@ export default {
       'Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.'
     ];
 
+    const display = useDisplay();
+
     //computed methods
     const isMobile = computed(() => {
-        const display = useDisplay();
-        return ['xs', 'sm'].includes(display.name);
+        return ['xs', 'sm'].includes(display.name.value);
     });
 
     return {
       skills,
       aboutMe,
+      display,
       isMobile
     };
   }
