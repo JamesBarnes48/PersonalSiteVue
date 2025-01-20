@@ -7,6 +7,7 @@ export default {
   name: 'Home',
   components: {SkillsPanelList},
   setup(props){
+    //static data
     const skills = [
     {
       skillName: 'Core Web Development',
@@ -49,6 +50,13 @@ export default {
       listItems: ['Offline movie database', '2D arcade game']
     }];
 
+    const aboutMe = [
+      'A fellow with an affinity for all things digital.',
+      'From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a white Japanese box (aka PS5) under my TV yet persists.',
+      'Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.'
+    ];
+
+    //computed methods
     const isMobile = computed(() => {
         const display = useDisplay();
         return ['xs', 'sm'].includes(display.name);
@@ -56,6 +64,7 @@ export default {
 
     return {
       skills,
+      aboutMe,
       isMobile
     };
   }
@@ -80,16 +89,16 @@ export default {
       </div>
       <h2 class="section-heading">Hello!</h2>
       <div v-if="isMobile" class="text-container">
-        <p>A fellow with an affinity for all things digital.</p>
+        <p>{{ aboutMe[0] }}</p>
         <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-        <p>From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a Japanese white box under my TV yet persists.</p>
+        <p>{{ aboutMe[1] }}</p>
         <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-        <p>Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.</p>
+        <p>{{ aboutMe[2] }}</p>
       </div>
       <div v-else class="text-container">
-        <p><v-icon class="star-icon" icon="mdi-star-circle"></v-icon>A chap with an affinity for all things digital.<v-icon class="star-icon" icon="mdi-star-circle"></v-icon></p>
-        <p>From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a Japanese white box under my TV yet persists.</p>
-        <p>Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.</p>
+        <p><v-icon class="star-icon" icon="mdi-star-circle"></v-icon>{{ aboutMe[0] }}<v-icon class="star-icon" icon="mdi-star-circle"></v-icon></p>
+        <p>{{ aboutMe[1] }}</p>
+        <p>{{ aboutMe[2] }}</p>
       </div>
 
       <div class="home-text-section">
@@ -112,7 +121,7 @@ export default {
 
     <div class="homepage-section">
       <h2 class="subheading">My Stats</h2>
-      <p>circa May 2024</p>
+      <p>circa Jan 2025</p>
       <div class="stats-grid">
         <div class="stats-child">
           <h3 class="stat-name">Years as professional dev:</h3>
@@ -120,11 +129,11 @@ export default {
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Merge requests successfully deployed:</h3>
-          <h2 class="stat-metric">246</h2>
+          <h2 class="stat-metric">296</h2>
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
-          <h2 class="stat-metric">390</h2>
+          <h2 class="stat-metric">394</h2>
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Major projects lead:</h3>
@@ -132,7 +141,7 @@ export default {
         </div>
         <div class="stats-child">
           <h3 class="stat-name">Countries visited:</h3>
-          <h2 class="stat-metric">9</h2>
+          <h2 class="stat-metric">10</h2>
         </div>
       </div>
     </div>
