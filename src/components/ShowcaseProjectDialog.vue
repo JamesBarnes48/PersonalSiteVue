@@ -31,10 +31,9 @@ export default {
             <div v-if="repoLink">
                 <v-btn 
                 class="view-btn"
-                block
                 hover
                 size="large"
-                color="grey-lighten-3"
+                color="orange-lighten-1"
                 :href="repoLink"
                 border="sm"
                 >View Project</v-btn>
