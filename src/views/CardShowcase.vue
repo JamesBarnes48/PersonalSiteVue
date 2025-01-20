@@ -1,11 +1,13 @@
 <script>
 import CardShowcaseSection from '../components/CardShowcaseSection.vue';
-import * as showcaseImages from '../utilities/showcase-images.js'
+import * as showcase from '../utilities/showcase-images.js'
 
 export default {
-  data:() => ({
-        showcaseImages: showcaseImages,
-        projects: {
+    name: 'CardShowcase',
+    components: {CardShowcaseSection},
+    setup(props){
+        const showcaseImages = showcase;
+        const projects = {
             webdev: [
                 {
                     title: 'Virtual Garage Application',
@@ -125,9 +127,13 @@ export default {
                     projectImages: [showcaseImages.omdb1, showcaseImages.omdb2],
                 }
             ]
-        }
-  }),
-  components: {CardShowcaseSection},
+        };
+
+        return {
+            showcaseImages,
+            projects
+        };
+    }
 }
 </script>
 
