@@ -1,57 +1,47 @@
 <script>
 import erdtreeImage from '/armoury/erdtree.webp';
-import armaments from '../assets/data/armaments.js';
+import armamentsData from '../assets/data/armaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
 
+import {ref} from 'vue';
+
 export default {
   name: 'Armoury',
-  async created() {
-    /* no api query required yet
-    for(let i = 0; i < this.armaments.length; i++){
-      this.armaments[i].apiData = this.armaments[i].apiRoute? (await this.queryApi(this.armaments[i].apiRoute))[0]: [];
-    }
-      */
-  },
-  data() {
-    return {
-      erdtreeImage: erdtreeImage,
-      armaments: armaments,
-      showBuild: false,
-      displayedBuild: null,
-      builds: [
-        {'Lightning Knight': {
-          'main': 'Death Knight\'s Longhaft Axe',
-          'offhand': 'Clawmark Seal',
-          'spells': ['Knight\'s Lightning Spear', 'Ancient Dragon\'s Lightning Strike', 'Fortissax\'s Lightning Spear', 'Wrath of Gold', 'Aspects of the Crucible: Horns', 'Divine Beast Tornado', 'Golden Vow', 'Flame, Grant Me Strength', 'Blessing of the Erdtree'],
-          'helmet': 'Oathseeker Knight Helm',
-          'chest': 'Gelmir Knight Armour',
-          'legs': 'Death Knight Greaves',
-          'arms': 'Death Knight Gauntlets',
-          'talismans': ['Two-Headed Turtle Talisman', 'Godfrey Icon', 'Lightning Scorpion Charm', 'Flock\'s Canvas Talisman']
-        }}
-      ]
-    }
-  },
   components: {RankingBar, Build},
-  methods: {
-    async queryApi(route){
-      const rawRes = await fetch(route);
-      const resJson = await rawRes.json();
-      return resJson?.data || {};
-    },
+  setup(props){
+    //imports
+    const [erdtree, armaments] = [erdtreeImage, armamentsData];
 
-    buildSelected(build) {
-      if(!this.displayedBuild){ this.showBuild = true; }
-      if(this.displayedBuild === build){ 
-        this.showBuild = false;
-        this.displayedBuild = null;
+    //reactive state
+    let showBuild = ref(false),
+    displayedBuild = ref(null);
+
+    const queryApi = async (route) => {
+      const resJson = await (await fetch(route)).json();
+      return resJson?.data || {};
+    };
+
+    const buildSelected = (build) => {
+      if(!displayedBuild.value) showBuild.value = true; 
+      if(displayedBuild.value?.name === build.name){ 
+        showBuild.value = false;
+        displayedBuild.value = null;
         return;
       }
-      this.displayedBuild = build;
-    }
-  },
+      displayedBuild.value = build;
+    };
+
+    return {
+      erdtree,
+      armaments,
+      showBuild,
+      displayedBuild,
+      queryApi,
+      buildSelected
+    };
+  }
 }
 </script>
 
@@ -59,16 +49,16 @@ export default {
   <div class="armoury-container">
     <h1 class="page-title">Elden Ring Armoury</h1>
     <div class="elden-container">
-      <img :src="erdtreeImage" class="erdtree-image">
+      <img :src="erdtree" class="erdtree-image">
       <RankingBar
-      :rankingData="this.armaments"
+      :rankingData="armaments"
       title="Choose an Armament"
       @selected="buildSelected"
       />
       <Transition name="openbuild">
         <Build
         v-if="showBuild"
-        :buildData="this.displayedBuild"
+        :buildData="displayedBuild"
         />
       </Transition>
     </div>
