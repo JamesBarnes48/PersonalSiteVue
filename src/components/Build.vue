@@ -7,16 +7,13 @@ import {useDisplay} from 'vuetify';
 //this uses Vue3 syntax - need to use this in future
 export default {
     name: 'Build',
-    created() {
-        this.characterImages = this.imagesToUrl(this.buildData.characterImages);
-    },
     components: {RankingBar, EmbeddedVideo},
     props: {
         buildData: {type: Object, required: true}
     },
     setup(props) {
     // Reactive state
-    const characterImages = ref([]);
+    const characterImages = ref(imagesToUrl(props.buildData.characterImages));
     const displayedTalisman = ref(null);
     const displayedSpell = ref(null);
     const showTalisman = ref(false);
@@ -40,11 +37,6 @@ export default {
         showSpell.value = false;
       }
     );
-
-    // Created lifecycle hook equivalent (onMounted for Vue 3)
-    onMounted(() => {
-      characterImages.value = imagesToUrl(props.buildData.characterImages);
-    });
 
     // Method equivalents
     function imagesToUrl(images) {
