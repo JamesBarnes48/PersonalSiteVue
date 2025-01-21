@@ -19,6 +19,26 @@ export default {
 </script>
 
 <template>
+  <div class="about-me-container2">
+    <h2 class="about-title">About</h2>
+    <div class="divider"></div>
+    <v-row class="about-me-row">
+      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[0] }}</v-col>
+      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[1] }}</v-col>
+      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[2] }}</v-col>
+    </v-row>
+
+    <div class="me-container">
+      <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
+      <v-icon 
+        icon="mdi-star-four-points-outline" 
+        class="shimmer-icon"
+        color="white"
+        :size="isMobile? '7px': '9px'"
+        ></v-icon>
+    </div>
+  </div>
+  <!--START OF OLD STUFF-->
     <div class="about-me-container">
       <div class="me-container">
         <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
@@ -61,6 +81,35 @@ export default {
 </template>
 
 <style scoped>
+
+  .about-me-container2{
+    background-color: var(--off-main-hex);
+    border-top: 2px solid var(--main-hex);
+    border-bottom: 2px solid var(--main-hex);
+    padding: 20px 35px;
+  }
+
+  .about-title{
+    font-family: 'Montserrat', serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+  }
+
+  .divider{
+    height: 6px;
+    width: 90%;
+    margin: auto;
+    background-color: white;
+  }
+
+  .about-me-row{
+    margin: 6px 15px;
+    text-align: left;
+    font-size: 1rem;
+  }
+  
   .star-icon {
     margin: 0 20px;
     font-size: 18px;
