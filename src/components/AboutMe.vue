@@ -6,9 +6,9 @@ export default {
     name: 'AboutMe',
     setup(props){
       const aboutMe = [
-        'A fellow with an affinity for all things digital.',
-        'From my humble origins as a young pioneer among the iPad kid movement to today where my love affair with a white Japanese box (aka PS5) under my TV yet persists.',
-        'Equipped with a pop culture reference for any occasion and a connoisseur of the office tea break. I am anything but your average software developer.'
+        'Hello! I\'m James and I am a software engineer from Norfolk, England. I studied Computer Science at UEA (big up) and in my free time you can find me up to all sorts: from baking bread to lifting weights. If I had to choose then my favourites would have to be either pub or PS5.',
+        'I am a full-stack engineer although recently I have found myself more on the frontend in my role as Product UI Software Engineer at Darktrace. My ideal stack is a total Javascript-fest: Node on the back and Vue/React on the front. How glorious!',
+        'lar de dar',
       ];
 
       return {
@@ -83,9 +83,9 @@ export default {
 <style scoped>
 
   .about-me-container2{
-    background-color: var(--off-main-hex);
-    border-top: 2px solid var(--main-hex);
-    border-bottom: 2px solid var(--main-hex);
+    background-color: #ed8a0c;
+    border-top: 2px solid var(--off-main-hex);
+    border-bottom: 2px solid var(--off-main-hex);
     padding: 20px 35px;
   }
 
@@ -108,6 +108,12 @@ export default {
     margin: 6px 15px;
     text-align: left;
     font-size: 1rem;
+  }
+
+  .about-me-row .v-col{
+    color: white;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
   }
   
   .star-icon {
@@ -194,6 +200,10 @@ export default {
 
     .star-icon{
       font-size: 20px;
+    }
+
+    .about-me-row{
+      margin-right: 7px;
     }
   }
 </style>
