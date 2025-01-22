@@ -90,8 +90,10 @@ export default {
 <style scoped>
 
   .about-me-container2{
-    background-color: #ed8a0c;
-    border-top: 2px solid var(--off-main-hex);
+    background-image: url("@/assets/images/AboutMeBanner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;    border-top: 2px solid var(--off-main-hex);
     border-bottom: 2px solid var(--off-main-hex);
     padding: 20px 35px;
   }
@@ -120,6 +122,7 @@ export default {
   .about-me-row .v-col{
     color: white;
     font-size: 18px;
+    line-height: 1.7;
     text-shadow: 1px 1px 2px black;
   }
   
