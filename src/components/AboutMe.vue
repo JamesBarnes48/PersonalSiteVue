@@ -1,5 +1,5 @@
 <script>
-import {ref} from 'vue';
+import { computed } from 'vue';
 import { useDisplay } from 'vuetify';
 
 export default {
@@ -10,8 +10,16 @@ export default {
         'I am a full-stack engineer although recently I have found myself more on the frontend in my role as Product UI Software Engineer at Darktrace. At uni I got my hands on all kinds of technologies; I learned about data structures and algorithms in Java, got my head around Python machine learning libraries and even getting neck-deep in logic and state machines to make a digital traffic light controller. After this I knew I wanted to pursue engineering web applications. My ideal stack is a total Javascript-fest: Node on the back and Vue/React on the front. Sounds good to me!',
       ];
 
+      const display = useDisplay();
+
+      // Computed property for isMobile
+      const isMobile = computed(() => {
+          return ['xs', 'sm'].includes(display.name.value);
+      });
+
       return {
-        aboutMe
+        aboutMe,
+        isMobile
       };
     }
 }
