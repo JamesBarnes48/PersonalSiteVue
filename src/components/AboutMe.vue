@@ -6,9 +6,8 @@ export default {
     name: 'AboutMe',
     setup(props){
       const aboutMe = [
-        'Hello! I\'m James and I am a software engineer from Norfolk, England. I studied Computer Science at UEA (big up) and in my free time you can find me up to all sorts: from baking bread to lifting weights. If I had to choose then my favourites would have to be either pub or PS5.',
-        'I am a full-stack engineer although recently I have found myself more on the frontend in my role as Product UI Software Engineer at Darktrace. My ideal stack is a total Javascript-fest: Node on the back and Vue/React on the front. How glorious!',
-        'lar de dar',
+        'Hello! I\'m James and I am a software engineer from Norfolk, England. I studied Computer Science at UEA and in my free time you can find me up to all sorts: from baking bread to lifting weights. I\'ve a soft spot for history and heritage and I am a fiend for a city break, be it in the UK ot abroad. Really though I\'m a simple guy who loves the pub and loves his PS5.',
+        'I am a full-stack engineer although recently I have found myself more on the frontend in my role as Product UI Software Engineer at Darktrace. At uni I got my hands on all kinds of technologies; I learned about data structures and algorithms in Java, got my head around Python machine learning libraries and even getting neck-deep in logic and state machines to make a digital traffic light controller. After this I knew I wanted to pursue engineering web applications. My ideal stack is a total Javascript-fest: Node on the back and Vue/React on the front. Sounds good to me!',
       ];
 
       return {
@@ -24,19 +23,19 @@ export default {
     <div class="divider"></div>
     <v-row class="about-me-row">
       <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[0] }}</v-col>
+      <v-col lg="4" md="4" sm="12" xs="12">
+        <div class="me-container">
+          <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
+          <v-icon 
+            icon="mdi-star-four-points-outline" 
+            class="shimmer-icon"
+            color="white"
+            :size="isMobile? '7px': '9px'"
+            ></v-icon>
+        </div>
+      </v-col>
       <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[1] }}</v-col>
-      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[2] }}</v-col>
     </v-row>
-
-    <div class="me-container">
-      <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
-      <v-icon 
-        icon="mdi-star-four-points-outline" 
-        class="shimmer-icon"
-        color="white"
-        :size="isMobile? '7px': '9px'"
-        ></v-icon>
-    </div>
   </div>
   <!--START OF OLD STUFF-->
     <div class="about-me-container">
@@ -112,7 +111,7 @@ export default {
 
   .about-me-row .v-col{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     text-shadow: 1px 1px 2px black;
   }
   
