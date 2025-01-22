@@ -1,8 +1,6 @@
 <script>
 import SkillsPanelList from '../components/SkillsPanelList.vue';
 import AboutMe from '../components/AboutMe.vue';
-import {computed} from 'vue';
-import { useDisplay } from 'vuetify';
 
 export default {
   name: 'Home',
@@ -51,17 +49,9 @@ export default {
       listItems: ['Offline movie database', '2D arcade game']
     }];
 
-    const display = useDisplay();
-
-    //computed methods
-    const isMobile = computed(() => {
-        return ['xs', 'sm'].includes(display.name.value);
-    });
-
     return {
       skills,
       display,
-      isMobile
     };
   }
 }
