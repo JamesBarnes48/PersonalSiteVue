@@ -57,6 +57,7 @@ export default {
 </script>
 
 <template>
+  <div class="homepage-container">
     <div class="title-container">
       <p id="nameTitle">I'm James.</p>
       <p class="title-subheading">web developer</p>
@@ -65,7 +66,7 @@ export default {
     <AboutMe />
     <SkillsPanelList :skillsList="skills" />
 
-    <div class="homepage-section">
+    <div class="stats-container">
       <h2 class="subheading">My Stats</h2>
       <p>circa Jan 2025</p>
       <div class="stats-grid">
@@ -91,9 +92,10 @@ export default {
         </div>
       </div>
     </div>
-  </template>
+  </div>
+</template>
   
-  <style scoped>
+<style scoped>
   .title-container{
     background-image: url("@/assets/images/waterscape.jpg");
     background-position: center;
@@ -116,7 +118,7 @@ export default {
     color: var(--main-hex);
   }
 
-  .homepage-section{
+  .stats-container{
     margin: 5% 10%;
   }
   
@@ -156,7 +158,12 @@ export default {
   }
   
   @media (max-width: 1280px){
-    .homepage-section {
+
+    .homepage-container{
+      margin-left: 35px;
+    }
+
+    .stats-container {
       margin: 2% 3% 0 3%;
     }
 
@@ -184,4 +191,10 @@ export default {
       font-size: 24px;
     }
   }
-  </style>
+
+  @media (max-width: 960px){
+    .homepage-container{
+      margin-left: 0px;
+    }
+  }
+</style>
