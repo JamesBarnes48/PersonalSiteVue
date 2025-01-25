@@ -50,10 +50,12 @@ export default {
 <style scoped>
 
   .about-me-container{
+    background-color: #ed8a0c;
     background-image: url("@/assets/images/AboutMeBanner.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;    border-top: 2px solid var(--off-main-hex);
+    background-size: cover;    
+    border-top: 2px solid var(--off-main-hex);
     border-bottom: 2px solid var(--off-main-hex);
     padding: 20px 35px;
   }
@@ -143,6 +145,10 @@ export default {
       height: 255px;
     }
 
+    .about-me-container{
+      background-image: url("@/assets/images/AboutMeBannerSM.png");
+    }
+
     .shimmer-icon{
       bottom: 155px;
       right: 122px;
@@ -168,6 +174,14 @@ export default {
       .shimmer-icon{
         bottom: 128px;
         right: 103px;
+      }
+    }
+
+    @media (max-width: 760px){
+      .about-me-container{
+        background-image: url("@/assets/images/AboutMeBannerXS.png");
+        background-position: bottom;
+        background-size: cover;
       }
     }
   }
