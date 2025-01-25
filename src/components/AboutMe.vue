@@ -30,8 +30,8 @@ export default {
     <h2 class="about-title">About</h2>
     <div class="divider"></div>
     <v-row class="about-me-row">
-      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[0] }}</v-col>
-      <v-col class="me-column" lg="4" md="4" sm="12" xs="12">
+      <v-col md="4" cols="12">{{ aboutMe[0] }}</v-col>
+      <v-col class="me-column" md="4" cols="12">
         <div class="me-container">
           <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
           <v-icon 
@@ -42,7 +42,7 @@ export default {
             ></v-icon>
         </div>
       </v-col>
-      <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[1] }}</v-col>
+      <v-col md="4" cols="12">{{ aboutMe[1] }}</v-col>
     </v-row>
   </div>
 </template>
@@ -81,7 +81,7 @@ export default {
     font-size: 1rem;
   }
 
-  .about-me-row .v-col{
+  .about-me-row .v-col-12{
     color: white;
     font-size: 18px;
     line-height: 1.7;
