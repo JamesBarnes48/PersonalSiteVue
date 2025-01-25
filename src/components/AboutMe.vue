@@ -26,7 +26,7 @@ export default {
 </script>
 
 <template>
-  <div class="about-me-container2">
+  <div class="about-me-container">
     <h2 class="about-title">About</h2>
     <div class="divider"></div>
     <v-row class="about-me-row">
@@ -45,51 +45,11 @@ export default {
       <v-col lg="4" md="4" sm="12" xs="12">{{ aboutMe[1] }}</v-col>
     </v-row>
   </div>
-  <!--START OF OLD STUFF-->
-    <div class="about-me-container">
-      <div class="me-container">
-        <img id="imageOfMe" src="@/assets/images/me.jpg" alt="Photo of Me">
-        <v-icon 
-          icon="mdi-star-four-points-outline" 
-          class="shimmer-icon"
-          color="white"
-          :size="isMobile? '7px': '9px'"
-          ></v-icon>
-      </div>
-      <h2 class="section-heading">Hello!</h2>
-      <div v-if="isMobile" class="text-container">
-        <p>{{ aboutMe[0] }}</p>
-        <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-        <p>{{ aboutMe[1] }}</p>
-        <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-        <p>{{ aboutMe[2] }}</p>
-      </div>
-      <div v-else class="text-container">
-        <p><v-icon class="star-icon" icon="mdi-star-circle"></v-icon>{{ aboutMe[0] }}<v-icon class="star-icon" icon="mdi-star-circle"></v-icon></p>
-        <p>{{ aboutMe[1] }}</p>
-        <p>{{ aboutMe[2] }}</p>
-      </div>
-      
-      <div>
-        <h2 class="subheading"> What am I up to?</h2>
-        <div class="text-container">
-          <p>This fine website you see before you was first born at the end of my degree. Seems like a long time ago! </p>
-          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-          <p>After graduating with my Bachelors degree in Computer Science at UEA I have enjoyed great opportunities in working as a full stack developer at Darktrace where I remain today.</p>
-          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-          <p>I've had the chance to greatly enhance my skills at software engineering by developing and maintaining bespoke CRM software all the way from tasking up the ticket to deploying it.</p>
-          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-          <p>I've been taking the opportunity to travel to as many places as I can. Krakow, Edinburgh and Cologne so far this year!</p>
-          <v-icon class="star-icon" icon="mdi-star-circle"></v-icon>
-          <p>On top of all this I have even been practicing hard to be able to make the perfect loaf of bread! Rest assured I have been busy.</p>
-        </div>
-      </div>
-    </div>  
 </template>
 
 <style scoped>
 
-  .about-me-container2{
+  .about-me-container{
     background-image: url("@/assets/images/AboutMeBanner.png");
     background-position: center;
     background-repeat: no-repeat;
@@ -176,31 +136,6 @@ export default {
   .me-container:hover > .shimmer-icon{
     animation-name: toothShimmer;
     animation-duration: 0.6s;
-  }
-
-  .text-container{
-    border: 1px solid var(--main-hex);
-    background-color: white;
-    padding: 7px 10px;
-  }
-
-  .text-container p{
-    margin: 7px 0;
-  }
-
-  .about-me-container{
-    background-color: var(--background-hex);
-    border-top: 2px solid var(--main-hex);
-    border-bottom: 2px solid var(--main-hex);
-    padding: 20px 30px;
-  }
-  
-  .section-heading {
-    color: var(--main-hex);
-    font-family: 'Montserrat', serif;
-    font-size: 2rem;
-    margin: 35px 0;
-    font-weight: bold;
   }
   
   @media (max-width: 1280px){
