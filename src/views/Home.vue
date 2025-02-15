@@ -29,7 +29,9 @@ export default {
       skillName: 'Java',
       skillStyle: 'java',
       iconImport: ['fab', 'java'],
-      skillDesc: 'As my primary language at university I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. The object oriented nature of the language resonates with me and I am capable of creating large projects in it with a hierarchy of classes.',
+      skillDesc: `As my primary language at university I have spent the most time with Java. Throughout my degree Java has been the language I use most often by far and I have created lots of different projects in it. 
+                  It might not be everybody's favourite language; it's quite strict, fairly old and not so easy on the eyes sometimes. Old but gold, I say. it forces you to be a good programmer with it's rigid structure and typing and 
+                  strongly object oriented nature of the language makes so much sense to me. I do miss Java and would love to get a proper project to work on in it again.`,
       listDescription: 'Some of projects I have made in Java include:',
       listItems: ['"Cheat" card game', 'Word auto-completion algorithm', 'Toll road system']
     },
