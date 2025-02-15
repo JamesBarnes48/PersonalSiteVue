@@ -7,7 +7,7 @@
     margin-right: 30px;
 }
 
-.v-expansion-panel-title.webdev {
+.v-expansion-panel-title.webdev, .v-expansion-panel-text.webdev {
     background-color: #ade1ff;
 }
 
@@ -20,7 +20,7 @@
     color: #028dde;
 }
 
-.v-expansion-panel-title.vue {
+.v-expansion-panel-title.vue, .v-expansion-panel-text.vue {
     background-color: #73ff8c;
 }
 
@@ -34,7 +34,7 @@
     color: #01941c;
 }
 
-.v-expansion-panel-title.java {
+.v-expansion-panel-title.java, .v-expansion-panel-text.java {
     background-color: #fca972;
 }
 
@@ -48,7 +48,7 @@
     color: #fc231c;
 }
 
-.v-expansion-panel-title.c {
+.v-expansion-panel-title.c, .v-expansion-panel-text.c {
     background-color: #fffc61;
 }
 
