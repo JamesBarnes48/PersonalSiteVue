@@ -1,4 +1,4 @@
-.skill-name {
+.v-expansion-panel-title h3 {
     display: inline;
 }
 
@@ -7,11 +7,11 @@
     margin-right: 30px;
 }
 
-.skill-title.webdev {
+.v-expansion-panel-title.webdev {
     background-color: #ade1ff;
 }
 
-.skill-name.webdev {
+.v-expansion-panel-title h3.webdev {
     color: white;
     text-shadow: 0 0 2px black;
 }
@@ -20,11 +20,11 @@
     color: #028dde;
 }
 
-.skill-title.vue {
+.v-expansion-panel-title.vue {
     background-color: #73ff8c;
 }
 
-.skill-name.vue {
+.v-expansion-panel-title h3.vue {
     color: white;
     text-shadow: 0 0 2px black;
 
@@ -34,11 +34,11 @@
     color: #01941c;
 }
 
-.skill-title.java {
+.v-expansion-panel-title.java {
     background-color: #fca972;
 }
 
-.skill-name.java {
+.v-expansion-panel-title h3.java {
     color: white;
     text-shadow: 0 0 2px black;
 
@@ -48,11 +48,11 @@
     color: #fc231c;
 }
 
-.skill-title.c {
+.v-expansion-panel-title.c {
     background-color: #fffc61;
 }
 
-.skill-name.c {
+.v-expansion-panel-title h3.c {
     color: white;
     text-shadow: 0 0 2px black;
 
@@ -63,7 +63,7 @@
 }
 
 @media (max-width: 1280px) {
-    .skill-name {
+    .v-expansion-panel-title h3 {
         font-size: 1.2rem;
     }
 }

@@ -16,12 +16,12 @@ export default {
     <v-hover>
         <template v-slot:default="{ isHovering, props }">
         <v-expansion-panel v-bind="props">
-            <v-expansion-panel-title class="skill-title" :class="isHovering? skillStyle: ''">
+            <v-expansion-panel-title :class="isHovering? skillStyle: ''">
                 <font-awesome-icon class="skill-icon" :class="isHovering? skillStyle: ''" :icon="iconImport" />
-                <h3 class="skill-name" :class="isHovering? skillStyle: ''">{{ skillName }}</h3>
+                <h3 :class="isHovering? skillStyle: ''">{{ skillName }}</h3>
             </v-expansion-panel-title>
 
-            <v-expansion-panel-text>
+            <v-expansion-panel-text :class="isHovering? skillStyle: ''">
                 <p>{{ skillDesc }}</p>
             </v-expansion-panel-text>
         </v-expansion-panel>
