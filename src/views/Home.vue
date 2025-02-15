@@ -13,22 +13,17 @@ export default {
       skillStyle: 'webdev',
       iconImport: ['fas', 'globe'],
       skillDesc: `First touching on web development in the first year of my degree, I gained a basic understanding of HTML, CSS and Javascript then to create a website for renting a fictional house.
-                  Since then I have returned to web development in the summer of 2020 to expand my knowledge of it and create websites as a passion project. In this time I delved deeper
-                  into web development expanding my knowledge of HTML/CSS/JS, using the Bootstrap library and jQuery.
-                  We have fancy frameworks and everything but if your core knowledge is weak the foundations will crumble. I have ensured this isn't the case.`,
-      listDescription: 'Some websites I have created include:',
-      listItems: ["Personal site", 'Virtual garage']
+                  Let\'s just say I won\'t be showing that here... But everybody has to start somewhere! Since graduation I have specialised in developing web apps of all kinds and underneath all the fancy frameworks it is
+                  always these core web development skills that show up, so it's crucial to know them! Javascript, HTML and CSS are my bread and butter and can be seen in almost all of my web apps, both at work and in my own projects.`
     },
     {
       skillName: 'Vue',
       skillStyle: 'vue',
       iconImport: ['fab', 'vuejs'],
-      skillDesc: `There's a plethora of fancy frameworks to choose from now: React, Vue, Angular. It's the most pressing question for the modern Javascript dev; which do you choose?
-                  I had the opportunity to learn Vue.js at Darktrace as I was tasked with migrating a page from vanilla JS into another application written in PHP/Vue. This meant essentially
-                  learning Vue and PHP as I went. PHP I was definitely not as huge a fan of but Vue I took to like a duck to water. So streamlined! So handy! It's definitely my favourite way to code right now.
-                  I even rewrote my site to be in Vue which is the version you are seeing now!`,
-      listDescription: 'Some Vue projects I have worked on include:',
-      listItems: ['Current personal site', 'Migrated page']
+      skillDesc: `There's a plethora of fancy frameworks to choose from now: React, Vue, Angular. It's the most pressing question for the modern frontend engineer; which do you choose?
+                  I had the opportunity to learn Vue at Darktrace as I was tasked with migrating a page tracking recent news updates from jQuery/Node into another application written in PHP/Vue. This meant essentially
+                  learning these two technologies as I went. It was a big task but with Vue it was love at first component. Let it be known that I love a good bit of modularity (that's right, I said it) and modularity is the name of the game with this. 
+                  Everyone has a favourite out of the big frontend frameworks and most choose React, but I'm backing Vue all the way. Anything frontend I do from now on is getting done in Vue and good luck stopping me.`,
     },
     {
       skillName: 'Java',
