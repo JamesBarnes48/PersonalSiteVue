@@ -12,6 +12,10 @@
     background-color: #ade1ff;
 }
 
+.v-expansion-panel--active.webdev .v-expansion-panel-title{
+    border-bottom: 2px solid #56b8f0;
+}
+
 .v-expansion-panel.isHovering .v-expansion-panel-title h3, .v-expansion-panel--active .v-expansion-panel-title h3 {
     color: white;
     text-shadow: 0 0 2px black;
@@ -25,12 +29,20 @@
     background-color: #73ff8c;
 }
 
+.v-expansion-panel--active.vue .v-expansion-panel-title{
+    border-bottom: 2px solid #31c34c;
+}
+
 .v-expansion-panel.isHovering.vue .skill-icon, .v-expansion-panel--active.vue .skill-icon {
     color: #01941c;
 }
 
 .v-expansion-panel.isHovering.java, .v-expansion-panel--active.java {
-    background-color: #fca972;
+    background-color: #fc8b72;
+}
+
+.v-expansion-panel--active.java .v-expansion-panel-title{
+    border-bottom: 2px solid #dd6449;
 }
 
 .v-expansion-panel.isHovering.java .skill-icon, .v-expansion-panel--active.java .skill-icon {
@@ -39,6 +51,10 @@
 
 .v-expansion-panel.isHovering.c, .v-expansion-panel--active.c {
     background-color: #fffc61;
+}
+
+.v-expansion-panel--active.c .v-expansion-panel-title{
+    border-bottom: 2px solid #d4d238;
 }
 
 .v-expansion-panel.isHovering.c .skill-icon, .v-expansion-panel--active.c .skill-icon {
