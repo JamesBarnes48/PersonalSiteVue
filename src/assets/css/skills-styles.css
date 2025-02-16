@@ -7,58 +7,40 @@
     margin-right: 30px;
 }
 
-.v-expansion-panel-title.webdev, .v-expansion-panel-text.webdev {
+.v-expansion-panel.isHovering.webdev, .v-expansion-panel--active.webdev {
     background-color: #ade1ff;
 }
 
-.v-expansion-panel-title h3.webdev {
+.v-expansion-panel.isHovering .v-expansion-panel-title, .v-expansion-panel--active .v-expansion-panel-title {
     color: white;
     text-shadow: 0 0 2px black;
 }
 
-.skill-icon.webdev {
+.v-expansion-panel.isHovering.webdev .skill-icon, .v-expansion-panel--active.webdev .skill-icon {
     color: #028dde;
 }
 
-.v-expansion-panel-title.vue, .v-expansion-panel-text.vue {
+.v-expansion-panel.isHovering.vue, .v-expansion-panel--active.vue  {
     background-color: #73ff8c;
 }
 
-.v-expansion-panel-title h3.vue {
-    color: white;
-    text-shadow: 0 0 2px black;
-
-}
-
-.skill-icon.vue {
+.v-expansion-panel.isHovering.vue .skill-icon, .v-expansion-panel--active.vue .skill-icon {
     color: #01941c;
 }
 
-.v-expansion-panel-title.java, .v-expansion-panel-text.java {
+.v-expansion-panel.isHovering.java, .v-expansion-panel--active.java {
     background-color: #fca972;
 }
 
-.v-expansion-panel-title h3.java {
-    color: white;
-    text-shadow: 0 0 2px black;
-
-}
-
-.skill-icon.java {
+.v-expansion-panel.isHovering.java .skill-icon, .v-expansion-panel--active.java .skill-icon {
     color: #fc231c;
 }
 
-.v-expansion-panel-title.c, .v-expansion-panel-text.c {
+.v-expansion-panel.isHovering.c, .v-expansion-panel--active.c {
     background-color: #fffc61;
 }
 
-.v-expansion-panel-title h3.c {
-    color: white;
-    text-shadow: 0 0 2px black;
-
-}
-
-.skill-icon.c {
+.v-expansion-panel.isHovering.c .skill-icon, .v-expansion-panel--active.c .skill-icon {
     color: #adab02;
 }
 
