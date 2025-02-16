@@ -49,6 +49,18 @@
     color: #fc231c;
 }
 
+.v-expansion-panel.isHovering.node, .v-expansion-panel--active.node  {
+    background-color: #2ba441;
+}
+
+.v-expansion-panel--active.node .v-expansion-panel-title{
+    border-bottom: 2px solid #1e742e;
+}
+
+.v-expansion-panel.isHovering.node .skill-icon, .v-expansion-panel--active.node .skill-icon {
+    color: black;
+}
+
 .v-expansion-panel.isHovering.c, .v-expansion-panel--active.c {
     background-color: #fffc61;
 }

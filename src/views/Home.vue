@@ -26,6 +26,12 @@ export default {
                   Everyone has a favourite out of the big frontend frameworks and most choose React, but I'm backing Vue all the way. Anything frontend I do from now on is getting done in Vue and good luck stopping me.`,
     },
     {
+      skillName: 'Node.js',
+      skillStyle: 'node',
+      iconImport: ['fab', 'node'],
+      skillDesc: `I couldn't be `,
+    },
+    {
       skillName: 'Java',
       skillStyle: 'java',
       iconImport: ['fab', 'java'],
