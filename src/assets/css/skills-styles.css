@@ -3,6 +3,7 @@
 }
 
 .skill-icon {
+    color: black;
     font-size: 1.5rem;
     margin-right: 30px;
 }
@@ -11,7 +12,7 @@
     background-color: #ade1ff;
 }
 
-.v-expansion-panel.isHovering .v-expansion-panel-title, .v-expansion-panel--active .v-expansion-panel-title {
+.v-expansion-panel.isHovering .v-expansion-panel-title h3, .v-expansion-panel--active .v-expansion-panel-title h3 {
     color: white;
     text-shadow: 0 0 2px black;
 }
