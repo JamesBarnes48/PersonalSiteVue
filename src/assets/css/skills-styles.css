@@ -51,7 +51,7 @@
 }
 
 .v-expansion-panel.isHovering.node, .v-expansion-panel--active.node  {
-    background-color: #2ba441;
+    background-color: #3cc655;
 }
 
 .v-expansion-panel--active.node .v-expansion-panel-title{

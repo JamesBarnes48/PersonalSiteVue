@@ -29,7 +29,11 @@ export default {
       skillName: 'Node.js',
       skillStyle: 'node',
       iconImport: ['fab', 'node'],
-      skillDesc: `I couldn't be `,
+      skillDesc: `Of course it's not just frontend technologies we love around here. I wouldn't be a fullstack engineer without both sides of the coin and
+                  Node is Javascript's answer to the server-side. It takes all the perks of Javascript and brings them to the backend which is known to be a bit more cryptic,
+                  combine this with the myriad libraries available such as the much-beloved Express and you can build some really strong stuff with minimal effort. it's definitely
+                  the server-side scripting that I'm most comfortable with as I have loads of experience working with it at Darktrace. How satisfying is it writing an Express endpoint and then hitting
+                  it in your browser and getting a lovely JSON back! It's the little things I suppose.`,
     },
     {
       skillName: 'Java',
