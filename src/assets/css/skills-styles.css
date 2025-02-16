@@ -5,7 +5,8 @@
 .skill-icon {
     color: black;
     font-size: 1.5rem;
-    margin-right: 30px;
+    width: 35px;
+    margin-right: 18px;
 }
 
 .v-expansion-panel.isHovering.webdev, .v-expansion-panel--active.webdev {
