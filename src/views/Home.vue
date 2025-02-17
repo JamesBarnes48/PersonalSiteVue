@@ -29,7 +29,9 @@ export default {
       skillName: 'React',
       skillStyle: 'react',
       iconImport: ['fab', 'react'],
-      skillDesc: `test`,
+      skillDesc: `If you've ever had a sniff at client-side then you've probably heard of React. It's the most popular framework by a mile and everyone wants a go on it. While Vue might be my favourite at the moment
+                  I will give React the credit it's due in that pretty much anything you can do in Vue you can do in React, so all the praise I gave that you could apply to this too. It's purely a question of which syntax you prefer.
+                  For me it might be because I've used Vue way more than I have this, which is why I'm pleased that I'm going to be using a lot more of it soon on the UI team at Darktrace! I'm more than familiar with it and I understand how it all works, now I just need to give it a chance to prove itself!.`,
     },
     {
       skillName: 'Node.js',
@@ -55,9 +57,9 @@ export default {
       skillName: 'C++',
       skillStyle: 'c',
       iconImport: ['fas', 'c'],
-      skillDesc: `I only got to do a few projects in C++ but they were all certainly memorable ones. It is very similar to C# which I had experience
-                  using early on during my A-levels. I enjoyed using some of the features in standard, low-level C++ that you don't see many other places, but on the other end of the spectrum I have also used the OpenGL API
-                  which was insightful too. I am still a relatively new C++ programmer but my proficiency in it will only grow with time.`,
+      skillDesc: `I only got to do a few projects in C++ but they were all certainly memorable ones. It is very similar to C# which I had a go at
+                  early on during my A-levels. The highlight of this was definitely using OpenGL graphics library. It was unlike anything I've done before but naturally the opportunity to make
+                  my own video game couldn't be passed up. Cannot be understated how tough that was but I got to build some really cool things with it.`,
       listDescription: 'Some C++ projects I have worked on include:',
       listItems: ['Offline movie database', '2D arcade game']
     }];
