@@ -15,15 +15,15 @@
 }
 
 .v-expansion-panel.isHovering.webdev, .v-expansion-panel--active.webdev {
-    background-color: #ade1ff;
+    background-color: #ced8de;
 }
 
 .v-expansion-panel--active.webdev .v-expansion-panel-title{
-    border-bottom: 2px solid #56b8f0;
+    border-bottom: 2px solid #9ea1a4;
 }
 
 .v-expansion-panel.isHovering.webdev .skill-icon, .v-expansion-panel--active.webdev .skill-icon {
-    color: #028dde;
+    color: #5e849a;
 }
 
 .v-expansion-panel.isHovering.vue, .v-expansion-panel--active.vue  {
