@@ -109,6 +109,20 @@ export default {
     }
 }
 
+@media (max-width: 760px){
+    .main-container.webdev {
+        background-image: url("@/assets/images/showcase/webdev/webdevbg-sm.png");
+    }
+
+    .main-container.java {
+        background-image: url("@/assets/images/showcase/java/javabg-sm.png");
+    }
+
+    .main-container.c {
+        background-image: url("@/assets/images/showcase/c++/cbg-sm.png");
+    }
+}
+
 .section-title {
     margin-bottom: 30px;
     font-size: 33px;
