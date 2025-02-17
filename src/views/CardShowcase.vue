@@ -167,8 +167,8 @@ export default {
 <style scoped>
 
 section {
-    border-top: 1px solid var(--main-hex);
-    border-bottom: 1px solid var(--main-hex);
+    border-top: 4px solid var(--main-hex);
+    border-bottom: 4px solid var(--main-hex);
 }
 
 </style>
