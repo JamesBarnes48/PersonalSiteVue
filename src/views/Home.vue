@@ -28,7 +28,7 @@ export default {
     {
       skillName: 'React',
       skillStyle: 'react',
-      iconImport: ['fab', 'java'],
+      iconImport: ['fab', 'react'],
       skillDesc: `test`,
     },
     {
