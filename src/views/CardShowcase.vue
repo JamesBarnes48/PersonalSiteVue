@@ -152,6 +152,7 @@ export default {
         <CardShowcaseSection
             sectionTitle="Java"
             :projectsInfo="projects.java"
+            sectionStyle="java"
         ></CardShowcaseSection>
     </section>
 

@@ -82,6 +82,11 @@ export default {
     background-image: url("@/assets/images/showcase/webdev/webdevbg.png");
 }
 
+.java {
+    background-color: #fc8b72;
+    background-image: url("@/assets/images/showcase/java/javabg.png");
+}
+
 .main-container.invertedStyle{
     background-color: var(--background-hex);
 }
