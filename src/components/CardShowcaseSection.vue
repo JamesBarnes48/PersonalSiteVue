@@ -8,10 +8,11 @@ export default {
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
         inverted: {type: Boolean, default: false},
-        projectsInfo: {type: Array, default(){return []}}
+        projectsInfo: {type: Array, default(){return []}},
+        sectionStyle: {type: String, default: 'webdev'}
     },
     setup(props){
-        const [sectionTitle, inverted, projectsInfo] = [props.sectionTitle, props.inverted, props.projectsInfo];
+        const [sectionTitle, inverted, projectsInfo, sectionStyle] = [props.sectionTitle, props.inverted, props.projectsInfo, props.sectionStyle];
 
         let models = ref({});
         const closeDialog = (index) => {models.value[index] = false}
@@ -21,6 +22,7 @@ export default {
             inverted,
             projectsInfo,
             models,
+            sectionStyle,
             closeDialog
         };
     }
@@ -28,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <div class="main-container" :class="{invertedStyle: !!inverted}">
+    <div class="main-container" :class="[inverted? 'invertedStyle': '', sectionStyle]">
         <h3 class="section-title">{{ sectionTitle }}</h3>
 
         <div class="project-cards-container">
@@ -70,7 +72,14 @@ export default {
 <style scoped>
 .main-container {
     padding: 40px 0;
-    background-color: var(--off-background-hex);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;    
+}
+
+.webdev {
+    background-color: #ced8de;
+    background-image: url("@/assets/images/showcase/webdev/webdevbg.png");
 }
 
 .main-container.invertedStyle{
