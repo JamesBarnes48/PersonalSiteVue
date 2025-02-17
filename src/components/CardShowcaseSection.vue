@@ -7,19 +7,17 @@ export default {
     components: {ShowcaseProjectDialog},
     props: {
         sectionTitle: {type: String, default: 'Section Title'},
-        inverted: {type: Boolean, default: false},
         projectsInfo: {type: Array, default(){return []}},
         sectionStyle: {type: String, default: 'webdev'}
     },
     setup(props){
-        const [sectionTitle, inverted, projectsInfo, sectionStyle] = [props.sectionTitle, props.inverted, props.projectsInfo, props.sectionStyle];
+        const [sectionTitle, projectsInfo, sectionStyle] = [props.sectionTitle, props.projectsInfo, props.sectionStyle];
 
         let models = ref({});
         const closeDialog = (index) => {models.value[index] = false}
 
         return {
             sectionTitle,
-            inverted,
             projectsInfo,
             models,
             sectionStyle,
@@ -30,7 +28,7 @@ export default {
 </script>
 
 <template>
-    <div class="main-container" :class="[inverted? 'invertedStyle': '', sectionStyle]">
+    <div class="main-container" :class="sectionStyle">
         <h3 class="section-title">{{ sectionTitle }}</h3>
 
         <div class="project-cards-container">
@@ -87,10 +85,6 @@ export default {
     background-image: url("@/assets/images/showcase/java/javabg.png");
 }
 
-.main-container.invertedStyle{
-    background-color: var(--background-hex);
-}
-
 .section-title {
     margin-bottom: 30px;
     font-size: 30px;
@@ -117,15 +111,6 @@ export default {
 }
 
 .project-cards-container .v-card:hover{
-    background-color: var(--main-hex);
-    color: var(--background-hex);
-}
-
-.main-container.invertedStyle .project-cards-container .v-card {
-    background-color: var(--off-background-hex);
-}
-
-.main-container.invertedStyle .project-cards-container .v-card:hover {
     background-color: var(--main-hex);
     color: var(--background-hex);
 }

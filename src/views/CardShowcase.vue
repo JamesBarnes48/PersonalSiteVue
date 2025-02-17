@@ -143,7 +143,6 @@ export default {
     <section id="webdev">
         <CardShowcaseSection
             sectionTitle="Web Development"
-            :inverted="true"
             :projectsInfo="projects.webdev"
         ></CardShowcaseSection>
     </section>
@@ -159,7 +158,6 @@ export default {
     <section id="c">
         <CardShowcaseSection
             sectionTitle="C++"
-            :inverted="true"
             :projectsInfo="projects.c"
         ></CardShowcaseSection>
     </section>
