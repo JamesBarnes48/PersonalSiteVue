@@ -80,19 +80,38 @@ export default {
     background-image: url("@/assets/images/showcase/webdev/webdevbg.png");
 }
 
+.main-container.webdev .section-title {
+    color: #5e849a;
+}
+
 .main-container.java {
     background-color: #fc8b72;
     background-image: url("@/assets/images/showcase/java/javabg.png");
 }
 
+.main-container.java .section-title {
+    color: #fc231c;
+}
+
 .main-container.c {
     background-color: #fffc61;
     background-image: url("@/assets/images/showcase/c++/cbg.png");
+    background-size: 60%;
+}
+
+.main-container.c .section-title {
+    color: #adab02;
+}
+
+@media (max-width: 1280px){
+    .main-container.c {
+        background-size: 80%;
+    }
 }
 
 .section-title {
     margin-bottom: 30px;
-    font-size: 30px;
+    font-size: 33px;
 }
 
 .project-cards-container{
