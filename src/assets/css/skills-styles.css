@@ -9,17 +9,17 @@
     margin-right: 18px;
 }
 
+.v-expansion-panel.isHovering .v-expansion-panel-title h3, .v-expansion-panel--active .v-expansion-panel-title h3 {
+    color: white;
+    text-shadow: 0 0 2px black;
+}
+
 .v-expansion-panel.isHovering.webdev, .v-expansion-panel--active.webdev {
     background-color: #ade1ff;
 }
 
 .v-expansion-panel--active.webdev .v-expansion-panel-title{
     border-bottom: 2px solid #56b8f0;
-}
-
-.v-expansion-panel.isHovering .v-expansion-panel-title h3, .v-expansion-panel--active .v-expansion-panel-title h3 {
-    color: white;
-    text-shadow: 0 0 2px black;
 }
 
 .v-expansion-panel.isHovering.webdev .skill-icon, .v-expansion-panel--active.webdev .skill-icon {
@@ -36,6 +36,18 @@
 
 .v-expansion-panel.isHovering.vue .skill-icon, .v-expansion-panel--active.vue .skill-icon {
     color: #01941c;
+}
+
+.v-expansion-panel.isHovering.react, .v-expansion-panel--active.react {
+    background-color: #8ac2e0;
+}
+
+.v-expansion-panel--active.react .v-expansion-panel-title{
+    border-bottom: 2px solid #4ba0d1;
+}
+
+.v-expansion-panel.isHovering.react .skill-icon, .v-expansion-panel--active.react .skill-icon {
+    color: #028dde;
 }
 
 .v-expansion-panel.isHovering.java, .v-expansion-panel--active.java {
