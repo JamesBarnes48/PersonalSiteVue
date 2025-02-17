@@ -159,6 +159,7 @@ export default {
         <CardShowcaseSection
             sectionTitle="C++"
             :projectsInfo="projects.c"
+            sectionStyle="c"
         ></CardShowcaseSection>
     </section>
 </template>

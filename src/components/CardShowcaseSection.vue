@@ -75,14 +75,19 @@ export default {
     background-size: contain;    
 }
 
-.webdev {
+.main-container.webdev {
     background-color: #ced8de;
     background-image: url("@/assets/images/showcase/webdev/webdevbg.png");
 }
 
-.java {
+.main-container.java {
     background-color: #fc8b72;
     background-image: url("@/assets/images/showcase/java/javabg.png");
+}
+
+.main-container.c {
+    background-color: #fffc61;
+    background-image: url("@/assets/images/showcase/c++/cbg.png");
 }
 
 .section-title {
@@ -101,7 +106,7 @@ export default {
 }
 
 .project-cards-container div{
-    flex: 0 0 30%;
+    flex: 0 0 47%;
     width: 370px;
 }
 
