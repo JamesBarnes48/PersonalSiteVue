@@ -70,7 +70,7 @@ export default {
                     clean frontend using jQuery allowing you to search, sort, filter and customise the table as you please, the most impressive part of this was the backend. Implementing a strict controller-service-repository pattern, I delved deep
                     into cryptic API documentation to allow users the freedom to upload and delete contacts from the third party, individually or in batches of hundreds at once. Our local database were kept up-to-date, they were kept in sync with the third-party
                     and any transactions were strictly atomic. This Node.js project really focused on the robustness of the system. Validation had to be strict and I was expected to handle the wildest of edge cases. In the end I was very pleased with what I produced!`,
-                    projectImages: [],
+                    projectImages: [showcaseImages.darktraceLogo],
                 },
             ],
             java: [
