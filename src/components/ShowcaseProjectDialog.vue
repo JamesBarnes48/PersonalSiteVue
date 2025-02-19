@@ -18,12 +18,17 @@ export default {
         @click="this.$emit('close-dialog');"
         ></v-btn>
         <div class="carousel-container">
-            <v-carousel height="325" cycle>
+            <v-carousel v-if="projectImages.length > 1" height="325" cycle>
                 <v-carousel-item
                 v-for="img in projectImages"
                 :src="img"
                 ></v-carousel-item>
             </v-carousel>
+            <img 
+            v-else 
+            width="90%"
+            :src="projectImages[0]" 
+            :alt="'Image of ' + title" />
         </div>
         <div class="text-container">
             <h3 class="subheading">{{ title }}</h3>
@@ -64,6 +69,12 @@ export default {
 
 .carousel-container {
     margin: auto;
+}
+
+.carousel-container img {
+    object-fit: contain;
+    object-position: center;
+    max-height: 325px;
 }
 
 @media(max-width: 1280px){
