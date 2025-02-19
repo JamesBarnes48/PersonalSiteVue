@@ -68,8 +68,8 @@ export default {
                     mainText: `About a year after I started my full-stack engineer role at Darktrace I was given quite the task: I was to create a new dashboard for Marketing featuring a table of contact's information. This page would
                     then allow you to run marketing campaigns en-masse on these contacts by leveraging a well-known third party marketing automation tool. Totally greenfield, just the way I like it. I did take the time to create a
                     clean frontend using jQuery allowing you to search, sort, filter and customise the table as you please, the most impressive part of this was the backend. Implementing a strict controller-service-repository pattern, I delved deep
-                    into cryptic API documentation to allow users the freedom to upload and delete contacts from the third party, individually or in batches of hundreds at once. Our local database were kept up-to-date, they were kept in sync with the third-party
-                    and any transactions were strictly atomic. This Node.js project really focused on the robustness of the system. Validation had to be strict and I was expected to handle the wildest of edge cases. In the end I was very pleased with what I produced!`,
+                    into cryptic API documentation to allow users to upload and delete contacts to and from the third party, individually or in batches of hundreds at once. Our local records were kept in sync with the third-party
+                    and any transactions were strictly atomic. This Node.js project really hinged on the robustness of the system. Validation had to be strict and I was expected to handle the wildest of edge cases. In the end I was very pleased with what I produced!`,
                     projectImages: [showcaseImages.darktraceLogo],
                 },
             ],
