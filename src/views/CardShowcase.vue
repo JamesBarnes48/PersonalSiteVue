@@ -10,18 +10,6 @@ export default {
         const projects = {
             webdev: [
                 {
-                    title: 'Virtual Garage Application',
-                    mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
-                        across the globe using this simple but fun tool. Really this has been a chance for
-                        me to put to practice some of the new development skills I have learned recently including linking a database service to your application,
-                        using some more advanced jQuery as well as generally building fuller and more scalable web applications. This project is also completely unguided 
-                        so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
-                        It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
-                        Extra effort has been made to mitigate cyber threats such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
-                    repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
-                    projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
-                },
-                {
                     title: 'Tindog',
                     mainText: `A webpage for a made-up company called Tindog, which runs a dating app for dogs. I made this page to get to grips
                         with the  Bootstrap 4  library and it's various tools for presentation which combine to make it look like a real company
@@ -60,6 +48,20 @@ export default {
                         While I don't have anything to send out at the moment, it's not difficult to see how this simple concept could be very useful from an advertising
                         perspective!`,
                     projectImages: [showcaseImages.news1, showcaseImages.news2],
+                },
+            ],
+            node: [
+                {
+                    title: 'Virtual Garage Application',
+                    mainText: `My latest side project has been a fun little Node.js web app where you can manage your five garages with a car of your choosing. Obviously it's only for a bit of fun, the main reason I
+                        made it was to practice integrating Postgres databases into your Node application, manipulating jQuery in various ways, simple Express routing as well as generally building fuller and more scalable web applications. 
+                        I enjoyed putting some of these skills into action at last!
+                        Obviously the main challenge of practicing Node.js and databases in a non-production environment is that you usually have to pay for a server. I did not fancy this
+                        so instead I included a guide to setting up your local Postgres DB in the readme file as well as a set of SQL queries to set up your database!
+                        It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
+                        Extra effort has been made to mitigate cyber threats such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
+                    repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
+                    projectImages: [showcaseImages.garage1, showcaseImages.garage2, showcaseImages.garage3, showcaseImages.garage4],
                 },
             ],
             java: [
