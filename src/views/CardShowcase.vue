@@ -142,24 +142,32 @@ export default {
 
     <section id="webdev">
         <CardShowcaseSection
-            sectionTitle="Web Development"
+            sectionTitle="Core Web Development"
             :projectsInfo="projects.webdev"
+        ></CardShowcaseSection>
+    </section>
+
+    <section id="node">
+        <CardShowcaseSection
+            sectionTitle="Node.js"
+            sectionStyle="node"
+            :projectsInfo="projects.node"
         ></CardShowcaseSection>
     </section>
 
     <section id="java">
         <CardShowcaseSection
             sectionTitle="Java"
-            :projectsInfo="projects.java"
             sectionStyle="java"
+            :projectsInfo="projects.java"
         ></CardShowcaseSection>
     </section>
 
     <section id="c">
         <CardShowcaseSection
             sectionTitle="C++"
-            :projectsInfo="projects.c"
             sectionStyle="c"
+            :projectsInfo="projects.c"
         ></CardShowcaseSection>
     </section>
 </template>
