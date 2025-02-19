@@ -84,6 +84,15 @@ export default {
     color: #5e849a;
 }
 
+.main-container.node {
+    background-color: #3cc655;
+    background-image: url("@/assets/images/showcase/node/nodebg.png");
+}
+
+.main-container.node .section-title {
+    color: #1e742e;
+}
+
 .main-container.java {
     background-color: #fc8b72;
     background-image: url("@/assets/images/showcase/java/javabg.png");
@@ -120,6 +129,10 @@ export default {
 
     .main-container.c {
         background-image: url("@/assets/images/showcase/c++/cbg-sm.png");
+    }
+
+    .main-container.node {
+        background-image: url("@/assets/images/showcase/node/nodebg-sm.png");
     }
 }
 
