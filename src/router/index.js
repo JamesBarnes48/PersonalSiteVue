@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import CardShowcase from '../views/CardShowcase.vue'
-import Armoury from '../views/Armoury.vue'
+import EldenRingArmoury from '../views/EldenRingArmoury.vue'
 import ChivalryArmoury from '../views/ChivalryArmoury.vue'
 import PageNotFound from '../views/PageNotFound.vue'
 
@@ -23,9 +23,9 @@ const router = createRouter({
       component: CardShowcase
     },
     {
-      path: '/armoury',
-      name: 'armoury',
-      component: Armoury
+      path: '/armoury/eldenring',
+      name: 'eldenringarmoury',
+      component: EldenRingArmoury
     },
     {
       path: '/armoury/chiv2',

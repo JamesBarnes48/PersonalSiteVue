@@ -8,7 +8,7 @@ import Build from '../components/Build.vue';
 import {ref} from 'vue';
 
 export default {
-  name: 'Armoury',
+  name: 'EldenRingArmoury',
   components: {RankingBar, Build},
   setup(props){
     //imports

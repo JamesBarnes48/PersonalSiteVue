@@ -7,7 +7,7 @@ import Build from '../components/Build.vue';
 import {ref} from 'vue';
 
 export default {
-  name: 'Armoury',
+  name: 'ChivalryArmoury',
   components: {RankingBar, Build},
   setup(props){
     //imports
