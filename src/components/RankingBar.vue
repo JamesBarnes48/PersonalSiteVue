@@ -1,13 +1,17 @@
 <script>
+import { onMounted } from 'vue';
 export default {
     name: 'RankingBar',
     props: {
         rankingData: {type: Array, required: true},
         title: {type: String},
         hideTitle: {type: Boolean, default: false},
+        vertical: {type: Boolean, default: false}
     },
     setup(props){
         const getImgUrl = (item) => item.thumbnail ? item.thumbnail : item.imgSrc;
+
+        onMounted(() => {console.log(props.vertical)})
 
         return {
             getImgUrl
@@ -19,7 +23,7 @@ export default {
 <template>
     <div class="ranking-bar-container">
         <h3 class="bar-title">{{title}}</h3>
-        <div class="bar-container">
+        <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
             v-for="item in rankingData"
@@ -62,6 +66,10 @@ export default {
     padding: 10px 12px;
     background-color: black;
     border: 2px solid var(--off-main-hex);
+}
+
+.vertical{
+    flex-direction: column;
 }
 
 .item-container {
