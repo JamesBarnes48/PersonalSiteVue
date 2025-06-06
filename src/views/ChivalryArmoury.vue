@@ -1,0 +1,107 @@
+<script>
+import armamentsData from '../assets/data/armaments.js';
+
+import RankingBar from '../components/RankingBar.vue';
+import Build from '../components/Build.vue';
+
+import {ref} from 'vue';
+
+export default {
+  name: 'Armoury',
+  components: {RankingBar, Build},
+  setup(props){
+    //imports
+    const [armaments] = [armamentsData];
+
+    //reactive state
+    let showBuild = ref(false),
+    displayedBuild = ref(null);
+
+    const queryApi = async (route) => {
+      const resJson = await (await fetch(route)).json();
+      return resJson?.data || {};
+    };
+
+    const buildSelected = (build) => {
+      if(!displayedBuild.value) showBuild.value = true; 
+      if(displayedBuild.value?.name === build.name){ 
+        showBuild.value = false;
+        displayedBuild.value = null;
+        return;
+      }
+      displayedBuild.value = build;
+    };
+
+    return {
+      armaments,
+      showBuild,
+      displayedBuild,
+      queryApi,
+      buildSelected
+    };
+  }
+}
+</script>
+
+<template>
+  <div class="main-container">
+    <h1 class="page-title">Chivalry 2 Armoury</h1>
+    <div class="chiv-container">
+      <RankingBar
+      :rankingData="armaments"
+      title="Choose an Armament"
+      @selected="buildSelected"
+      />
+      <Transition name="openbuild">
+        <Build
+        v-if="showBuild"
+        :buildData="displayedBuild"
+        />
+      </Transition>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+
+.main-container {
+  background-color: var(--off-background-hex);
+}
+
+.main-container h1 {
+  color: var(--off-main-hex);
+}
+
+.chiv-container {
+  border: 1px solid var(--main-hex);
+  background-color: #24211a;
+  padding: 20px 15px;
+  height: fit-content;
+  min-height: 550px;
+}
+
+@media(max-width: 1280px){
+  .chiv-container{
+    padding-left: 53px;
+  }
+}
+
+@media(max-width: 600px){
+  .chiv-container{
+      padding-left: 0px;
+      padding-right: 0px
+  }
+}
+
+.openbuild-enter-active,
+.openbuild-leave-active {
+  transition: opacity 0.6s ease-in;
+}
+
+.openbuild-enter-from,
+.openbuild-leave-to {
+  opacity: 0;
+}
+
+</style>
+
