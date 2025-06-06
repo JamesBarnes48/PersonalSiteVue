@@ -105,6 +105,10 @@ export default {
     .item-container {
         padding: 3px 5px;
     }
+
+    .bar-title {
+        font-size: 26px;
+    }
 }
 
 @media(max-width: 600px){

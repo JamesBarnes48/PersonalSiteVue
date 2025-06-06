@@ -83,14 +83,14 @@ export default {
 
 @media(max-width: 1280px){
   .chiv-container{
-    padding-left: 53px;
+    padding-left: 73px;
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 960px){
   .chiv-container{
-      padding-left: 0px;
-      padding-right: 0px
+    padding-left: 8px;
+    padding-right: 0px;
   }
 }
 
