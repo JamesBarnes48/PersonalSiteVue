@@ -76,6 +76,9 @@ export default {
 }
 
 .elden-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;

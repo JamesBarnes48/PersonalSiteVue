@@ -95,12 +95,14 @@ export default {
         <v-row>
             <v-col lg="6" md="12" sm="12" xs="12">
                 <img class="character-image" :src="characterImages[0]" alt="">
-                <RankingBar 
-                :rankingData="buildData.talismans"
-                title="Talismans"
-                :hideTitle="isMobile"
-                @selected="talismanSelected"
-                />
+                <div class="centered">
+                    <RankingBar 
+                    :rankingData="buildData.talismans"
+                    title="Talismans"
+                    :hideTitle="isMobile"
+                    @selected="talismanSelected"
+                    />
+                </div>
                 <Transition>
                     <div 
                     class="desc-container"
@@ -110,13 +112,15 @@ export default {
                         <p class="desc-paragraph">{{ displayedTalisman.description }}</p>
                     </div>
                 </Transition>
-                <RankingBar 
-                v-if="buildData.spells"
-                :rankingData="buildData.spells"
-                title="Spells"
-                :hideTitle="isMobile"
-                @selected="spellSelected"
-                />
+                <div class="centered">
+                    <RankingBar 
+                    v-if="buildData.spells"
+                    :rankingData="buildData.spells"
+                    title="Spells"
+                    :hideTitle="isMobile"
+                    @selected="spellSelected"
+                    />
+                </div>
                 <Transition>
                     <div 
                     class="desc-container"
