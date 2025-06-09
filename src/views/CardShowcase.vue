@@ -10,6 +10,21 @@ export default {
         const projects = {
             webdev: [
                 {
+                    title: 'Feedback Manager',
+                    mainText: `Here is a project I made when I was waiting for a project at Solirius to get the hang of Typescript and using a NoSQL database in your application.
+                        I ended up getting carried away with this and ended up making separate frontend and backend repositories. One repository features a dedicated Express server using Typescript to
+                        handle API calls. It can interact with my NoSQL database and handle authentication and login. The other repo is the frontend which uses Vite to serve up a very simple frontend using Vue with Typescript.
+                        Visually it's simple and unambiguous but functionally this project is capable and ready to go. It features a fully fleshed out authentication system that lets users register accounts and log in from the web client.
+                        It uses HTTPOnly cookies to ensure authentication so it's very secure to this end. Once logged in it allows users to post feedback, which is attached to that specific user and leverages NoSQL flexibility by
+                        allowing any number of the fields to be filled out, displaying them right back to us and following the crucial Vue convention of treating our database as the 'one source of truth'!
+                        This project was fantastic practice and it is also a fantastic template for other projects I might undertake using the ubiquitous concepts of authentication and databases. It's a strong and extensible foundation
+                        to perhaps base future projects off.`,
+                    customRepoLinks: [
+                        {href: 'https://github.com/JamesBarnes48/FeedbackManagerClient', text: 'View Client'},
+                        {href: 'https://github.com/JamesBarnes48/FeedbackManagerServer', text: 'View Server'}
+                    ]
+                },
+                {
                     title: 'Virtual Garage Application',
                     mainText: `This is a fun little Node.js web app where you can manage your five prestigious (made up) garages spanning
                         across the globe using this simple but fun tool. Really this has been a chance for
