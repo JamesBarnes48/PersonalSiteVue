@@ -22,7 +22,8 @@ export default {
                     customRepoLinks: [
                         {href: 'https://github.com/JamesBarnes48/FeedbackManagerClient', text: 'View Client'},
                         {href: 'https://github.com/JamesBarnes48/FeedbackManagerServer', text: 'View Server'}
-                    ]
+                    ],
+                    projectImages: [showcaseImages.feedback3, showcaseImages.feedback1, showcaseImages.feedback2]
                 },
                 {
                     title: 'Virtual Garage Application',
