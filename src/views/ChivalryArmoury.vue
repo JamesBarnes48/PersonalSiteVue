@@ -54,6 +54,7 @@ export default {
       :rankingData="armaments"
       title="Choose an Armament"
       vertical="true"
+      :theme="{mainColour: '#64787d', offColour: '#4a6167'}"
       @selected="buildSelected"
       />
       <Transition name="openbuild">
