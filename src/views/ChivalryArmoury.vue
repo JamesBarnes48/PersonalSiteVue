@@ -1,5 +1,5 @@
 <script>
-import armamentsData from '../assets/data/armaments.js';
+import armamentsData from '../assets/data/eldenRingArmaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
