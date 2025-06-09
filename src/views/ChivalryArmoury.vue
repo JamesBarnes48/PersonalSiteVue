@@ -1,5 +1,5 @@
 <script>
-import armamentsData from '../assets/data/eldenRingArmaments.js';
+import armamentsData from '../assets/data/chivalryArmaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
@@ -52,7 +52,6 @@ export default {
     <div class="chiv-container">
       <RankingBar
       :rankingData="armaments"
-      title="Choose an Armament"
       vertical="true"
       :theme="{mainColour: '#64787d', offColour: '#4a6167'}"
       @selected="buildSelected"
