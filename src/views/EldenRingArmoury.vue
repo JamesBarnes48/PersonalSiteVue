@@ -5,7 +5,7 @@ import armamentsData from '../assets/data/armaments.js';
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
 
-import {ref} from 'vue';
+import {ref, onMounted, onUnmounted} from 'vue';
 
 export default {
   name: 'EldenRingArmoury',
@@ -17,6 +17,9 @@ export default {
     //reactive state
     let showBuild = ref(false),
     displayedBuild = ref(null);
+
+    onMounted(() => {document.body.classList.add('dark-body')})
+    onUnmounted(() => {document.body.classList.remove('dark-body')})
 
     const queryApi = async (route) => {
       const resJson = await (await fetch(route)).json();
@@ -83,7 +86,7 @@ export default {
   background-color: #24211a;
   padding: 20px 15px;
   height: fit-content;
-  min-height: 550px;
+  min-height: 80vh;
 }
 
 @media(max-width: 1280px){
