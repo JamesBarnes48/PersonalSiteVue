@@ -4,7 +4,7 @@ import armamentsData from '../assets/data/armaments.js';
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
 
-import {ref} from 'vue';
+import {ref, onMounted, onUnmounted} from 'vue';
 
 export default {
   name: 'ChivalryArmoury',
@@ -16,6 +16,9 @@ export default {
     //reactive state
     let showBuild = ref(false),
     displayedBuild = ref(null);
+
+    onMounted(() => {document.body.classList.add('dark-body')})
+    onUnmounted(() => {document.body.classList.remove('dark-body')})
 
     const queryApi = async (route) => {
       const resJson = await (await fetch(route)).json();
@@ -74,6 +77,8 @@ export default {
 }
 
 .chiv-container {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;
