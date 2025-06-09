@@ -1,5 +1,5 @@
 <script lang="ts">
-import { onMounted, PropType } from 'vue';
+import { PropType } from 'vue';
 
 //prop defining styling options for ranking bar
 interface Theme{
@@ -11,7 +11,6 @@ export default {
     name: 'RankingBar',
     props: {
         rankingData: {type: Array, required: true},
-        title: {type: String},
         hideTitle: {type: Boolean, default: false},
         vertical: {type: Boolean, default: false},
         theme: {type: Object as PropType<Theme>, default: {mainColour: '#Fab256', offColour: '#Fd920b'}}
@@ -28,7 +27,6 @@ export default {
 
 <template>
     <div class="ranking-bar-container" :style="{'--mainColour': theme.mainColour, '--offColour': theme.offColour}">
-        <h3 class="bar-title">{{title}}</h3>
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
@@ -56,10 +54,6 @@ export default {
 
 .ranking-bar-container {
     width: fit-content;
-}
-
-.bar-title {
-    font-size: 30px;
 }
 
 .bar-container{

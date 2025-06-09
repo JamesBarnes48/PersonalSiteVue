@@ -53,11 +53,13 @@ export default {
     <h1 class="page-title">Elden Ring Armoury</h1>
     <div class="elden-container">
       <img :src="erdtree" class="erdtree-image">
-      <RankingBar
-      :rankingData="armaments"
-      title="Choose an Armament"
-      @selected="buildSelected"
-      />
+      <div>
+        <h3 class="bar-title">Choose an Armament</h3>
+        <RankingBar
+        :rankingData="armaments"
+        @selected="buildSelected"
+        />
+      </div>
       <Transition name="openbuild">
         <Build
         v-if="showBuild"
@@ -114,6 +116,10 @@ export default {
 .openbuild-enter-from,
 .openbuild-leave-to {
   opacity: 0;
+}
+
+.bar-title {
+    font-size: 30px;
 }
 
 .erdtree-image {
