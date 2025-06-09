@@ -2,20 +2,20 @@
 import armamentsData from '../assets/data/chivalryArmaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
-import Build from '../components/Build.vue';
+import ChivalryWeapon from '../components/ChivalryWeapon.vue';
 
 import {ref, onMounted, onUnmounted} from 'vue';
 
 export default {
   name: 'ChivalryArmoury',
-  components: {RankingBar, Build},
+  components: {RankingBar, ChivalryWeapon},
   setup(props){
     //imports
     const [armaments] = [armamentsData];
 
     //reactive state
-    let showBuild = ref(false),
-    displayedBuild = ref(null);
+    let showWeapon = ref(false),
+    displayedWeapon = ref(null);
 
     onMounted(() => {document.body.classList.add('dark-body')})
     onUnmounted(() => {document.body.classList.remove('dark-body')})
@@ -26,19 +26,19 @@ export default {
     };
 
     const buildSelected = (build) => {
-      if(!displayedBuild.value) showBuild.value = true; 
-      if(displayedBuild.value?.name === build.name){ 
-        showBuild.value = false;
-        displayedBuild.value = null;
+      if(!displayedWeapon.value) showWeapon.value = true; 
+      if(displayedWeapon.value?.name === build.name){ 
+        showWeapon.value = false;
+        displayedWeapon.value = null;
         return;
       }
-      displayedBuild.value = build;
+      displayedWeapon.value = build;
     };
 
     return {
       armaments,
-      showBuild,
-      displayedBuild,
+      showWeapon,
+      displayedWeapon,
       queryApi,
       buildSelected
     };
@@ -58,11 +58,19 @@ export default {
       @selected="buildSelected"
       />
       <Transition name="openbuild">
-        <Build
-        v-if="showBuild"
-        :buildData="displayedBuild"
+        <ChivalryWeapon
+        v-if="showWeapon"
+        :weaponData="displayedWeapon"
         />
       </Transition>
+      <div v-if="!showWeapon">
+        <p>Current ideas:</p>
+        <ul>
+          <li>maybe put some intro text here and then click on each weapon to expand on it? Problem is dunno what text to put here could be cringe</li>
+          <li>could put another rack of weapons along the other side if i want, might be a bit bloated visually and struggle for smaller screens</li>
+          
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -71,6 +79,7 @@ export default {
 
 .main-container {
   background-color: var(--off-background-hex);
+  color: white;
 }
 
 .main-container h1 {
