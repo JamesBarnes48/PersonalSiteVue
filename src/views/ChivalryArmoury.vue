@@ -53,7 +53,8 @@ export default {
       <RankingBar
       :rankingData="armaments"
       vertical="true"
-      :theme="{mainColour: '#64787d', offColour: '#4a6167'}"
+      hideTitle="true"
+      :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white'}"
       @selected="buildSelected"
       />
       <Transition name="openbuild">

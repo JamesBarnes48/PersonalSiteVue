@@ -4,7 +4,8 @@ import { PropType } from 'vue';
 //prop defining styling options for ranking bar
 interface Theme{
     mainColour: string,     //defaults to off-main-hex
-    offColour: string       //defaults to main-hex
+    offColour: string,       //defaults to main-hex
+    fontColour: string      //defaults to main-hex
 }
 
 export default {
@@ -13,20 +14,26 @@ export default {
         rankingData: {type: Array, required: true},
         hideTitle: {type: Boolean, default: false},
         vertical: {type: Boolean, default: false},
-        theme: {type: Object as PropType<Theme>, default: {mainColour: '#Fab256', offColour: '#Fd920b'}}
+        theme: {type: Object as PropType<Partial<Theme>>, default: {}}
     },
     setup(props){
         const getImgUrl = (item) => item.thumbnail ? item.thumbnail : item.imgSrc;
 
+        //sets out a default set of values for the css variables we need to style the page 
+        //we then use spread on top of that to replace defaults with any provided values, if we have them.
+        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b'};
+        const pageTheme: Theme = {...defaultTheme, ...props.theme};
+
         return {
-            getImgUrl
+            getImgUrl,
+            pageTheme
         };
     }
 }
 </script>
 
 <template>
-    <div class="ranking-bar-container" :style="{'--mainColour': theme.mainColour, '--offColour': theme.offColour}">
+    <div class="ranking-bar-container" :style="{'--mainColour': pageTheme.mainColour, '--offColour': pageTheme.offColour, '--fontColour': pageTheme.fontColour}">
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
