@@ -10,12 +10,27 @@ export default {
         const projects = {
             webdev: [
                 {
+                    title: 'Feedback Manager',
+                    mainText: `Here is a project I made while I was waiting for a project at Solirius in order to get the hang of Typescript and using a NoSQL database in an application.
+                        I ended up getting carried away with this and ended up making separate frontend and backend repositories. One repository features a dedicated Express server using Typescript to
+                        handle API calls. It can interact with my NoSQL database and handle authentication and login. The other repo is the frontend which uses Vite to serve up a very simple frontend using Vue with Typescript.
+                        Visually it's simple and unambiguous but functionally this project is capable and ready to go. It features a fully fleshed out authentication system that lets users register accounts and log in from the web client.
+                        It uses HTTPOnly cookies to ensure authentication so it's very secure to this end. Once logged in it allows users to post feedback, which is attached to that specific user and leverages NoSQL flexibility by
+                        allowing any number of the fields to be filled out, displaying them right back to us and following the crucial Vue convention of treating our database as the 'one source of truth'!
+                        This project was fantastic practice and it is also a fantastic template for other projects I might undertake using the ubiquitous concepts of authentication and databases. It's a strong and extensible foundation
+                        to perhaps base future projects off.`,
+                    customRepoLinks: [
+                        {href: 'https://github.com/JamesBarnes48/FeedbackManagerClient', text: 'View Client'},
+                        {href: 'https://github.com/JamesBarnes48/FeedbackManagerServer', text: 'View Server'}
+                    ],
+                    projectImages: [showcaseImages.feedback3, showcaseImages.feedback1, showcaseImages.feedback2]
+                },
+                {
                     title: 'Virtual Garage Application',
-                    mainText: `My latest side project has been a fun little Node.js web app where you can run your own dream garage. Manage your five prestigious garages spanning
+                    mainText: `This is a fun little Node.js web app where you can manage your five prestigious (made up) garages spanning
                         across the globe using this simple but fun tool. Really this has been a chance for
-                        me to put to practice some of the new development skills I have learned recently including linking a database service to your application,
-                        using some more advanced jQuery as well as generally building fuller and more scalable web applications. This project is also completely unguided 
-                        so it's something I have full creative control over. I enjoyed putting some of my skills into action at last! I know it's my finest piece of web dev so far.
+                        me to put to practice linking an SQL database service to an application, using some more advanced jQuery as well as generally 
+                        building fuller and more scalable web applications on an unguided, independent project. I enjoyed putting some of my skills into action at last!
                         It's also worth mentioning that since this project uses databases this project pays close attention to following cyber security convention.
                         Extra effort has been made to mitigate cyber threats such as XSS and SQL Injection using strong input validation, sanitisation and operating on a zero-trust basis.`,
                     repoLink: 'https://github.com/JamesBarnes48/Virtual-Garage',
@@ -52,20 +67,20 @@ export default {
                 {
                     title: 'Newsletter Sign-up',
                     mainText: `Up until this point I had been making static web pages, but this was my first step into developing a dynamic web app, meaning the website is
-                        hosted on a server instead of on the clients web browser, meaning the whole project is structured a lot differently to a static web site,
-                        it uses Node.js and Express to create a file to handle requests to my server (which I am hosting for free on Heroku). Dynamic web apps like this can handle a lot more complex tasks than
+                        hosted on a server instead of on the clients web browser. This means the whole project is structured a lot differently to a static web site,
+                        it uses Node.js and Express to create a file to handle requests to my server. Dynamic web apps like this can handle a lot more complex tasks than
                         any static webpage, and if you were developing a website for your company this is likely how you would do it! This is a simple site on the surface, but most of this site's utility is behind the scenes. The user enters their name and email address
                         to sign themselves up for a newsletter. When the user submits their info it uses the Mailchimp API to sign them up to my personal mailing list.
                         After a user has signed up successfully I will be able to see everyone who has signed up from my Mailchimp account.
                         While I don't have anything to send out at the moment, it's not difficult to see how this simple concept could be very useful from an advertising
                         perspective!`,
                     projectImages: [showcaseImages.news1, showcaseImages.news2],
-                },
+                }
             ],
             java: [
                 {
                     title: 'Cheat Card Game Simulator',
-                    mainText: `The latest project I completed using Java is a simulation of the card game Cheat. Boasting 16 different classes and 3 different interfaces it is my most complex project to date.
+                    mainText: `In 2019 I used Java to create a simulation of the card game Cheat. Boasting 16 different classes and 3 different interfaces it is my most complex Java project to date.
                         The game is simple and as you would expect, simulates the card game Cheat. Depending on how you configure it you can set any number of potential players to be either a human player who
                         plays the game through console input or an AI with 3 different strategies. Basic strategy plays the game with a very basic strategy, thinker strategy plays the game more randomly
                         and takes more risks and my own strategy which plays the game even more randomly with varying levels of randomness similar to how a human might play. The game can manipulate cards and the deck
@@ -110,7 +125,7 @@ export default {
             c: [
                 {
                     title: 'Redline LA Pursuit',
-                    mainText: `A large personal project of mine and my first attempt at game development, Redline LA Pursuit is a 2D arcade-style
+                    mainText: `My first attempt at game development, Redline LA Pursuit is a 2D arcade-style
                         game developed using OpenGL for C++. Inspired by old-school 80's arcade games, the game is relatively simple in that you
                         must drive your car as far as you can while avoiding obstacles in your way. This was a lot of fun to make and introduced me
                         to the world of graphics rendering with OpenGL. Have a go and see how far you can get!`,

@@ -5,6 +5,7 @@ export default {
         title: {type: String, default: 'Project title'},
         mainText: {type: String, default: 'Main text'},
         repoLink: {type: String},
+        customRepoLinks: {type: Array, default() {return []}},
         projectImages: {type: Array, default() {return []}}
     }
 }
@@ -37,6 +38,16 @@ export default {
                 :href="repoLink"
                 border="sm"
                 >View Project</v-btn>
+            </div>
+            <div v-for="link in customRepoLinks">
+                <v-btn 
+                class="view-btn"
+                hover
+                size="large"
+                color="orange-lighten-1"
+                :href="link.href"
+                border="sm"
+                >{{ link.text }}</v-btn>
             </div>
         </div>
     </div>
