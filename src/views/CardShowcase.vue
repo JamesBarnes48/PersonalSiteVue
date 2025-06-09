@@ -11,7 +11,7 @@ export default {
             webdev: [
                 {
                     title: 'Feedback Manager',
-                    mainText: `Here is a project I made when I was waiting for a project at Solirius to get the hang of Typescript and using a NoSQL database in your application.
+                    mainText: `Here is a project I made while I was waiting for a project at Solirius in order to get the hang of Typescript and using a NoSQL database in an application.
                         I ended up getting carried away with this and ended up making separate frontend and backend repositories. One repository features a dedicated Express server using Typescript to
                         handle API calls. It can interact with my NoSQL database and handle authentication and login. The other repo is the frontend which uses Vite to serve up a very simple frontend using Vue with Typescript.
                         Visually it's simple and unambiguous but functionally this project is capable and ready to go. It features a fully fleshed out authentication system that lets users register accounts and log in from the web client.
