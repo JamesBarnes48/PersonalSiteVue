@@ -38,10 +38,10 @@ export default {
             <div
             class="item-container"
             v-for="item in rankingData"
-            @click="this.$emit('selected', item)"
+            @click="$emit('selected', item)"
             >
                 <img class="item-image" :src="getImgUrl(item)">
-                <p v-if="!hideTitle">{{ item.name }}</p>
+                <p v-if="!hideTitle">{{ item?.name || '' }}</p>
             </div>
         </div>
     </div>
