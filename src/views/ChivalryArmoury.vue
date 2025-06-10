@@ -78,12 +78,13 @@ export default {
 
 .chiv-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;
   height: fit-content;
-  min-height: 550px;
+  min-height: 85vh;
 }
 
 @media(max-width: 1280px){
