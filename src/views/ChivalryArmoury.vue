@@ -50,17 +50,20 @@ export default {
   <div class="main-container">
     <h1 class="page-title">Chivalry 2 Armoury</h1>
     <div class="chiv-container">
-      <RankingBar
-      :rankingData="armaments"
-      :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px'}"
-      @selected="buildSelected"
-      />
-      <Transition name="openbuild">
-        <ChivalryWeapon
-        v-if="showWeapon"
-        :weaponData="displayedWeapon"
+      <div>
+        <h3 class="bar-title">Choose a Weapon</h3>
+        <RankingBar
+        :rankingData="armaments"
+        :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px'}"
+        @selected="buildSelected"
         />
-      </Transition>
+        <Transition name="openbuild">
+          <ChivalryWeapon
+          v-if="showWeapon"
+          :weaponData="displayedWeapon"
+          />
+        </Transition>
+      </div>
     </div>
   </div>
 </template>
@@ -74,6 +77,10 @@ export default {
 
 .main-container h1 {
   color: var(--off-main-hex);
+}
+
+.bar-title {
+    font-size: 30px;
 }
 
 .chiv-container {
