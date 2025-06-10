@@ -52,9 +52,7 @@ export default {
     <div class="chiv-container">
       <RankingBar
       :rankingData="armaments"
-      vertical="true"
-      hideTitle="true"
-      :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white'}"
+      :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px'}"
       @selected="buildSelected"
       />
       <Transition name="openbuild">
@@ -63,14 +61,6 @@ export default {
         :weaponData="displayedWeapon"
         />
       </Transition>
-      <div v-if="!showWeapon">
-        <p>Current ideas:</p>
-        <ul>
-          <li>maybe put some intro text here and then click on each weapon to expand on it? Problem is dunno what text to put here could be cringe</li>
-          <li>could put another rack of weapons along the other side if i want, might be a bit bloated visually and struggle for smaller screens</li>
-          
-        </ul>
-      </div>
     </div>
   </div>
 </template>
@@ -87,8 +77,8 @@ export default {
 }
 
 .chiv-container {
-  display: grid;
-  grid-template-columns: 1fr 2.5fr;
+  display: flex;
+  justify-content: center;
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;

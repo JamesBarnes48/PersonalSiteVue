@@ -5,7 +5,8 @@ import { PropType } from 'vue';
 interface Theme{
     mainColour: string,     //defaults to off-main-hex
     offColour: string,       //defaults to main-hex
-    fontColour: string      //defaults to main-hex
+    fontColour: string,      //defaults to main-hex
+    boxWidth: string,       //defaults to 13px
 }
 
 export default {
@@ -21,7 +22,7 @@ export default {
 
         //sets out a default set of values for the css variables we need to style the page 
         //we then use spread on top of that to replace defaults with any provided values, if we have them.
-        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b'};
+        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '25px'};
         const pageTheme: Theme = {...defaultTheme, ...props.theme};
 
         return {
@@ -33,7 +34,7 @@ export default {
 </script>
 
 <template>
-    <div class="ranking-bar-container" :style="{'--mainColour': pageTheme.mainColour, '--offColour': pageTheme.offColour, '--fontColour': pageTheme.fontColour}">
+    <div class="ranking-bar-container" :style="{'--mainColour': pageTheme.mainColour, '--offColour': pageTheme.offColour, '--fontColour': pageTheme.fontColour, '--boxWidth': pageTheme.boxWidth}">
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
@@ -79,7 +80,7 @@ export default {
 }
 
 .item-container {
-    padding: 10px 13px;
+    padding: 10px var(--boxWidth);
     flex-grow: 1;
     background-color: var(--mainColour);
 }
