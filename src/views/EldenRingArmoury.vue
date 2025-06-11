@@ -54,11 +54,15 @@ export default {
     <div class="elden-container">
       <img :src="erdtree" class="erdtree-image">
       <div>
-        <h3 class="bar-title">Choose an Armament</h3>
         <RankingBar
         :rankingData="armaments"
         @selected="buildSelected"
         />
+      </div>
+      <div v-if="!showBuild">
+        <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
+        <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
+        <h2>Choose your weapon.</h2>
       </div>
       <Transition name="openbuild">
         <Build
