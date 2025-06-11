@@ -56,6 +56,7 @@ export default {
       <div>
         <RankingBar
         :rankingData="armaments"
+        :theme="{boxWidth: '45px', block: true}"
         @selected="buildSelected"
         />
       </div>

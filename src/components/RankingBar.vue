@@ -7,6 +7,7 @@ interface Theme{
     offColour: string,       //defaults to main-hex
     fontColour: string,      //defaults to main-hex
     boxWidth: string,       //defaults to 25px
+    block: boolean          //does box fill maximum width?
 }
 
 export default {
@@ -37,7 +38,7 @@ export default {
 
         //sets out a default set of values for the css variables we need to style the page 
         //we then use spread on top of that to replace defaults with any provided values, if we have them.
-        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '25px'};
+        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '25px', block: false};
         const pageTheme: Theme = {...defaultTheme, ...props.theme};
 
 
@@ -54,7 +55,7 @@ export default {
 </script>
 
 <template>
-    <div class="ranking-bar-container" :style="{'--mainColour_inline': pageTheme.mainColour, '--offColour_inline': pageTheme.offColour, '--fontColour_inline': pageTheme.fontColour, '--boxWidth_inline': pageTheme.boxWidth}">
+    <div class="ranking-bar-container" :style="{'--mainColour_inline': pageTheme.mainColour, '--offColour_inline': pageTheme.offColour, '--fontColour_inline': pageTheme.fontColour, '--boxWidth_inline': pageTheme.boxWidth, '--block_inline': pageTheme.block? '100%': 'fit-content'}">
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
@@ -86,7 +87,7 @@ export default {
 /* css variables defined inline cannot be overridden, must translate inline style variables onto class so the class can be overridden */
 /* also cant just put theme prop vals straight into <style> tags, must put in inline style first */
 .ranking-bar-container {
-    width: fit-content;
+    width: var(--block_inline);
     --mainColour: var(--mainColour_inline);
     --offColour: var(--offColour_inline);
     --fontColour: var(--fontColour_inline);
@@ -137,12 +138,12 @@ export default {
 
 .item-image {
     object-fit: cover;
-    height: 100px;
+    height: 90px;
 }
 
 @media(max-width: 1080px){
     .ranking-bar-container{
-        --boxWidth: 30px;
+        --boxWidth: 28px;
     }
 
     .item-image{
@@ -170,7 +171,7 @@ export default {
     }
 
     .item-container {
-        padding: 4px 6px;
+        padding: 12px 17px;
     }
 }
 

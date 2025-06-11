@@ -53,27 +53,29 @@ export default {
     <h1 class="page-title">Chivalry 2 Armoury</h1>
     <div class="chiv-container banner-wrapper">
       <img :src="banner" class="banner-image">
+      <div>
         <RankingBar
         :rankingData="armaments"
-        :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px'}"
+        :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px', block: true}"
         @selected="buildSelected"
         />
-        <Transition name="openbuild" mode="out-in">
-          <ChivalryWeapon
-          v-if="showWeapon"
-          key="main"
-          :weaponData="displayedWeapon"
-          />
-          <div 
-          v-else
-          key="placeholder"
-          class="placeholder-container"
-          >
-            <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
-            <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
-            <h2>Choose your weapon.</h2>
-          </div>
-        </Transition>
+      </div>
+      <Transition name="openbuild" mode="out-in">
+        <ChivalryWeapon
+        v-if="showWeapon"
+        key="main"
+        :weaponData="displayedWeapon"
+        />
+        <div 
+        v-else
+        key="placeholder"
+        class="placeholder-container"
+        >
+          <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
+          <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
+          <h2>Choose your weapon.</h2>
+        </div>
+      </Transition>
     </div>
   </div>
 </template>
