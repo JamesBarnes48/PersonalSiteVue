@@ -6,7 +6,7 @@ interface Theme{
     mainColour: string,     //defaults to off-main-hex
     offColour: string,       //defaults to main-hex
     fontColour: string,      //defaults to main-hex
-    boxWidth: string,       //defaults to 13px
+    boxWidth: string,       //defaults to 25px
 }
 
 export default {
