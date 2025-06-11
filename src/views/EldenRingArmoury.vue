@@ -100,6 +100,10 @@ export default {
   min-height: 85vh;
 }
 
+.placeholder-container > *{
+  margin: 9px 0;
+}
+
 @media(max-width: 1280px){
   .elden-container{
     padding-left: 53px;
