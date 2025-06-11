@@ -1,5 +1,5 @@
 <script lang="ts">
-import { PropType } from 'vue';
+import { PropType, ref } from 'vue';
 
 //prop defining styling options for ranking bar
 interface Theme{
@@ -17,17 +17,31 @@ export default {
         vertical: {type: Boolean, default: false},
         theme: {type: Object as PropType<Partial<Theme>>, default: {}}
     },
-    setup(props){
+    setup(props, {emit}){
+        const selectedItemKey = ref(null);
+
         const getImgUrl = (item) => item.thumbnail ? item.thumbnail : item.imgSrc;
+        const selectItem = (key, item) => {
+            //if re-clicking same element
+            if(selectedItemKey.value === key){
+                selectedItemKey.value = null;
+            }else{
+                selectedItemKey.value = key;
+            }
+            emit('selected', item);
+        };
 
         //sets out a default set of values for the css variables we need to style the page 
         //we then use spread on top of that to replace defaults with any provided values, if we have them.
         const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '25px'};
         const pageTheme: Theme = {...defaultTheme, ...props.theme};
 
+
         return {
             getImgUrl,
-            pageTheme
+            selectItem,
+            pageTheme,
+            selectedItemKey
         };
     }
 }
@@ -38,8 +52,9 @@ export default {
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
-            v-for="item in rankingData"
-            @click="$emit('selected', item)"
+            :class="selectedItemKey === key? 'selected': ''"
+            v-for="(item, key) in rankingData"
+            @click="selectItem(key, item)"
             >
                 <img class="item-image" :src="getImgUrl(item)">
                 <p v-if="!hideTitle">{{ item?.name || '' }}</p>
@@ -89,6 +104,12 @@ export default {
     animation-name: highlightItem;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.item-container.selected {
+    animation: none;
+    transform: scale(1.05);
+    background-color: var(--offColour);
 }
 
 .item-container p {
