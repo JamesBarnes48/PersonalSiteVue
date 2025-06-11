@@ -126,10 +126,6 @@ export default {
   opacity: 0;
 }
 
-.bar-title {
-    font-size: 30px;
-}
-
 .erdtree-image {
   position: absolute; 
   left: 0; 
