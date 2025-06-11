@@ -52,6 +52,15 @@ export default {
 <template>
     <div class="weapon-container">
         <h2>{{ weaponData.name }}</h2>
+        <div class="stats-container">
+            <div 
+            v-for="key in Object.keys(weaponData.stats)"
+            class="stat-container"
+            >
+                <h3>{{ key }}:</h3>
+                <h2>{{ weaponData.stats[key] }}</h2>
+            </div>
+        </div>
         <div class="desc-container">
             <p class="desc-flavour">{{ weaponData.descriptionFlavour }}</p>
             <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
@@ -91,13 +100,6 @@ export default {
   border: 1px solid var(--off-main-hex);
 }
 
-@media(max-width: 600px){
-    .weapon-container{
-        padding-left: 7px;
-        padding-right: 7px;
-    }
-}
-
 .desc-container {
     border: 1px solid var(--off-main-hex);
     padding: 14px 12px;
@@ -111,8 +113,53 @@ export default {
     scrollbar-color: var(--main-hex) #000; 
 }
 
+.stats-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.stat-container{
+    width: 27%;
+    border: 1px solid white;
+    padding: 10px 14px;
+}
+
+.stat-container > h2{
+    font-size: 1.7rem;
+}
+
+.stat-container > h3{
+    font-size: 1.5rem;
+}
+
 @media(max-width: 1280px){
     .desc-container {max-height: 420px;}
+
+    .stat-container > h2 {    
+        font-size: 1.4rem;
+    }
+
+    .stat-container > h2 {    
+        font-size: 1.2rem;
+    }
+}
+
+@media(max-width: 600px){
+    .stat-container{
+        width: 30%;
+    }
+    .stat-container > h2{
+        font-size: 1.3rem;
+    }
+
+    .stat-container > h3{
+        font-size: 1.1rem;
+    }
+
+    .weapon-container{
+        padding-left: 7px;
+        padding-right: 7px;
+    }
 }
 
 /* Webkit browser scrollbar customizations (Chrome, Safari, Edge) */

@@ -171,7 +171,7 @@ export default {
     }
 
     .item-container {
-        padding: 12px 17px;
+        padding: 7px 11px;
     }
 }
 
