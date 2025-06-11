@@ -59,16 +59,20 @@ export default {
         @selected="buildSelected"
         />
       </div>
-      <div v-if="!showBuild">
-        <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
-        <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
-        <h2>Choose your weapon.</h2>
-      </div>
-      <Transition name="openbuild">
+      <Transition name="openbuild" mode="out-in">
         <Build
         v-if="showBuild"
+        key="main"
         :buildData="displayedBuild"
         />
+        <div 
+        v-else
+        key="placeholder"
+        >
+          <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
+          <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
+          <h2>Choose your weapon.</h2>
+      </div>
       </Transition>
     </div>
   </div>
