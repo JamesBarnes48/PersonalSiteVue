@@ -19,11 +19,15 @@ export default {
     },
     setup(props, {emit}){
         const selectedItemKey = ref(null);
+        const disableAnimationKey = ref(null);
 
         const getImgUrl = (item) => item.thumbnail ? item.thumbnail : item.imgSrc;
+        const resetAnimation = () => disableAnimationKey.value = selectedItemKey.value? disableAnimationKey.value: null;
         const selectItem = (key, item) => {
             //if re-clicking same element
             if(selectedItemKey.value === key){
+                //if unselecting element, mark it to disable the hover animation until the mouse leaves the element and resetAnimation un-marks it again
+                disableAnimationKey.value = key;
                 selectedItemKey.value = null;
             }else{
                 selectedItemKey.value = key;
@@ -40,8 +44,10 @@ export default {
         return {
             getImgUrl,
             selectItem,
+            resetAnimation,
             pageTheme,
-            selectedItemKey
+            selectedItemKey,
+            disableAnimationKey
         };
     }
 }
@@ -52,9 +58,10 @@ export default {
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
-            :class="selectedItemKey === key? 'selected': ''"
+            :class="{'selected': selectedItemKey === key, 'animationDisabled': disableAnimationKey === key}"
             v-for="(item, key) in rankingData"
             @click="selectItem(key, item)"
+            @mouseleave="resetAnimation"
             >
                 <img class="item-image" :src="getImgUrl(item)">
                 <p v-if="!hideTitle">{{ item?.name || '' }}</p>
@@ -104,6 +111,10 @@ export default {
     animation-name: highlightItem;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+}
+
+.item-container.animationDisabled:hover{
+    animation: none;
 }
 
 .item-container.selected {
