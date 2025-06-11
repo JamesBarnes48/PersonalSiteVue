@@ -61,9 +61,11 @@ export default {
                 <h2>{{ weaponData.stats[key] }}</h2>
             </div>
         </div>
-        <div class="desc-container">
-            <p class="desc-flavour">{{ weaponData.descriptionFlavour }}</p>
-            <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
+        <div class="side-by-side-container">
+            <div class="desc-container">
+                <p class="desc-flavour">{{ weaponData.descriptionFlavour }}</p>
+                <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
+            </div>
         </div>
         <EmbeddedVideo
             v-if="weaponData.videos?.length"
@@ -100,7 +102,7 @@ export default {
   border: 1px solid var(--off-main-hex);
 }
 
-.desc-container {
+.weapon-container .desc-container {
     border: 1px solid var(--off-main-hex);
     padding: 14px 12px;
     background-color: var(--off-main-hex);
@@ -113,15 +115,21 @@ export default {
     scrollbar-color: var(--main-hex) #000; 
 }
 
-.stats-container{
+.weapon-container .stats-container{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 25px;
 }
 
-.stat-container{
+.weapon-container .stat-container{
     width: 27%;
     border: 1px solid white;
     padding: 10px 14px;
+}
+
+.weapon-container .side-by-side-container{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
 }
 
 .stat-container > h2{
