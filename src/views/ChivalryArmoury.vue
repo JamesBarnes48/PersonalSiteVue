@@ -71,8 +71,9 @@ export default {
         key="placeholder"
         class="placeholder-container"
         >
-          <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
-          <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
+          <h3>Chivalry 2 is a game with massive, 64-player online battles where two armies collide.</h3>
+          <h3>The battlefield is our proving ground. The strong flourish... and the weak feed their egos.</h3>
+          <h3>Your most important decision is what you wield. These are some of my signature weapons, my own personal favourites.</h3>
           <h2>Choose your weapon.</h2>
         </div>
       </Transition>
@@ -122,6 +123,10 @@ export default {
   filter: alpha(opacity=50);  
   -moz-opacity: 0.5;  
   -khtml-opacity: 0.5; 
+}
+
+.placeholder-container{
+  z-index: 1;
 }
 
 .placeholder-container > *{
