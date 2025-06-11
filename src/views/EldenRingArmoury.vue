@@ -68,6 +68,7 @@ export default {
         <div 
         v-else
         key="placeholder"
+        class="placeholder-container"
         >
           <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
           <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
@@ -107,12 +108,28 @@ export default {
   .erdtree-image {
     width: 43%;
   }
+
+  .elden-container .placeholder-container h3{
+    font-size: 1.4rem;
+  }
+
+  .elden-container .placeholder-container h2{
+    font-size: 1.6rem;
+  }
 }
 
 @media(max-width: 600px){
   .elden-container{
       padding-left: 0px;
       padding-right: 0px
+  }
+
+  .elden-container .placeholder-container h3{
+    font-size: 1.2rem;
+  }
+
+  .elden-container .placeholder-container h2{
+    font-size: 1.4rem;
   }
 }
 
