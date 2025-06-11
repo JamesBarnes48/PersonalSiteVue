@@ -1,4 +1,5 @@
 <script>
+import bannerImage from '/chivalry/chiv2banner.jpg';
 import armamentsData from '../assets/data/chivalryArmaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
@@ -11,7 +12,7 @@ export default {
   components: {RankingBar, ChivalryWeapon},
   setup(props){
     //imports
-    const [armaments] = [armamentsData];
+    const [banner, armaments] = [bannerImage, armamentsData];
 
     //reactive state
     let showWeapon = ref(false),
@@ -36,6 +37,7 @@ export default {
     };
 
     return {
+      banner,
       armaments,
       showWeapon,
       displayedWeapon,
@@ -49,7 +51,8 @@ export default {
 <template>
   <div class="main-container">
     <h1 class="page-title">Chivalry 2 Armoury</h1>
-    <div class="chiv-container">
+    <div class="chiv-container banner-wrapper">
+      <img :src="banner" class="banner-image">
       <div>
         <h3 class="bar-title">Choose a Weapon</h3>
         <RankingBar
@@ -92,6 +95,28 @@ export default {
   padding: 20px 15px;
   height: fit-content;
   min-height: 85vh;
+}
+
+/* relative positioned parent means max height, overflowing background image is contained inside it - "nearest positioned ancestor" */
+.banner-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.banner-image {
+  position: absolute; 
+  left: 0; 
+  right: 0; 
+  bottom: 0;
+  top: 0;
+  margin: auto;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);  
+  -moz-opacity: 0.5;  
+  -khtml-opacity: 0.5; 
 }
 
 @media(max-width: 1280px){
