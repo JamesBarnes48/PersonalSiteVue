@@ -63,7 +63,6 @@ export default {
         </div>
         <div class="side-by-side-container">
             <div class="desc-container">
-                <p class="desc-flavour">{{ weaponData.descriptionFlavour }}</p>
                 <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
             </div>
         </div>
@@ -195,13 +194,8 @@ export default {
 }
 
 .desc-paragraph {
+    color: black;
     margin: 10px 0;
-}
-
-.desc-flavour {
-    margin-bottom: 20px;
-    font-weight: bold;
-    font-style: italic;
 }
 
 .video-nav-container {
