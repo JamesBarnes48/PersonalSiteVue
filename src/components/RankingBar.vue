@@ -54,7 +54,7 @@ export default {
 </script>
 
 <template>
-    <div class="ranking-bar-container" :style="{'--mainColour': pageTheme.mainColour, '--offColour': pageTheme.offColour, '--fontColour': pageTheme.fontColour, '--boxWidth': pageTheme.boxWidth}">
+    <div class="ranking-bar-container" :style="{'--mainColour_inline': pageTheme.mainColour, '--offColour_inline': pageTheme.offColour, '--fontColour_inline': pageTheme.fontColour, '--boxWidth_inline': pageTheme.boxWidth}">
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
             class="item-container"
@@ -82,8 +82,15 @@ export default {
     }
 }
 
+/* for responsiveness, media queries override certain css variables for smaller screens */
+/* css variables defined inline cannot be overridden, must translate inline style variables onto class so the class can be overridden */
+/* also cant just put theme prop vals straight into <style> tags, must put in inline style first */
 .ranking-bar-container {
     width: fit-content;
+    --mainColour: var(--mainColour_inline);
+    --offColour: var(--offColour_inline);
+    --fontColour: var(--fontColour_inline);
+    --boxWidth: var(--boxWidth_inline);
 }
 
 .bar-container{
@@ -133,6 +140,26 @@ export default {
     height: 100px;
 }
 
+@media(max-width: 1080px){
+    .ranking-bar-container{
+        --boxWidth: 30px;
+    }
+
+    .item-image{
+        height: 85px;
+    }
+}
+
+@media(max-width: 800px){
+    .ranking-bar-container{
+        --boxWidth: 25px;
+    }
+
+    .item-image{
+        height: 80px;
+    }
+}
+
 @media(max-width: 700px){
     .item-image{
         height: 75px;
@@ -143,11 +170,7 @@ export default {
     }
 
     .item-container {
-        padding: 3px 5px;
-    }
-
-    .bar-title {
-        font-size: 26px;
+        padding: 4px 6px;
     }
 }
 
