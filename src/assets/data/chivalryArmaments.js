@@ -26,8 +26,8 @@ export default [
         descriptionParagraphs: [
             `Many players know this nasty little thing as the 'gamble stick', a reputation which certainly isn't unfounded. It's earned this name because of how easily you can break the normal flow of combat and 'gamble' on a free hit.
             This is my second most used weapon and it is characterised by its rapid and relentless attack. It's fast to swing, and since it's a blunt weapon it combos extremely fast, allowing you to overwhelm your opponent with a flurry of hits before
-            they can figure out what day of the week it is. The damage isn't bad either for a one-handed weapon, it soon adds up and even more so against knights with their weakness to blunt damage.`,
-            `As with any one-handed weapon it shares a fairly short range, meaning you will have to really lean into the aggressive playstyle and overwhelm your enemy. This isn't an issue for me though as that's exactly the kind of playstyle i enjoy.
+            they can figure out what day of the week it is. The damage isn't too bad either for a one-handed weapon, it soon adds up and even more so against knights with their weakness to blunt damage.`,
+            `As with any one-handed weapon it shares a fairly short range, meaning you will have to lean into the aggressive playstyle and overwhelm your enemy. This isn't an issue for me though as that's exactly the kind of playstyle I enjoy.
             If I'm in the mood for a one-handed weapon this monster is where my mind goes to first. For 1v1 fights as long as you stick to your opponent like glue you'll be hard pressed to find a more terrifying weapon.`
         ]
     },
@@ -41,11 +41,11 @@ export default [
         },
         descriptionParagraphs: [
             `Sometimes there's only one thing for it: bringing down a comically large hammer on your opponents skull. The maul is probably the most situational weapon on this list: in a 1v1 with a good player with a quicker weapon
-            you will have to put the work in, with it's big telegraphed swings being easy to gamble against. In fact, it's the second slowest weapon in the game. Because of this some lesser people might rule this weapon out because of this...
+            you will have to put the work in, with it's big telegraphed swings being easy to gamble against. In fact, it's the second slowest weapon in the game. Because of this some lesser people might rule it out...
             I think they need more imagination.`,
             `Obviously the maul's greatest strength is it's crushing damage, the hard part is connecting a hit. This is where a crucial concept of Chivalry combat comes in: drags. By moving your camera around you can manipulate when your swing connects.
-            Delaying or accelerating it can throw off your opponents timing and connect those attacks and deal devastating damage, making the maul quite fun to use in the hands of an experienced player. It becomes something like a dance, swinging your majestic giant hammer
-            to try and find a crack in their guard. When I'm in the mood for the maul it always makes for a good time.`
+            Delaying or accelerating it can throw off your opponents timing and connect those attacks and deal devastating damage, making the maul quite fun to use in the hands of an experienced player. It becomes something like a painting on canvas, swinging your majestic giant hammer
+            to try and find a crack in their guard. When I'm in the mood for the maul it always makes for a good time, and who could argue with that satisfying 'bonk'.`
         ]
     },
     {
@@ -59,8 +59,8 @@ export default [
         descriptionParagraphs: [
             `To see the greatsword do work in skilled hands is a thing of beauty. Luckily, you wont have to wait long because it's probably one of the most popular weapons in the game.
             For good reason too, it just ticks all the boxes. Its got fantastic range rivalling polearms like the halberd, it's got decent damage for a sword and a long release like the maul so it is great for drags and cleaving through
-            groups of enemies. It just does everything well and means you will always have plenty of tools at your disposal to mix up your play. Granted, the stabs aren't great and sometimes it can feel pretty underpowered against knights for such a 
-            chunky weapon but I think it just radiates a sense of comfort. You can rely of this to look after you whenever you need.`,
+            groups of enemies. It's a true all-rounder and means you will always have plenty of tools at your disposal to mix up your play. Granted, the stabs aren't great and sometimes it can feel pretty underpowered against knights for such a 
+            chunky weapon but you can still rely of this to look after you whenever you need.`,
             `The good thing about this weapon is that it doesn't really dictate a certain playstyle: you can play for range, you can jump into the fray and swing like mad or you can 1v1 effectively. Best of all I find that the rhythm of combat
             flows very nicely with it. It plays a little differently from the other swords due to its slightly worse stab but to be honest I prefer overheads anyway. One thing's for sure though: I love this weapon.`
         ]
@@ -72,6 +72,16 @@ export default [
             'Weapon Level': '48',
             'Total Elims': '2200',
             'Preferred Class': 'Guardian'
-        }
+        },
+        descriptionParagraphs: [
+            `This weapon proves that good things do come in small packages. This pocket sized wrecking ball can do some real damage in the right hands. Overheads are the name of the game here and they can deal a deceptive amount of damage.
+            They have just the most satisfying 'clonk' sound when they connect which is just lovely. The high damage is aided by the fact that it swings rapidly too. It, like other one handed weapons, suits aggression and savage combo attacks. 
+            Once you find an opening, if you exploit it you'll find enemies fall very quickly.`,
+            `It comes on the guardian class, a tanky knight with a heavy shield which allows you to block a lot more often than with anything else. This allows you to lean into a back and forth, block and riposte
+            playstyle and really take advantage of the flexibility in follow up attacks afforded by mixing up blocking and countering, especially with such a snappy weapon. Follow the flow of combat and mix up your reply to decieve your opponents and then once you
+            find your mark you can leverage the aggression of this weapon to keep up the pressure and crush them.`,
+            `It has one big weakness though, you have to be very up close and personal to connect. If there is any weapon susceptible to spacing it's this one, so its crucial you use that big
+            shield of yours to block hits and keep up the attack. An interesting playstyle for sure but I love it and have gone on some real nice sprees with it.`
+        ]
     }
 ]
