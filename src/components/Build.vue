@@ -42,11 +42,12 @@ export default {
 
     // Method equivalents
     function imagesToUrl(images) {
-      if (!images?.length) return ['temp'];
+      if (!images?.length) return [];
       return images.map((img) => new URL(img, import.meta.url).href);
     }
 
     function getVideoThumbnail() {
+      if(!characterImages) return null;
       const thumb = characterImages.value[videoNumber.value];
       return thumb ? thumb : characterImages.value[videoNumber.value - characterImages.value.length];
     }

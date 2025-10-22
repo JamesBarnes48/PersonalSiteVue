@@ -52,7 +52,7 @@ export default {
   <div class="main-container">
     <h1 class="page-title">Chivalry 2 Armoury</h1>
     <div class="chiv-container banner-wrapper">
-      <img :src="banner" class="banner-image">
+      <img :src="banner" class="banner-image" />
       <div>
         <RankingBar
         :rankingData="armaments"
@@ -107,6 +107,7 @@ export default {
 .banner-wrapper {
   position: relative;
   overflow: hidden;
+  min-height: 1100px;
 }
 
 .banner-image {

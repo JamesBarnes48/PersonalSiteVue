@@ -8,11 +8,29 @@ export default [
             'Preferred Class': 'Devastator'
         },
         descriptionParagraphs: [
-            `The king of the hill, the battle axe is my most used weapon in the game by a long shot. It's just brutal: with it's defining feature being its ability to dish out
+            `The undisputed champ, the battle axe is my most used weapon in the game by a long shot. It's just brutal: with it's defining feature being its ability to dish out
             damage in abundance in as short a time as possible. It owes this to it's deceptively fast swing speed which makes it feel very natural to use, and the crushing blows make it rewarding too.`,
             `Like any weapon in Chivalry 2 it doesn't come without drawbacks. It is quite a short-range weapon which can easily be outspaced by longer weapons, meaning you need to play aggressively and get 
             into the thick of it to overwhelm your enemy. Many a time has a battle axe player whiffed his swing completely only to get smacked afterwards, which is where a feint might come in handy to help delay your strike until they're in range. 
             This playstyle is why it suits me so well: you can focus on your own technique and embrace the natural rhythm of combat, trusting your weapon to do it's part. And believe me, it will.`
+        ],
+        videos: [
+            {
+                id: 'nS5LD5ZPeqE',
+                title: 'Brute of the North'
+            },
+            {
+                id: 'u1RkzhiQTWk',
+                title: 'POV: that one viking at the Battle of Stamford Bridge'
+            },
+            {
+                id: 'r5pOHLplHts',
+                title: 'Clash of Titans'
+            },
+            {
+                id: 'jwYN2Dp0IUw',
+                title: 'Tis but a scratch'
+            }
         ]
     },
     {
@@ -29,6 +47,24 @@ export default [
             they can figure out what day of the week it is. The damage isn't too bad either for a one-handed weapon, it soon adds up and even more so against knights with their weakness to blunt damage.`,
             `As with any one-handed weapon it shares a fairly short range, meaning you will have to lean into the aggressive playstyle and overwhelm your enemy. This isn't an issue for me though as that's exactly the kind of playstyle I enjoy.
             If I'm in the mood for a one-handed weapon this monster is where my mind goes to first. For 1v1 fights as long as you stick to your opponent like glue you'll be hard pressed to find a more terrifying weapon.`
+        ],
+        videos: [
+            {
+                id: 'uo7gwQS0yug',
+                title: `I'm not trapped in here with you...`
+            },
+            {
+                id: '7i4PakJg7z0',
+                title: 'Finesse'
+            },
+            {
+                id: 'IOSKlaOysFg',
+                title: 'An unstoppable force vs an immovable stone pillar'
+            },
+            {
+                id: '7E2gY72Hmyg',
+                title: 'Unchivalrous'
+            }
         ]
     },
     {
@@ -46,6 +82,20 @@ export default [
             `Obviously the maul's greatest strength is it's crushing damage, the hard part is connecting a hit. This is where a crucial concept of Chivalry combat comes in: drags. By moving your camera around you can manipulate when your swing connects.
             Delaying or accelerating it can throw off your opponents timing and connect those attacks and deal devastating damage, making the maul quite fun to use in the hands of an experienced player. It becomes something like a painting on canvas, swinging your majestic giant hammer
             to try and find a crack in their guard. When I'm in the mood for the maul it always makes for a good time, and who could argue with that satisfying 'bonk'.`
+        ],
+        videos: [
+            {
+                id: 'HUB5phHCNok',
+                title: `Harold Godwinson's Last Stand`
+            },
+            {
+                id: 'efc5b3GI838',
+                title: 'Grace and Brutality'
+            },
+            {
+                id: 'XNg4hmpO2ns',
+                title: 'Playground Bully'
+            },
         ]
     },
     {
@@ -63,6 +113,20 @@ export default [
             chunky weapon but you can still rely of this to look after you whenever you need.`,
             `The good thing about this weapon is that it doesn't really dictate a certain playstyle: you can play for range, you can jump into the fray and swing like mad or you can 1v1 effectively. Best of all I find that the rhythm of combat
             flows very nicely with it. It plays a little differently from the other swords due to its slightly worse stab but to be honest I prefer overheads anyway. One thing's for sure though: I love this weapon.`
+        ],
+        videos: [
+            {
+                id: 'CBMTmyIkY30',
+                title: `The Black Prince's last chevauchée`,
+            },
+            {
+                id: '_AcYr3mDUSg',
+                title: `Laying Siege`,
+            },    
+            {
+                id: 'LTneik38mC4',
+                title: `Wheat before the scythe`,
+            }
         ]
     },
     {
@@ -82,6 +146,24 @@ export default [
             find your mark you can leverage the aggression of this weapon to keep up the pressure and crush them.`,
             `It has one big weakness though, you have to be very up close and personal to connect. If there is any weapon susceptible to spacing it's this one, so its crucial you use that big
             shield of yours to block hits and keep up the attack. An interesting playstyle for sure but I love it and have gone on some real nice sprees with it.`
+        ],
+        videos: [
+            {
+                id: 'mXPVGwejiH0',
+                title: `Call it a day`
+            },
+            {
+                id: 'Zl6F_8ubuDc',
+                title: `You're outclassed`
+            },
+            {
+                id: '-7vHxf1Ut-M',
+                title: `Gladiator`
+            },
+            {
+                id: 'nATT1HDu_f4',
+                title: `Frenzied Charge`
+            }
         ]
     }
 ]
