@@ -1,6 +1,6 @@
 <script>
 import erdtreeImage from '/armoury/erdtree.webp';
-import armamentsData from '../assets/data/armaments.js';
+import armamentsData from '../assets/data/eldenRingArmaments.js';
 
 import RankingBar from '../components/RankingBar.vue';
 import Build from '../components/Build.vue';
@@ -8,7 +8,7 @@ import Build from '../components/Build.vue';
 import {ref, onMounted, onUnmounted} from 'vue';
 
 export default {
-  name: 'Armoury',
+  name: 'EldenRingArmoury',
   components: {RankingBar, Build},
   setup(props){
     //imports
@@ -53,16 +53,28 @@ export default {
     <h1 class="page-title">Elden Ring Armoury</h1>
     <div class="elden-container">
       <img :src="erdtree" class="erdtree-image">
-      <RankingBar
-      :rankingData="armaments"
-      title="Choose an Armament"
-      @selected="buildSelected"
-      />
-      <Transition name="openbuild">
+      <div>
+        <RankingBar
+        :rankingData="armaments"
+        :theme="{boxWidth: '45px', block: true}"
+        @selected="buildSelected"
+        />
+      </div>
+      <Transition name="openbuild" mode="out-in">
         <Build
         v-if="showBuild"
+        key="main"
         :buildData="displayedBuild"
         />
+        <div 
+        v-else
+        key="placeholder"
+        class="placeholder-container"
+        >
+          <h3>In Elden Ring there are many armaments to choose from, but not all are forged equal.</h3>
+          <h3>In the numerous times I have played through the game I have honed in on a few personal favourites, a gallery of weapons that are the most fun to play.</h3>
+          <h2>Choose your weapon.</h2>
+      </div>
       </Transition>
     </div>
   </div>
@@ -79,11 +91,18 @@ export default {
 }
 
 .elden-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   border: 1px solid var(--main-hex);
   background-color: #24211a;
   padding: 20px 15px;
   height: fit-content;
-  min-height: 80vh;
+  min-height: 85vh;
+}
+
+.placeholder-container > *{
+  margin: 9px 0;
 }
 
 @media(max-width: 1280px){
@@ -94,12 +113,28 @@ export default {
   .erdtree-image {
     width: 43%;
   }
+
+  .elden-container .placeholder-container h3{
+    font-size: 1.4rem;
+  }
+
+  .elden-container .placeholder-container h2{
+    font-size: 1.6rem;
+  }
 }
 
 @media(max-width: 600px){
   .elden-container{
       padding-left: 0px;
       padding-right: 0px
+  }
+
+  .elden-container .placeholder-container h3{
+    font-size: 1.2rem;
+  }
+
+  .elden-container .placeholder-container h2{
+    font-size: 1.4rem;
   }
 }
 
