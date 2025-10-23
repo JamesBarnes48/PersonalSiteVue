@@ -20,8 +20,8 @@ export default [
                 title: 'Brute of the North'
             },
             {
-                id: 'u1RkzhiQTWk',
-                title: 'POV: that one viking at the Battle of Stamford Bridge'
+                id: 'QSb0-F1tgTE',
+                title: 'Frontline Bruiser'
             },
             {
                 id: 'r5pOHLplHts',
@@ -110,7 +110,7 @@ export default [
             `To see the greatsword do work in skilled hands is a thing of beauty. Luckily, you wont have to wait long because it's probably one of the most popular weapons in the game.
             For good reason too, it just ticks all the boxes. Its got fantastic range rivalling polearms like the halberd, it's got decent damage for a sword and a long release like the maul so it is great for drags and cleaving through
             groups of enemies. It's a true all-rounder and means you will always have plenty of tools at your disposal to mix up your play. Granted, the stabs aren't great and sometimes it can feel pretty underpowered against knights for such a 
-            chunky weapon but you can still rely of this to look after you whenever you need.`,
+            chunky weapon but you can still rely on this to look after you whenever you need.`,
             `The good thing about this weapon is that it doesn't really dictate a certain playstyle: you can play for range, you can jump into the fray and swing like mad or you can 1v1 effectively. Best of all I find that the rhythm of combat
             flows very nicely with it. It plays a little differently from the other swords due to its slightly worse stab but to be honest I prefer overheads anyway. One thing's for sure though: I love this weapon.`
         ],
@@ -153,7 +153,7 @@ export default [
                 title: `Call it a day`
             },
             {
-                id: 'Zl6F_8ubuDc',
+                id: 'GTAQ64zqdI8',
                 title: `You're outclassed`
             },
             {

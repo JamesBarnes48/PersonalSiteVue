@@ -21,16 +21,6 @@ export default {
         return ['xs', 'sm'].includes(display.name.value);
     });
 
-    function imagesToUrl(images) {
-      if (!images?.length) return ['temp'];
-      return images.map((img) => new URL(img, import.meta.url).href);
-    }
-
-    function getVideoThumbnail() {
-      const thumb = characterImages.value[videoNumber.value];
-      return thumb ? thumb : characterImages.value[videoNumber.value - characterImages.value.length];
-    }
-
     watch(
       () => props.weaponData, //watch() requires a function as its first arg - returning the val you want to watch
       (newWeapon) => {
@@ -42,8 +32,6 @@ export default {
       videoNumber,
       display,
       isMobile,
-      imagesToUrl,
-      getVideoThumbnail
     };
   }
 }
@@ -61,31 +49,32 @@ export default {
                 <h2>{{ weaponData.stats[key] }}</h2>
             </div>
         </div>
-        <div class="side-by-side-container">
+        <div :class="{'side-by-side-container': !isMobile}">
             <div class="desc-container">
                 <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
             </div>
-        </div>
-        <EmbeddedVideo
-            v-if="weaponData.videos?.length"
-            :video="weaponData.videos[videoNumber]"
-            :thumbnail="getVideoThumbnail()"
-        />
-        <div class="video-nav-container">
-            <v-btn 
-            class="video-nav-btn"
-            :disabled="videoNumber < 1"
-            @click="videoNumber--;"
-            >
-                Previous Video
-            </v-btn>
-            <v-btn 
-            class="video-nav-btn"
-            :disabled="videoNumber >= weaponData.videos?.length - 1"
-            @click="videoNumber++;"
-            >
-                Next Video
-            </v-btn>
+            <div>
+                <EmbeddedVideo
+                    v-if="weaponData.videos?.length"
+                    :video="weaponData.videos[videoNumber]"
+                />
+                <div class="video-nav-container">
+                    <v-btn 
+                    class="video-nav-btn"
+                    :disabled="videoNumber < 1"
+                    @click="videoNumber--;"
+                    >
+                        Previous Video
+                    </v-btn>
+                    <v-btn 
+                    class="video-nav-btn"
+                    :disabled="videoNumber >= weaponData.videos?.length - 1"
+                    @click="videoNumber++;"
+                    >
+                        Next Video
+                    </v-btn>
+                </div>
+            </div>
         </div>
     </div>
 </template>
@@ -106,7 +95,7 @@ export default {
     padding: 14px 12px;
     background-color: var(--off-main-hex);
     font-size: 15px;
-    max-height: 950px;
+    max-height: 70vh;
     overflow-y: auto;
 
     /*firefox only*/
@@ -122,6 +111,10 @@ export default {
 
 .weapon-container .stat-container{
     width: 27%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     border: 1px solid white;
     padding: 10px 14px;
 }
@@ -140,32 +133,37 @@ export default {
 }
 
 @media(max-width: 1280px){
-    .desc-container {max-height: 420px;}
+    .weapon-container .desc-container {max-height: 420px;}
 
-    .stat-container > h2 {    
+    .weapon-container .stat-container > h2 {    
         font-size: 1.4rem;
     }
 
-    .stat-container > h2 {    
+    .weapon-container .stat-container > h2 {    
         font-size: 1.2rem;
     }
 }
 
 @media(max-width: 600px){
-    .stat-container{
+    .weapon-container .stat-container{
         width: 30%;
     }
-    .stat-container > h2{
-        font-size: 1.3rem;
+
+    .weapon-container .stat-container > h2{
+        font-size: 1.1rem;
     }
 
-    .stat-container > h3{
+    .weapon-container .stat-container > h3{
         font-size: 1.1rem;
     }
 
     .weapon-container{
         padding-left: 7px;
         padding-right: 7px;
+    }
+
+    .weapon-container .desc-container{
+        max-height: 55vh;
     }
 }
 
@@ -201,7 +199,7 @@ export default {
 .video-nav-container {
     margin: 10px auto;
     display: flex;
-    width: 90%;
+    width: 97%;
     justify-content: space-between;
 }
 

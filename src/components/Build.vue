@@ -47,7 +47,7 @@ export default {
     }
 
     function getVideoThumbnail() {
-      if(!characterImages) return null;
+      if(!characterImages?.length) return null;
       const thumb = characterImages.value[videoNumber.value];
       return thumb ? thumb : characterImages.value[videoNumber.value - characterImages.value.length];
     }

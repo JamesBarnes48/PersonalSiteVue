@@ -9,7 +9,7 @@ export default {
         const items = [
             {name: 'Home', path: '/', icon: 'mdi-home'},
             {name: 'Showcase', path: '/showcase', icon: 'mdi-movie-filter'},
-            {name: 'Elden Ring Armoury', path: '/armoury/eldenring', icon: 'mdi-sword-cross'},
+            {name: 'Elden Ring Armoury', path: '/armoury/eldenring', icon: 'mdi-cross-bolnisi'},
             {name: 'Chivalry 2 Armoury', path: '/armoury/chiv2', icon: 'mdi-sword-cross'}
         ];
         const display = useDisplay();
