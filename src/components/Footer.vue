@@ -19,6 +19,7 @@ export default {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    min-height: 10vh;
     background-color: var(--off-background-hex);
     padding: 20px 0 20px 0;
     color: #EAF6F6;
