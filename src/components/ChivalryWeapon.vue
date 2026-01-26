@@ -40,7 +40,7 @@ export default {
 <template>
     <div class="weapon-container">
         <h2>{{ weaponData.name }}</h2>
-        <div class="stats-container">
+        <div v-if="weaponData.stats" class="stats-container">
             <div 
             v-for="key in Object.keys(weaponData.stats)"
             class="stat-container"
@@ -49,11 +49,43 @@ export default {
                 <h2>{{ weaponData.stats[key] }}</h2>
             </div>
         </div>
-        <div :class="{'side-by-side-container': !isMobile}">
+
+        <div
+        v-if="weaponData.descriptionParagraphs"
+        :class="{'side-by-side-container': !isMobile}">
             <div class="desc-container">
                 <p class="desc-paragraph" v-for="desc in weaponData.descriptionParagraphs">{{ desc }}</p>
             </div>
             <div>
+                <EmbeddedVideo
+                    v-if="weaponData.videos?.length"
+                    :video="weaponData.videos[videoNumber]"
+                />
+                <div class="video-nav-container">
+                    <v-btn 
+                    class="video-nav-btn"
+                    :disabled="videoNumber < 1"
+                    @click="videoNumber--;"
+                    >
+                        Previous Video
+                    </v-btn>
+                    <v-btn 
+                    class="video-nav-btn"
+                    :disabled="videoNumber >= weaponData.videos?.length - 1"
+                    @click="videoNumber++;"
+                    >
+                        Next Video
+                    </v-btn>
+                </div>
+            </div>
+        </div>
+        <div
+        v-else
+        >
+            <div class="top-paragraph-container">
+                <p class="top-paragraph" v-for="para in weaponData.topParagraphs">{{ para }}</p>
+            </div>
+            <div class="large-video-container">
                 <EmbeddedVideo
                     v-if="weaponData.videos?.length"
                     :video="weaponData.videos[videoNumber]"
@@ -82,7 +114,6 @@ export default {
 <style scoped>
 .weapon-container {
   width: 95%;
-  height: fit-content;
   position: relative;
   z-index: 2;
   margin: 25px auto;
@@ -132,8 +163,73 @@ export default {
     font-size: 1.5rem;
 }
 
+/* Webkit browser scrollbar customizations (Chrome, Safari, Edge) */
+.desc-container::-webkit-scrollbar {
+    width: 8px; /* Vertical scrollbar width */
+    height: 8px; /* Horizontal scrollbar height */
+}
+
+.desc-container::-webkit-scrollbar-track {
+    background: #000; /* Black background for the track */
+}
+
+.desc-container::-webkit-scrollbar-thumb {
+    background: #888; /* Grey color for the thumb */
+    border-radius: 10px; /* Optional: Rounded corners for the thumb */
+}
+
+.desc-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker grey for thumb when hovered */
+}
+
+.desc-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.desc-paragraph {
+    color: black;
+    margin: 10px 0;
+}
+
+.top-paragraph {
+    color: var(--off-main-hex);
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.large-video-container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.video-nav-container {
+    margin: 10px auto;
+    display: flex;
+    width: 97%;
+    justify-content: space-between;
+}
+
+.video-nav-btn {
+    background-color: var(--main-hex);
+}
+
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.3s ease-in;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+
 @media(max-width: 1280px){
     .weapon-container .desc-container {max-height: 420px;}
+
+    .large-video-container {
+        width: 90%;
+    }
 
     .weapon-container .stat-container > h2 {    
         font-size: 1.4rem;
@@ -165,56 +261,10 @@ export default {
     .weapon-container .desc-container{
         max-height: 55vh;
     }
-}
 
-/* Webkit browser scrollbar customizations (Chrome, Safari, Edge) */
-.desc-container::-webkit-scrollbar {
-    width: 8px; /* Vertical scrollbar width */
-    height: 8px; /* Horizontal scrollbar height */
-}
-
-.desc-container::-webkit-scrollbar-track {
-    background: #000; /* Black background for the track */
-}
-
-.desc-container::-webkit-scrollbar-thumb {
-    background: #888; /* Grey color for the thumb */
-    border-radius: 10px; /* Optional: Rounded corners for the thumb */
-}
-
-.desc-container::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Darker grey for thumb when hovered */
-}
-
-.desc-title {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.desc-paragraph {
-    color: black;
-    margin: 10px 0;
-}
-
-.video-nav-container {
-    margin: 10px auto;
-    display: flex;
-    width: 97%;
-    justify-content: space-between;
-}
-
-.video-nav-btn {
-    background-color: var(--main-hex);
-}
-
-.v-enter-active,
-.v-leave-active {
-    transition: opacity 0.3s ease-in;
-}
-
-.v-enter-from,
-.v-leave-to {
-    opacity: 0;
+    .large-video-container {
+        width: 98%;
+    }
 }
 
 </style>

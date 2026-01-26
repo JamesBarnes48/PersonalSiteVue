@@ -56,7 +56,7 @@ export default {
       <div>
         <RankingBar
         :rankingData="armaments"
-        :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '45px', block: true}"
+        :theme="{mainColour: '#64787d', offColour: '#4a6167', fontColour: 'white', boxWidth: '38px', block: true}"
         @selected="buildSelected"
         />
       </div>
@@ -72,7 +72,7 @@ export default {
         class="placeholder-container"
         >
           <h3>Chivalry 2 is a game with massive, 64-player online battles where two armies collide.</h3>
-          <h3>The battlefield is our proving ground. The strong flourish... and the weak feed their egos.</h3>
+          <h3>The battlefield is our proving ground. The strong crush the weak, and their egos feast.</h3>
           <h3>Your most important decision is what you wield. These are some of my signature weapons, my own personal favourites.</h3>
           <h2>Choose your weapon.</h2>
         </div>

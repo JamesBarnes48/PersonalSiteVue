@@ -165,5 +165,28 @@ export default [
                 title: `Frenzied Charge`
             }
         ]
+    },
+    {
+        name: 'One Man Army',
+        imgSrc: '/chivalry/crown.svg',
+        colourClass: 'gold',
+        topParagraphs: [
+            `These clips need no description. Not bound by any specific weapon, they are the best of the best.`, 
+            `Demonstrations of notable skill, overcoming hopeless situations alone or fighting fearlessly on the frontline.`
+        ],
+        videos: [
+            {
+                id: 'pw5hMKCpJtc',
+                title: `Alight, ablaze`
+            },
+            {
+                id: 's2YU3hKtViw',
+                title: 'Sacred Ground'
+            },
+            {
+                id: 'tJkDCb7J6bs',
+                title: 'The Impenetrable Line'
+            }
+        ]
     }
 ]

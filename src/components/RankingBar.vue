@@ -38,7 +38,7 @@ export default {
 
         //sets out a default set of values for the css variables we need to style the page 
         //we then use spread on top of that to replace defaults with any provided values, if we have them.
-        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '25px', block: false};
+        const defaultTheme: Theme = {mainColour: '#Fab256', offColour: '#Fd920b', fontColour: '#Fd920b', boxWidth: '40px', block: false};
         const pageTheme: Theme = {...defaultTheme, ...props.theme};
 
 
@@ -58,9 +58,15 @@ export default {
     <div class="ranking-bar-container" :style="{'--mainColour_inline': pageTheme.mainColour, '--offColour_inline': pageTheme.offColour, '--fontColour_inline': pageTheme.fontColour, '--boxWidth_inline': pageTheme.boxWidth, '--block_inline': pageTheme.block? '100%': 'fit-content'}">
         <div :class="vertical? 'vertical': ''" class="bar-container">
             <div
-            class="item-container"
-            :class="{'selected': selectedItemKey === key, 'animationDisabled': disableAnimationKey === key}"
             v-for="(item, key) in rankingData"
+            class="item-container"
+            :class="[
+                item?.colourClass,
+                {
+                    'selected': selectedItemKey === key, 
+                    'animationDisabled': disableAnimationKey === key,
+                }
+            ]"
             @click="selectItem(key, item)"
             @mouseleave="resetAnimation"
             >
@@ -91,7 +97,8 @@ export default {
     --mainColour: var(--mainColour_inline);
     --offColour: var(--offColour_inline);
     --fontColour: var(--fontColour_inline);
-    --boxWidth: var(--boxWidth_inline);
+    --boxWidth_base: var(--boxWidth_inline);
+    --boxWidth: var(--boxWidth_base);
 }
 
 .bar-container{
@@ -107,6 +114,11 @@ export default {
 
 .vertical{
     flex-direction: column;
+}
+
+.gold {
+  --mainColour: #d6a318;
+  --offColour: #f5c84e;
 }
 
 .item-container {
@@ -143,7 +155,7 @@ export default {
 
 @media(max-width: 1080px){
     .ranking-bar-container{
-        --boxWidth: 28px;
+        --boxWidth: calc(var(--boxWidth_base) - 14px);
     }
 
     .item-image{
@@ -153,7 +165,7 @@ export default {
 
 @media(max-width: 800px){
     .ranking-bar-container{
-        --boxWidth: 25px;
+        --boxWidth: calc(var(--boxWidth_base) - 18px);
     }
 
     .item-image{
