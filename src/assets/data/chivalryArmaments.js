@@ -182,10 +182,6 @@ export default [
             {
                 id: 's2YU3hKtViw',
                 title: 'Sacred Ground'
-            },
-            {
-                id: 'tJkDCb7J6bs',
-                title: 'The Impenetrable Line'
             }
         ]
     }
