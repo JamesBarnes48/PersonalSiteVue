@@ -7,7 +7,7 @@ export default {
     setup(props){
       const aboutMe = [
         'Hello! I\'m James and I am a software engineer from Norfolk, England. I studied Computer Science at UEA and in my free time you can find me up to all sorts: from baking bread to lifting weights. I\'ve a soft spot for history and heritage and I am a fiend for a city break, be it in the UK or abroad. Really though I\'m a simple guy who loves the pub and loves his PS5.',
-        'I am a full-stack engineer although recently I have found myself more on the frontend in my role as Product UI Software Engineer at Darktrace. At uni I got my hands on all kinds of technologies; I learned about data structures and algorithms in Java, got my head around Python machine learning libraries and even getting neck-deep in logic and state machines to make a digital traffic light controller. After this I knew I wanted to pursue engineering web applications. My ideal stack is a total Javascript-fest: Node on the back and Vue/React on the front. Sounds good to me!',
+        'I am a true full-stack engineer. I am most comfortable working on a Node.js backend but I enjoy using React and Vue too. I work as a software engineering consultant at Solirius Consulting, where I work with a lot of public sector clients on whatever solutions they may need. Quite similar to when I was at uni, where I was expected to find my way around all kinds of technologies; I learned about data structures and algorithms in Java, got my head around Python machine learning libraries and even getting neck-deep in logic and state machines to make a digital traffic light controller. After this I knew I wanted to pursue engineering web applications.',
       ];
 
       const display = useDisplay();
