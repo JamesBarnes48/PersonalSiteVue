@@ -80,33 +80,6 @@ export default {
 
     <AboutMe />
     <SkillsPanelList :skillsList="skills" />
-
-    <div class="stats-container">
-      <h2 class="subheading">My Stats</h2>
-      <p>circa Jan 2025</p>
-      <div class="stats-grid">
-        <div class="stats-child">
-          <h3 class="stat-name">Years as professional dev:</h3>
-          <h2 class="stat-metric">3</h2>
-        </div>
-        <div class="stats-child">
-          <h3 class="stat-name">Merge requests successfully deployed:</h3>
-          <h2 class="stat-metric">296</h2>
-        </div>
-        <div class="stats-child">
-          <h3 class="stat-name">Other people's merge requests reviewed and successfully deployed:</h3>
-          <h2 class="stat-metric">394</h2>
-        </div>
-        <div class="stats-child">
-          <h3 class="stat-name">Major projects lead:</h3>
-          <h2 class="stat-metric">4</h2>
-        </div>
-        <div class="stats-child">
-          <h3 class="stat-name">Countries visited:</h3>
-          <h2 class="stat-metric">10</h2>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
   
@@ -132,66 +105,11 @@ export default {
     margin-top: 0px;
     color: var(--main-hex);
   }
-
-  .stats-container{
-    margin: 5% 10%;
-  }
-  
-  /* Stats */
-  
-  .stats-grid{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-  }
-  
-  .stats-child{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 30%;
-    padding: 10px 8px;
-    margin: 10px 10px;
-    background-color: whitesmoke;
-    border: 1px solid var(--off-main-hex);
-  }
-  
-  .stat-name{
-    font-size: 1.2rem;
-    color: black;
-  }
-  
-  .stat-metric{
-    color: var(--main-hex);
-    font-weight: bolder;
-  }
-  
-  .stat-metric.small{
-    font-size: 1.5rem;
-  }
   
   @media (max-width: 1280px){
 
     .homepage-container{
       margin-left: 35px;
-    }
-
-    .stats-container {
-      margin: 2% 3% 0 3%;
-    }
-
-    .stats-child{
-      width: 40%;
-    }
-
-    .stat-name{
-      font-size: 0.9rem;
-    }
-
-    .stat-metric{
-      font-size: 1.3rem;
     }
 
     .title-container{
