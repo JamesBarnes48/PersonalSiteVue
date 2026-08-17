@@ -14,9 +14,12 @@ import * as directives from 'vuetify/directives'
 import FontAwesomeIcon from "./utilities/font-awesome-icons.js";
 
 const vuetify = createVuetify({
-    components,
-    directives,
-  });
+  components,
+  directives,
+  theme: {
+    defaultTheme: 'light',
+  }
+});
 
 const app = createApp(App);
 
